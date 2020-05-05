@@ -1,0 +1,270 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"{$jspagetitlelabel paa_master_q search}","hidden":"{$item_hide_search_header}","fontSize":30},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+		
+								
+''
+,
+		
+								
+{
+	table: {
+	
+				tableForm: true,
+				
+		location: 'grid',
+		
+		
+		widths: [
+									{BEGIN col_grid_0}
+						"*", 
+							{END col_grid_0}
+					 ],	
+		
+			heights: [
+								{BEGIN row_grid_0}
+						
+			"%",
+						{END row_grid_0}
+			 
+				],
+	
+		body: [
+				
+					{BEGIN row_grid_0}
+				[
+												{BEGIN cellblock_grid_c3}
+{
+	cellId: 'c3',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_search_field}","text":{$PAA_ID_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field1}","text":{$COD_UNSPSC_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field2}","text":{$DESCRIPCION_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field4}","text":{$MES_INICIO_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field5}","text":{$MES_PRESENTA_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field6}","text":{$DURACION_CONTRATO_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field7}","text":{$DURACION_ESTIMADA_DMA_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field8}","text":{$MODALIDAD_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field9}","text":{$FUENTE_RECURSOS_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field10}","text":{$VALOR_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field11}","text":{$VALOR_VIGENCIA_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field12}","text":{$VF_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field13}","text":{$ESTADO_VF_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field14}","text":{$UNIDAD_CONTRATACION_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field15}","text":{$COD_UBICACION_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field16}","text":{$RESPONSABLE_NOMBRE_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field17}","text":{$RESPONSABLE_TELEFONO_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field18}","text":{$RESPONSABLE_EMAIL_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field19}","text":{$responsable_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field20}","text":{$vigencia_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field21}","text":{$sys_user_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field22}","text":{$sys_date_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field23}","text":{$sys_status_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field3}","text":{$TIPOSOL_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field24}","text":{$USOS_TOTAL_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field25}","text":{$VALOR_VIGENCIA_FUTURA_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field26}","text":{$dep_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field27}","text":{$deps_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c3}
+											],
+				{END row_grid_0}
+					]
+	}
+}
+,
+		
+								
+{
+	table: {
+	
+				
+		location: 'below-grid',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":""},
+				
+				
+			{"text":""},
+				
+				
+			{"text":"","hidden":"{$item_hide_search_back_list}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_search_cancel}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+			]
+}
+  

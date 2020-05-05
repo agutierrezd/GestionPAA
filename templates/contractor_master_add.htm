@@ -1,0 +1,861 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-add" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="2"
+	data-v-margin="0"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="add_header" data-itemid="add_header" {$item_add_header} data-pageid="{$pageid}" >{$pagetitlelabel contractor_master add}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="2"
+	data-v-margin="0"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		{BEGIN message_block}
+<div data-itemtype="add_message" data-itemid="add_message" {$item_add_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN back_button}
+		
+	<button class="btn btn-sm btn-default" {$backbutton_attrs}>Volver a la lista</button>
+	{END back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>Ver</button>
+{END view_page_button}
+{BEGIN edit_page_button}
+	<button class="btn btn-sm btn-default" {$edit_page_button_attrs}>Editar</button>
+{END edit_page_button}
+</div>
+</div>
+{END message_block}	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<div class="panel with-tabs panel-default form-tabs" data-itemtype="tabs" data-itemid="tabs" {$item_tabs} data-pageid="{$pageid}">
+	<div class="panel-heading">
+		<ul class="nav nav-tabs" role="tablist">
+									<li role="presentation" class="active">
+				<a aria-controls="settings" role="tab" data-toggle="tab" href="#tab_section{$pageid}">
+					Información personal				</a>
+			</li>
+										<li role="presentation" class="">
+				<a aria-controls="settings" role="tab" data-toggle="tab" href="#tab_section1{$pageid}">
+					Información de contacto y financiera				</a>
+			</li>
+									</ul>
+	</div>
+	<div class="panel-body">
+		<div class="tab-content">
+							<div role="tabpanel" class="tab-pane active" id="tab_section{$pageid}"> 
+			{BEGIN section_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="section" id="form_section_{$pageid}" data-makeup="small" {$form_section} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="3"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_section_c1}
+<td
+	{$cell_section_c1}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c1" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN contractor_type_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_type}  r-vertical-field" 
+	data-fieldname="contractor_type" 
+	data-signal-error-for="contractor_type{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="contractor_type" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_contractor_type}">
+		{BEGIN contractor_type_label}{$label contractor_master contractor_type }{END contractor_type_label}
+	</label>
+	<div class="r-edit-field">
+		{$contractor_type_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="contractor_type">
+		<div class="text-muted" >
+		{$tooltip contractor_master contractor_type }		</div>
+	</div>
+</div>
+
+
+{END contractor_type_fieldblock}
+	
+								</td>
+			{END cellblock_section_c1}
+			 
+																
+
+{BEGIN cellblock_section_c}
+<td
+	{$cell_section_c}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN contractor_doc_id_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_doc_id}  r-vertical-field" 
+	data-fieldname="contractor_doc_id" 
+	data-signal-error-for="contractor_doc_id{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="contractor_doc_id" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_contractor_doc_id}">
+		{BEGIN contractor_doc_id_label}{$label contractor_master contractor_doc_id }{END contractor_doc_id_label}
+	</label>
+	<div class="r-edit-field">
+		{$contractor_doc_id_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="contractor_doc_id">
+		<div class="text-muted" >
+		{$tooltip contractor_master contractor_doc_id }		</div>
+	</div>
+</div>
+
+
+{END contractor_doc_id_fieldblock}
+	
+								</td>
+			{END cellblock_section_c}
+			 
+																
+
+{BEGIN cellblock_section_c10}
+<td
+	{$cell_section_c10}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c10" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN contractor_doc_id_dv_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_doc_id_dv}  r-vertical-field" 
+	data-fieldname="contractor_doc_id_dv" 
+	data-signal-error-for="contractor_doc_id_dv{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="contractor_doc_id_dv" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_contractor_doc_id_dv}">
+		{BEGIN contractor_doc_id_dv_label}{$label contractor_master contractor_doc_id_dv }{END contractor_doc_id_dv_label}
+	</label>
+	<div class="r-edit-field">
+		{$contractor_doc_id_dv_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="contractor_doc_id_dv">
+		<div class="text-muted" >
+		{$tooltip contractor_master contractor_doc_id_dv }		</div>
+	</div>
+</div>
+
+
+{END contractor_doc_id_dv_fieldblock}
+	
+								</td>
+			{END cellblock_section_c10}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section_c11}
+<td
+	{$cell_section_c11}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c11" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN contractor_name_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_name}  r-vertical-field" 
+	data-fieldname="contractor_name" 
+	data-signal-error-for="contractor_name{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="contractor_name" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_contractor_name}">
+		{BEGIN contractor_name_label}{$label contractor_master contractor_name }{END contractor_name_label}
+	</label>
+	<div class="r-edit-field">
+		{$contractor_name_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="contractor_name">
+		<div class="text-muted" >
+		{$tooltip contractor_master contractor_name }		</div>
+	</div>
+</div>
+
+
+{END contractor_name_fieldblock}
+	
+								</td>
+			{END cellblock_section_c11}
+			 
+		
+							
+
+{BEGIN cellblock_section_c13}
+<td
+	{$cell_section_c13}
+	class=" r-ori-vert"
+	
+			data-single
+			
+	ocolspan="2"		data-cellId="section_c13" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_section_c13}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section_c6}
+<td
+	{$cell_section_c6}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c6" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN contractor_email_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_email}  r-vertical-field" 
+	data-fieldname="contractor_email" 
+	data-signal-error-for="contractor_email{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="contractor_email" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_contractor_email}">
+		{BEGIN contractor_email_label}{$label contractor_master contractor_email }{END contractor_email_label}
+	</label>
+	<div class="r-edit-field">
+		{$contractor_email_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="contractor_email">
+		<div class="text-muted" >
+		{$tooltip contractor_master contractor_email }		</div>
+	</div>
+</div>
+
+
+{END contractor_email_fieldblock}
+	
+								</td>
+			{END cellblock_section_c6}
+			 
+																
+
+{BEGIN cellblock_section_c12}
+<td
+	{$cell_section_c12}
+	class=" r-ori-vert"
+	
+			data-single
+			
+	ocolspan="2"		data-cellId="section_c12" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN contractor_email_mincit_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_email_mincit}  r-vertical-field" 
+	data-fieldname="contractor_email_mincit" 
+	data-signal-error-for="contractor_email_mincit{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="contractor_email_mincit" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_contractor_email_mincit}">
+		{BEGIN contractor_email_mincit_label}{$label contractor_master contractor_email_mincit }{END contractor_email_mincit_label}
+	</label>
+	<div class="r-edit-field">
+		{$contractor_email_mincit_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="contractor_email_mincit">
+		<div class="text-muted" >
+		{$tooltip contractor_master contractor_email_mincit }		</div>
+	</div>
+</div>
+
+
+{END contractor_email_mincit_fieldblock}
+	
+								</td>
+			{END cellblock_section_c12}
+								</tr>
+			</tbody></table>
+{END section_block}
+						</div>
+					<div role="tabpanel" class="tab-pane " id="tab_section1{$pageid}"> 
+			{BEGIN section1_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="section1" id="form_section1_{$pageid}" data-makeup="small" {$form_section1} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="2"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_section1_c1}
+<td
+	{$cell_section1_c1}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c1" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN contractor_address_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_address}  r-vertical-field" 
+	data-fieldname="contractor_address" 
+	data-signal-error-for="contractor_address{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="contractor_address" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_contractor_address}">
+		{BEGIN contractor_address_label}{$label contractor_master contractor_address }{END contractor_address_label}
+	</label>
+	<div class="r-edit-field">
+		{$contractor_address_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="contractor_address">
+		<div class="text-muted" >
+		{$tooltip contractor_master contractor_address }		</div>
+	</div>
+</div>
+
+
+{END contractor_address_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c1}
+			 
+																
+
+{BEGIN cellblock_section1_c}
+<td
+	{$cell_section1_c}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN contractor_city_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_city}  r-vertical-field" 
+	data-fieldname="contractor_city" 
+	data-signal-error-for="contractor_city{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="contractor_city" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_contractor_city}">
+		{BEGIN contractor_city_label}{$label contractor_master contractor_city }{END contractor_city_label}
+	</label>
+	<div class="r-edit-field">
+		{$contractor_city_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="contractor_city">
+		<div class="text-muted" >
+		{$tooltip contractor_master contractor_city }		</div>
+	</div>
+</div>
+
+
+{END contractor_city_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section1_c8}
+<td
+	{$cell_section1_c8}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c8" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN contractor_phone_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_phone}  r-vertical-field" 
+	data-fieldname="contractor_phone" 
+	data-signal-error-for="contractor_phone{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="contractor_phone" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_contractor_phone}">
+		{BEGIN contractor_phone_label}{$label contractor_master contractor_phone }{END contractor_phone_label}
+	</label>
+	<div class="r-edit-field">
+		{$contractor_phone_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="contractor_phone">
+		<div class="text-muted" >
+		{$tooltip contractor_master contractor_phone }		</div>
+	</div>
+</div>
+
+
+{END contractor_phone_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c8}
+			 
+																
+
+{BEGIN cellblock_section1_c9}
+<td
+	{$cell_section1_c9}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c9" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN contractor_mobile_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_mobile}  r-vertical-field" 
+	data-fieldname="contractor_mobile" 
+	data-signal-error-for="contractor_mobile{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="contractor_mobile" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_contractor_mobile}">
+		{BEGIN contractor_mobile_label}{$label contractor_master contractor_mobile }{END contractor_mobile_label}
+	</label>
+	<div class="r-edit-field">
+		{$contractor_mobile_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="contractor_mobile">
+		<div class="text-muted" >
+		{$tooltip contractor_master contractor_mobile }		</div>
+	</div>
+</div>
+
+
+{END contractor_mobile_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c9}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section1_c6}
+<td
+	{$cell_section1_c6}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c6" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN bank_name_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_bank_name}  r-vertical-field" 
+	data-fieldname="bank_name" 
+	data-signal-error-for="bank_name{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="bank_name" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_bank_name}">
+		{BEGIN bank_name_label}{$label contractor_master bank_name }{END bank_name_label}
+	</label>
+	<div class="r-edit-field">
+		{$bank_name_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="bank_name">
+		<div class="text-muted" >
+		{$tooltip contractor_master bank_name }		</div>
+	</div>
+</div>
+
+
+{END bank_name_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c6}
+			 
+		
+							
+
+{BEGIN cellblock_section1_c7}
+<td
+	{$cell_section1_c7}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c7" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_section1_c7}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section1_c4}
+<td
+	{$cell_section1_c4}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c4" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN bank_cta_type_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_bank_cta_type}  r-vertical-field" 
+	data-fieldname="bank_cta_type" 
+	data-signal-error-for="bank_cta_type{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field15" {$item_integrated_edit_field15} data-pageid="{$pageid}" data-field="bank_cta_type" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_bank_cta_type}">
+		{BEGIN bank_cta_type_label}{$label contractor_master bank_cta_type }{END bank_cta_type_label}
+	</label>
+	<div class="r-edit-field">
+		{$bank_cta_type_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="bank_cta_type">
+		<div class="text-muted" >
+		{$tooltip contractor_master bank_cta_type }		</div>
+	</div>
+</div>
+
+
+{END bank_cta_type_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c4}
+			 
+																
+
+{BEGIN cellblock_section1_c5}
+<td
+	{$cell_section1_c5}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c5" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN bank_cta_number_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_bank_cta_number}  r-vertical-field" 
+	data-fieldname="bank_cta_number" 
+	data-signal-error-for="bank_cta_number{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field16" {$item_integrated_edit_field16} data-pageid="{$pageid}" data-field="bank_cta_number" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_bank_cta_number}">
+		{BEGIN bank_cta_number_label}{$label contractor_master bank_cta_number }{END bank_cta_number_label}
+	</label>
+	<div class="r-edit-field">
+		{$bank_cta_number_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="bank_cta_number">
+		<div class="text-muted" >
+		{$tooltip contractor_master bank_cta_number }		</div>
+	</div>
+</div>
+
+
+{END bank_cta_number_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c5}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section1_c2}
+<td
+	{$cell_section1_c2}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c2" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN sys_status_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sys_status}  r-vertical-field" 
+	data-fieldname="sys_status" 
+	data-signal-error-for="sys_status{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field23" {$item_integrated_edit_field23} data-pageid="{$pageid}" data-field="sys_status" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_sys_status}">
+		{BEGIN sys_status_label}{$label contractor_master sys_status }{END sys_status_label}
+	</label>
+	<div class="r-edit-field">
+		{$sys_status_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="sys_status">
+		<div class="text-muted" >
+		{$tooltip contractor_master sys_status }		</div>
+	</div>
+</div>
+
+
+{END sys_status_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c2}
+			 
+																
+
+{BEGIN cellblock_section1_c3}
+<td
+	{$cell_section1_c3}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c3" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN active_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_active}  r-vertical-field" 
+	data-fieldname="active" 
+	data-signal-error-for="active{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field27" {$item_integrated_edit_field27} data-pageid="{$pageid}" data-field="active" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_active}">
+		{BEGIN active_label}{$label contractor_master active }{END active_label}
+	</label>
+	<div class="r-edit-field">
+		{$active_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="active">
+		<div class="text-muted" >
+		{$tooltip contractor_master active }		</div>
+	</div>
+</div>
+
+
+{END active_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c3}
+								</tr>
+			</tbody></table>
+{END section1_block}
+						</div>
+				</div>
+	</div>
+</div>  	
+				{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="2"
+	data-v-margin="0"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="add_save" data-itemid="add_save" {$item_add_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							Guardar			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="add_back_list" data-itemid="add_back_list" {$item_add_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="backButton{$id}" >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="add_cancel" data-itemid="add_cancel" {$item_add_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Cancelar			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

@@ -1,0 +1,6295 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-list" {$bodyattrs}>
+	{BEGIN body}
+		<style>
+		{$containerCss}
+		</style>
+		<div class="r-vbar-page">
+			<div data-width="" data-fixed class="r-left clearfix {$leftbar_class}" >
+								<div data-location="left" id="form_left_{$pageid}" data-makeup="leftbar" {$form_left} data-pageid="{$pageid}">
+{BEGIN left_block}
+ 
+     
+         
+
+			<div data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell class="clearfix " data-itemid="logo1" {$item_logo1}>
+				{BEGIN logo_block}
+	<A data-itemtype="logo" data-itemid="logo1" {$item_logo1} data-pageid="{$pageid}" class="navbar-brand" href="{$home_link}" data-pageid="{$pageid}" {$logo_hiddenattr}>
+		{$logo}
+	</A>
+{END logo_block}
+				<button data-pageid="1" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target="[data-mobile-controlled]">	
+					<span class="sr-only">Toggle navigation</span>	
+					<span class="icon-bar"></span>					
+				</button>				
+			</div>
+		
+ 
+
+			<div class="clearfix " data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell data-itemid="expand_button" {$item_expand_button} data-topcell-item-type="expand_button" >
+				<span data-itemtype="expand_button" data-itemid="expand_button" {$item_expand_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Expand" class="btn btn-link   
+	" href="#" >
+					<span class="glyphicon glyphicon-triangle-right"></span>
+										</a>
+</span>
+			</div>
+		
+     
+     
+         
+
+			<div data-cellId="left_c1" data-pageid="{$pageid}" class="clearfix  r-ori-vert " data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}">
+				{$menu main}			</div>
+		
+ 
+
+			<div class="clearfix  r-ori-vert" data-cellId="left_c1" data-pageid="{$pageid}" data-itemid="search_panel" {$item_search_panel} data-topcell-item-type="search_panel" >
+				<!-- Begin Search panel content -->
+<div class="searchOptions panel panel-primary searchPanelContainer " {$srchOpt_attrs} data-itemtype="search_panel" data-itemid="search_panel" {$item_search_panel} data-pageid="{$pageid}" >
+
+	<div class="panel-heading">
+		<div class="btn-group" id="addSearchFieldButton{$id}">
+			<button id="showHideControlChooseMenu{$id}" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Búsqueda			<span class="caret"></span>
+			</button>
+		</div>
+
+
+		<div class="btn-group searchpanel-options" id="searchPanelOptions{$id}">
+			<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<span class="glyphicon glyphicon glyphicon-option-vertical"></span>
+			</button>
+			<ul class="dropdown-menu dropdown-left">
+				<li id="showHideSearchType{$id}" {$showHideCtrlsOpt_attrs}><a>Mostrar opciones</a></li>
+				<li role="separator" class="divider"></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAll" {$all_checkbox}><label for="radioAll"><span class="glyphicon">&nbsp;</span>todas las condiciones</label></a></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAny" {$any_checkbox}><label for="radioAny"><span class="glyphicon">&nbsp;</span>cualquier condición</label></a></li>
+				<li role="separator" class="divider"></li>
+				<li><a class="close-button"><span class="glyphicon glyphicon-remove">&nbsp;</span>esconder</a></li>
+			</ul>
+		</div>
+
+
+		</div>
+	<div class="panel-body controlsBlock" {$bottomSearchButt_attrs} >
+
+
+		
+		{BEGIN searchCtrlBlock}
+		<div class="srchPanelRow form-group" {$filterRow_attrs}>
+			<label>{$fLabel}</label>	{$delCtrlButt}
+				<span class="rnr-searchtype">{$searchtype}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol1}</span>
+		</div>
+		{END searchCtrlBlock}
+																		{BEGIN searchCtrlBlock_prenumero}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_prenumero}" {$filterRow_attrs_prenumero}>
+			<label>{$label contrato prenumero }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_prenumero}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_prenumero}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_prenumero}</span>
+						</div>
+		{END searchCtrlBlock_prenumero}
+																{BEGIN searchCtrlBlock_vf_valor}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_vf_valor}" {$filterRow_attrs_vf_valor}>
+			<label>{$label contrato vf_valor }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_vf_valor}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_vf_valor}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_vf_valor}</span>
+						</div>
+		{END searchCtrlBlock_vf_valor}
+																{BEGIN searchCtrlBlock_vf_fecha}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_vf_fecha}" {$filterRow_attrs_vf_fecha}>
+			<label>{$label contrato vf_fecha }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_vf_fecha}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_vf_fecha}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_vf_fecha}</span>
+						</div>
+		{END searchCtrlBlock_vf_fecha}
+																{BEGIN searchCtrlBlock_vf_num_autorizacion}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_vf_num_autorizacion}" {$filterRow_attrs_vf_num_autorizacion}>
+			<label>{$label contrato vf_num_autorizacion }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_vf_num_autorizacion}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_vf_num_autorizacion}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_vf_num_autorizacion}</span>
+						</div>
+		{END searchCtrlBlock_vf_num_autorizacion}
+																{BEGIN searchCtrlBlock_cont_vigencias_futuras}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_vigencias_futuras}" {$filterRow_attrs_cont_vigencias_futuras}>
+			<label>{$label contrato cont_vigencias_futuras }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_vigencias_futuras}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_vigencias_futuras}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_vigencias_futuras}</span>
+						</div>
+		{END searchCtrlBlock_cont_vigencias_futuras}
+																{BEGIN searchCtrlBlock_cont_sigep}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_sigep}" {$filterRow_attrs_cont_sigep}>
+			<label>{$label contrato cont_sigep }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_sigep}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_sigep}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_sigep}</span>
+						</div>
+		{END searchCtrlBlock_cont_sigep}
+																{BEGIN searchCtrlBlock_cont_secop_enlace}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_secop_enlace}" {$filterRow_attrs_cont_secop_enlace}>
+			<label>{$label contrato cont_secop_enlace }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_secop_enlace}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_secop_enlace}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_secop_enlace}</span>
+						</div>
+		{END searchCtrlBlock_cont_secop_enlace}
+																{BEGIN searchCtrlBlock_cont_secop_proceso}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_secop_proceso}" {$filterRow_attrs_cont_secop_proceso}>
+			<label>{$label contrato cont_secop_proceso }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_secop_proceso}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_secop_proceso}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_secop_proceso}</span>
+						</div>
+		{END searchCtrlBlock_cont_secop_proceso}
+																{BEGIN searchCtrlBlock_cont_fecha_firma}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_fecha_firma}" {$filterRow_attrs_cont_fecha_firma}>
+			<label>{$label contrato cont_fecha_firma }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_fecha_firma}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_fecha_firma}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_fecha_firma}</span>
+						</div>
+		{END searchCtrlBlock_cont_fecha_firma}
+																{BEGIN searchCtrlBlock_cont_tipo_regimen}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_tipo_regimen}" {$filterRow_attrs_cont_tipo_regimen}>
+			<label>{$label contrato cont_tipo_regimen }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_tipo_regimen}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_tipo_regimen}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_tipo_regimen}</span>
+						</div>
+		{END searchCtrlBlock_cont_tipo_regimen}
+																{BEGIN searchCtrlBlock_cont_plazo}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_plazo}" {$filterRow_attrs_cont_plazo}>
+			<label>{$label contrato cont_plazo }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_plazo}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_plazo}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_plazo}</span>
+						</div>
+		{END searchCtrlBlock_cont_plazo}
+																{BEGIN searchCtrlBlock_cont_obligaciones}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_obligaciones}" {$filterRow_attrs_cont_obligaciones}>
+			<label>{$label contrato cont_obligaciones }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_obligaciones}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_obligaciones}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_obligaciones}</span>
+						</div>
+		{END searchCtrlBlock_cont_obligaciones}
+																{BEGIN searchCtrlBlock_cont_lugar_prestacion}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_lugar_prestacion}" {$filterRow_attrs_cont_lugar_prestacion}>
+			<label>{$label contrato cont_lugar_prestacion }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_lugar_prestacion}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_lugar_prestacion}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_lugar_prestacion}</span>
+						</div>
+		{END searchCtrlBlock_cont_lugar_prestacion}
+																{BEGIN searchCtrlBlock_cont_dep}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_dep}" {$filterRow_attrs_cont_dep}>
+			<label>{$label contrato cont_dep }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_dep}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_dep}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_dep}</span>
+						</div>
+		{END searchCtrlBlock_cont_dep}
+																{BEGIN searchCtrlBlock_cont_depsup}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_depsup}" {$filterRow_attrs_cont_depsup}>
+			<label>{$label contrato cont_depsup }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_depsup}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_depsup}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_depsup}</span>
+						</div>
+		{END searchCtrlBlock_cont_depsup}
+																{BEGIN searchCtrlBlock_cont_afilia_arl}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_afilia_arl}" {$filterRow_attrs_cont_afilia_arl}>
+			<label>{$label contrato cont_afilia_arl }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_afilia_arl}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_afilia_arl}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_afilia_arl}</span>
+						</div>
+		{END searchCtrlBlock_cont_afilia_arl}
+																{BEGIN searchCtrlBlock_cont_fecha_aprobgarantia}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_fecha_aprobgarantia}" {$filterRow_attrs_cont_fecha_aprobgarantia}>
+			<label>{$label contrato cont_fecha_aprobgarantia }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_fecha_aprobgarantia}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_fecha_aprobgarantia}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_fecha_aprobgarantia}</span>
+						</div>
+		{END searchCtrlBlock_cont_fecha_aprobgarantia}
+																{BEGIN searchCtrlBlock_cesion_estado}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cesion_estado}" {$filterRow_attrs_cesion_estado}>
+			<label>{$label contrato cesion_estado }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cesion_estado}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cesion_estado}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cesion_estado}</span>
+						</div>
+		{END searchCtrlBlock_cesion_estado}
+																{BEGIN searchCtrlBlock_cont_funcion}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_funcion}" {$filterRow_attrs_cont_funcion}>
+			<label>{$label contrato cont_funcion }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_funcion}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_funcion}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_funcion}</span>
+						</div>
+		{END searchCtrlBlock_cont_funcion}
+																{BEGIN searchCtrlBlock_cont_causalc}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_causalc}" {$filterRow_attrs_cont_causalc}>
+			<label>{$label contrato cont_causalc }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_causalc}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_causalc}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_causalc}</span>
+						</div>
+		{END searchCtrlBlock_cont_causalc}
+																{BEGIN searchCtrlBlock_cont_tipoc}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_tipoc}" {$filterRow_attrs_cont_tipoc}>
+			<label>{$label contrato cont_tipoc }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_tipoc}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_tipoc}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_tipoc}</span>
+						</div>
+		{END searchCtrlBlock_cont_tipoc}
+																{BEGIN searchCtrlBlock_cont_valormensual_iva}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_valormensual_iva}" {$filterRow_attrs_cont_valormensual_iva}>
+			<label>{$label contrato cont_valormensual_iva }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_valormensual_iva}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_valormensual_iva}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_valormensual_iva}</span>
+						</div>
+		{END searchCtrlBlock_cont_valormensual_iva}
+																{BEGIN searchCtrlBlock_cont_valormensual_base}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_valormensual_base}" {$filterRow_attrs_cont_valormensual_base}>
+			<label>{$label contrato cont_valormensual_base }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_valormensual_base}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_valormensual_base}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_valormensual_base}</span>
+						</div>
+		{END searchCtrlBlock_cont_valormensual_base}
+																{BEGIN searchCtrlBlock_cont_reg_sigep}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_reg_sigep}" {$filterRow_attrs_cont_reg_sigep}>
+			<label>{$label contrato cont_reg_sigep }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_reg_sigep}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_reg_sigep}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_reg_sigep}</span>
+						</div>
+		{END searchCtrlBlock_cont_reg_sigep}
+																{BEGIN searchCtrlBlock_cont_tipo_rubro}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_tipo_rubro}" {$filterRow_attrs_cont_tipo_rubro}>
+			<label>{$label contrato cont_tipo_rubro }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_tipo_rubro}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_tipo_rubro}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_tipo_rubro}</span>
+						</div>
+		{END searchCtrlBlock_cont_tipo_rubro}
+																{BEGIN searchCtrlBlock_cont_unspsc}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_unspsc}" {$filterRow_attrs_cont_unspsc}>
+			<label>{$label contrato cont_unspsc }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_unspsc}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_unspsc}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_unspsc}</span>
+						</div>
+		{END searchCtrlBlock_cont_unspsc}
+																{BEGIN searchCtrlBlock_pre_contnumero}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_pre_contnumero}" {$filterRow_attrs_pre_contnumero}>
+			<label>{$label contrato pre_contnumero }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_pre_contnumero}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_pre_contnumero}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_pre_contnumero}</span>
+						</div>
+		{END searchCtrlBlock_pre_contnumero}
+																{BEGIN searchCtrlBlock_numregistro}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_numregistro}" {$filterRow_attrs_numregistro}>
+			<label>{$label contrato numregistro }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_numregistro}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_numregistro}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_numregistro}</span>
+						</div>
+		{END searchCtrlBlock_numregistro}
+																{BEGIN searchCtrlBlock_id_cont}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_id_cont}" {$filterRow_attrs_id_cont}>
+			<label>{$label contrato id_cont }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_id_cont}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_id_cont}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_id_cont}</span>
+						</div>
+		{END searchCtrlBlock_id_cont}
+																{BEGIN searchCtrlBlock_contnumero}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_contnumero}" {$filterRow_attrs_contnumero}>
+			<label>{$label contrato contnumero }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_contnumero}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_contnumero}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_contnumero}</span>
+						</div>
+		{END searchCtrlBlock_contnumero}
+																{BEGIN searchCtrlBlock_cont_valorvigente}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_valorvigente}" {$filterRow_attrs_cont_valorvigente}>
+			<label>{$label contrato cont_valorvigente }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_valorvigente}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_valorvigente}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_valorvigente}</span>
+						</div>
+		{END searchCtrlBlock_cont_valorvigente}
+																{BEGIN searchCtrlBlock_cont_valors}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_valors}" {$filterRow_attrs_cont_valors}>
+			<label>{$label contrato cont_valors }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_valors}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_valors}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_valors}</span>
+						</div>
+		{END searchCtrlBlock_cont_valors}
+																{BEGIN searchCtrlBlock_cont_valorreduc_fecha}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_valorreduc_fecha}" {$filterRow_attrs_cont_valorreduc_fecha}>
+			<label>{$label contrato cont_valorreduc_fecha }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_valorreduc_fecha}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_valorreduc_fecha}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_valorreduc_fecha}</span>
+						</div>
+		{END searchCtrlBlock_cont_valorreduc_fecha}
+																{BEGIN searchCtrlBlock_cont_valorreduc}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_valorreduc}" {$filterRow_attrs_cont_valorreduc}>
+			<label>{$label contrato cont_valorreduc }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_valorreduc}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_valorreduc}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_valorreduc}</span>
+						</div>
+		{END searchCtrlBlock_cont_valorreduc}
+																{BEGIN searchCtrlBlock_cont_valormensual}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_valormensual}" {$filterRow_attrs_cont_valormensual}>
+			<label>{$label contrato cont_valormensual }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_valormensual}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_valormensual}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_valormensual}</span>
+						</div>
+		{END searchCtrlBlock_cont_valormensual}
+																{BEGIN searchCtrlBlock_cont_valorinicial}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_valorinicial}" {$filterRow_attrs_cont_valorinicial}>
+			<label>{$label contrato cont_valorinicial }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_valorinicial}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_valorinicial}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_valorinicial}</span>
+						</div>
+		{END searchCtrlBlock_cont_valorinicial}
+																{BEGIN searchCtrlBlock_cont_valorant}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_valorant}" {$filterRow_attrs_cont_valorant}>
+			<label>{$label contrato cont_valorant }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_valorant}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_valorant}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_valorant}</span>
+						</div>
+		{END searchCtrlBlock_cont_valorant}
+																{BEGIN searchCtrlBlock_cont_valoradic_fecha}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_valoradic_fecha}" {$filterRow_attrs_cont_valoradic_fecha}>
+			<label>{$label contrato cont_valoradic_fecha }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_valoradic_fecha}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_valoradic_fecha}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_valoradic_fecha}</span>
+						</div>
+		{END searchCtrlBlock_cont_valoradic_fecha}
+																{BEGIN searchCtrlBlock_cont_valoradic}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_valoradic}" {$filterRow_attrs_cont_valoradic}>
+			<label>{$label contrato cont_valoradic }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_valoradic}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_valoradic}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_valoradic}</span>
+						</div>
+		{END searchCtrlBlock_cont_valoradic}
+																{BEGIN searchCtrlBlock_cont_tipoproceso}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_tipoproceso}" {$filterRow_attrs_cont_tipoproceso}>
+			<label>{$label contrato cont_tipoproceso }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_tipoproceso}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_tipoproceso}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_tipoproceso}</span>
+						</div>
+		{END searchCtrlBlock_cont_tipoproceso}
+																{BEGIN searchCtrlBlock_cont_tipopre}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_tipopre}" {$filterRow_attrs_cont_tipopre}>
+			<label>{$label contrato cont_tipopre }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_tipopre}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_tipopre}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_tipopre}</span>
+						</div>
+		{END searchCtrlBlock_cont_tipopre}
+																{BEGIN searchCtrlBlock_cont_tipo}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_tipo}" {$filterRow_attrs_cont_tipo}>
+			<label>{$label contrato cont_tipo }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_tipo}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_tipo}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_tipo}</span>
+						</div>
+		{END searchCtrlBlock_cont_tipo}
+																{BEGIN searchCtrlBlock_cont_requactaliq}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_requactaliq}" {$filterRow_attrs_cont_requactaliq}>
+			<label>{$label contrato cont_requactaliq }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_requactaliq}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_requactaliq}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_requactaliq}</span>
+						</div>
+		{END searchCtrlBlock_cont_requactaliq}
+																{BEGIN searchCtrlBlock_cont_region}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_region}" {$filterRow_attrs_cont_region}>
+			<label>{$label contrato cont_region }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_region}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_region}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_region}</span>
+						</div>
+		{END searchCtrlBlock_cont_region}
+																{BEGIN searchCtrlBlock_cont_plazol}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_plazol}" {$filterRow_attrs_cont_plazol}>
+			<label>{$label contrato cont_plazol }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_plazol}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_plazol}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_plazol}</span>
+						</div>
+		{END searchCtrlBlock_cont_plazol}
+																{BEGIN searchCtrlBlock_cont_plazoi}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_plazoi}" {$filterRow_attrs_cont_plazoi}>
+			<label>{$label contrato cont_plazoi }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_plazoi}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_plazoi}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_plazoi}</span>
+						</div>
+		{END searchCtrlBlock_cont_plazoi}
+																{BEGIN searchCtrlBlock_cont_periodicidad}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_periodicidad}" {$filterRow_attrs_cont_periodicidad}>
+			<label>{$label contrato cont_periodicidad }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_periodicidad}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_periodicidad}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_periodicidad}</span>
+						</div>
+		{END searchCtrlBlock_cont_periodicidad}
+																{BEGIN searchCtrlBlock_cont_paa_id}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_paa_id}" {$filterRow_attrs_cont_paa_id}>
+			<label>{$label contrato cont_paa_id }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_paa_id}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_paa_id}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_paa_id}</span>
+						</div>
+		{END searchCtrlBlock_cont_paa_id}
+																{BEGIN searchCtrlBlock_cont_otrosi_type}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_otrosi_type}" {$filterRow_attrs_cont_otrosi_type}>
+			<label>{$label contrato cont_otrosi_type }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_otrosi_type}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_otrosi_type}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_otrosi_type}</span>
+						</div>
+		{END searchCtrlBlock_cont_otrosi_type}
+																{BEGIN searchCtrlBlock_cont_otrosi}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_otrosi}" {$filterRow_attrs_cont_otrosi}>
+			<label>{$label contrato cont_otrosi }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_otrosi}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_otrosi}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_otrosi}</span>
+						</div>
+		{END searchCtrlBlock_cont_otrosi}
+																{BEGIN searchCtrlBlock_cont_objeto}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_objeto}" {$filterRow_attrs_cont_objeto}>
+			<label>{$label contrato cont_objeto }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_objeto}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_objeto}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_objeto}</span>
+						</div>
+		{END searchCtrlBlock_cont_objeto}
+																{BEGIN searchCtrlBlock_cont_nit_contra_ta}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_nit_contra_ta}" {$filterRow_attrs_cont_nit_contra_ta}>
+			<label>{$label contrato cont_nit_contra_ta }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_nit_contra_ta}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_nit_contra_ta}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_nit_contra_ta}</span>
+						</div>
+		{END searchCtrlBlock_cont_nit_contra_ta}
+																{BEGIN searchCtrlBlock_cont_modalidad}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_modalidad}" {$filterRow_attrs_cont_modalidad}>
+			<label>{$label contrato cont_modalidad }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_modalidad}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_modalidad}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_modalidad}</span>
+						</div>
+		{END searchCtrlBlock_cont_modalidad}
+																{BEGIN searchCtrlBlock_cont_lugar}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_lugar}" {$filterRow_attrs_cont_lugar}>
+			<label>{$label contrato cont_lugar }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_lugar}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_lugar}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_lugar}</span>
+						</div>
+		{END searchCtrlBlock_cont_lugar}
+																{BEGIN searchCtrlBlock_cont_informessug}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_informessug}" {$filterRow_attrs_cont_informessug}>
+			<label>{$label contrato cont_informessug }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_informessug}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_informessug}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_informessug}</span>
+						</div>
+		{END searchCtrlBlock_cont_informessug}
+																{BEGIN searchCtrlBlock_cont_hash}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_hash}" {$filterRow_attrs_cont_hash}>
+			<label>{$label contrato cont_hash }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_hash}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_hash}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_hash}</span>
+						</div>
+		{END searchCtrlBlock_cont_hash}
+																{BEGIN searchCtrlBlock_cont_formapago}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_formapago}" {$filterRow_attrs_cont_formapago}>
+			<label>{$label contrato cont_formapago }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_formapago}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_formapago}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_formapago}</span>
+						</div>
+		{END searchCtrlBlock_cont_formapago}
+																{BEGIN searchCtrlBlock_cont_fechavigencia}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_fechavigencia}" {$filterRow_attrs_cont_fechavigencia}>
+			<label>{$label contrato cont_fechavigencia }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_fechavigencia}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_fechavigencia}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_fechavigencia}</span>
+						</div>
+		{END searchCtrlBlock_cont_fechavigencia}
+																{BEGIN searchCtrlBlock_cont_fechasistema}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_fechasistema}" {$filterRow_attrs_cont_fechasistema}>
+			<label>{$label contrato cont_fechasistema }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_fechasistema}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_fechasistema}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_fechasistema}</span>
+						</div>
+		{END searchCtrlBlock_cont_fechasistema}
+																{BEGIN searchCtrlBlock_cont_fechafinal}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_fechafinal}" {$filterRow_attrs_cont_fechafinal}>
+			<label>{$label contrato cont_fechafinal }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_fechafinal}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_fechafinal}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_fechafinal}</span>
+						</div>
+		{END searchCtrlBlock_cont_fechafinal}
+																{BEGIN searchCtrlBlock_cont_fechaapertura}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_fechaapertura}" {$filterRow_attrs_cont_fechaapertura}>
+			<label>{$label contrato cont_fechaapertura }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_fechaapertura}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_fechaapertura}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_fechaapertura}</span>
+						</div>
+		{END searchCtrlBlock_cont_fechaapertura}
+																{BEGIN searchCtrlBlock_cont_fecha_inicio}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_fecha_inicio}" {$filterRow_attrs_cont_fecha_inicio}>
+			<label>{$label contrato cont_fecha_inicio }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_fecha_inicio}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_fecha_inicio}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_fecha_inicio}</span>
+						</div>
+		{END searchCtrlBlock_cont_fecha_inicio}
+																{BEGIN searchCtrlBlock_cont_excluir_notificacion}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_excluir_notificacion}" {$filterRow_attrs_cont_excluir_notificacion}>
+			<label>{$label contrato cont_excluir_notificacion }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_excluir_notificacion}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_excluir_notificacion}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_excluir_notificacion}</span>
+						</div>
+		{END searchCtrlBlock_cont_excluir_notificacion}
+																{BEGIN searchCtrlBlock_cont_estado}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_estado}" {$filterRow_attrs_cont_estado}>
+			<label>{$label contrato cont_estado }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_estado}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_estado}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_estado}</span>
+						</div>
+		{END searchCtrlBlock_cont_estado}
+																{BEGIN searchCtrlBlock_cont_codrubro}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_codrubro}" {$filterRow_attrs_cont_codrubro}>
+			<label>{$label contrato cont_codrubro }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_codrubro}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_codrubro}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_codrubro}</span>
+						</div>
+		{END searchCtrlBlock_cont_codrubro}
+																{BEGIN searchCtrlBlock_cont_cesion}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_cesion}" {$filterRow_attrs_cont_cesion}>
+			<label>{$label contrato cont_cesion }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_cesion}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_cesion}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_cesion}</span>
+						</div>
+		{END searchCtrlBlock_cont_cesion}
+																{BEGIN searchCtrlBlock_cont_catalogo_presupuestal}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_catalogo_presupuestal}" {$filterRow_attrs_cont_catalogo_presupuestal}>
+			<label>{$label contrato cont_catalogo_presupuestal }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_catalogo_presupuestal}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_catalogo_presupuestal}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_catalogo_presupuestal}</span>
+						</div>
+		{END searchCtrlBlock_cont_catalogo_presupuestal}
+																{BEGIN searchCtrlBlock_cont_ano}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_ano}" {$filterRow_attrs_cont_ano}>
+			<label>{$label contrato cont_ano }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_ano}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_ano}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_ano}</span>
+						</div>
+		{END searchCtrlBlock_cont_ano}
+																{BEGIN searchCtrlBlock_cont_acta_liquidacion}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_acta_liquidacion}" {$filterRow_attrs_cont_acta_liquidacion}>
+			<label>{$label contrato cont_acta_liquidacion }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_acta_liquidacion}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_acta_liquidacion}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_acta_liquidacion}</span>
+						</div>
+		{END searchCtrlBlock_cont_acta_liquidacion}
+		
+
+	</div>
+
+	<div class="panel-footer bottomSearchButt" {$bottomSearchButt_attrs}>
+		<button class="btn btn-primary" id="searchButton{$id}" {$searchbutton_attrs}>Buscar</button>
+		<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs}>Mostrar todo</button>
+	</div>
+</div>
+<!-- End Search panel content -->
+			</div>
+		
+    {END left_block}
+</div>				</div>	
+			<div class="r-content-col" data-resize-left="leftbar">
+				<div  class="r-topheader" data-resize-name="topbar">
+									{BEGIN supertop_block}
+<nav class="navbar navbar-default" 
+	data-location="supertop" id="form_supertop_{$pageid}" data-makeup="leftbar" {$form_supertop} data-pageid="{$pageid}" >
+			 
+							 
+				<span class="navbar-form  navbar-header" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="collapse_button" {$item_collapse_button} data-topcell-item-type="collapse_button" >
+				<span data-itemtype="collapse_button" data-itemid="collapse_button" {$item_collapse_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Collapse" class="btn-link   
+	 glyphicon glyphicon-triangle-left" href="#" >		
+				
+								</a>
+</span>
+			</span>
+		 
+				<span class="navbar-form  navbar-collapse" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="breadcrumb" {$item_breadcrumb} data-topcell-item-type="breadcrumb" >
+				{BEGIN breadcrumb}
+<ol class="breadcrumb" data-itemtype="breadcrumb" data-itemid="breadcrumb" {$item_breadcrumb} data-pageid="{$pageid}">
+<li ><a href="{$crumb_home_link}"><span class="glyphicon glyphicon-home"></span></a>{$crumb_dropdown}</li>
+{BEGIN crumb}
+  <li class="{$crumb_item_class}">
+{BEGIN crumb_title_link}
+	<a {$crumb_attrs}>{$crumb_title}</a>
+{END crumb_title_link}
+{BEGIN crumb_title_span}
+	<span {$crumb_attrs}>{$crumb_title}</span>
+{END crumb_title_span}	
+	{$crumb_dropdown}
+  </li>
+{END crumb}
+</ol>
+{END breadcrumb}			</span>
+							 
+							 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="simple_search" {$item_simple_search} data-topcell-item-type="simple_search" >
+				<span data-itemtype="simple_search" data-itemid="simple_search" {$item_simple_search} data-pageid="{$pageid}" class="form-group">
+
+<div  class="input-group">
+{BEGIN searchform_text}
+	<input type="search" class="form-control" {$searchfor_attrs} size="25">
+{END searchform_text}
+	<span class="input-group-btn">
+	{BEGIN searchform_showall}
+		<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs} title="Mostrar todo">
+			<span class="glyphicon glyphicon-remove"></span>
+		</button>
+	{END searchform_showall}
+	{BEGIN searchform_search}
+	<button {$searchbutton_attrs} class="btn btn-primary" >
+		<span class="glyphicon glyphicon-search"></span>
+	</button>
+	{END searchform_search}
+	</span>
+</div>
+		
+</span>			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="list_options" {$item_list_options} data-topcell-item-type="list_options" >
+				<span data-itemtype="list_options" data-itemid="list_options" {$item_list_options} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-cog"></span>
+									<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN exportselected_link}
+	<li data-itemtype="export_selected" data-itemid="export_selected" {$item_export_selected} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$exportselectedlink_attrs} {$exportselectedlink_span}  title="" >
+				
+		Exportar seleccionados		
+		</a>
+	</li>
+{END exportselected_link}
+							{BEGIN deleteselected_link}
+	<li data-itemtype="delete_selected" data-itemid="delete_selected" {$item_delete_selected} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$deleteselectedlink_attrs} {$deleteselectedlink_span}  title="" >
+				
+		Borrar articulos seleccionados		
+		</a>
+	</li>
+{END deleteselected_link}
+							<li role="separator" class="divider"></li>								<li data-itemtype="advsearch_link" data-itemid="advsearch_link" {$item_advsearch_link} data-pageid="{$pageid}" data-small >
+				<a   href="contrato_search.php" {$advsearchlink_attrs}  title="" >
+				
+		Búsqueda avanzada		
+		</a>
+	</li>
+							{BEGIN searchPanelTopButtons}
+	<li data-itemtype="show_search_panel" data-itemid="show_search_panel" {$item_show_search_panel} data-pageid="{$pageid}" data-small >
+				<a  id="showOptPanel{$id}"  title="" >
+				
+		Mostrar panel de búsqueda		
+		</a>
+	</li>
+{END searchPanelTopButtons}
+							{BEGIN searchPanelTopButtons}
+	<li data-itemtype="hide_search_panel" data-itemid="hide_search_panel" {$item_hide_search_panel} data-pageid="{$pageid}" data-small >
+				<a  id="hideOptPanel{$id}"  title="" >
+				
+		Ocultar panel de búsqueda		
+		</a>
+	</li>
+{END searchPanelTopButtons}
+							<li role="separator" class="divider"></li>							{BEGIN export_link}
+	<li data-itemtype="export" data-itemid="export" {$item_export} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$exportlink_attrs}  title="" >
+				
+		Exportar resultados		
+		</a>
+	</li>
+{END export_link}
+							<li role="separator" class="divider"></li>							{BEGIN import_link}
+	<li data-itemtype="import" data-itemid="import" {$item_import} data-pageid="{$pageid}" data-small >
+				<a  {$importlink_attrs} href="contrato_import.php?{$crosstable_attrs}"  title="" >
+				
+		Importar		
+		</a>
+	</li>
+{END import_link}
+					</ul>
+	</span>
+</span>
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="loginform_login" {$item_loginform_login} data-topcell-item-type="loginform_login" >
+				{BEGIN guestloginbutton}
+<span data-itemtype="loginform_login" data-itemid="loginform_login" {$item_loginform_login} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" href="#" {$guestloginlink_attrs} >
+							Conectar			</a>
+</span>
+{END guestloginbutton}
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="username_button" {$item_username_button} data-topcell-item-type="username_button" >
+				{BEGIN loggedas_message}
+<span data-itemtype="username_button" data-itemid="username_button" {$item_username_button} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-user"></span>
+						{$username}			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN logoutbutton}
+	<li data-itemtype="logout_link" data-itemid="logout_link" {$item_logout_link} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$logoutlink_attrs}  title="" >
+				
+		Desconectarse		
+		</a>
+	</li>
+{END logoutbutton}
+							{BEGIN adminarea_link}
+	<li data-itemtype="adminarea_link" data-itemid="adminarea_link" {$item_adminarea_link} data-pageid="{$pageid}" data-small >
+				<a  href="admin_rights_list.php"  title="" >
+				
+		Area Admin		
+		</a>
+	</li>
+{END adminarea_link}
+					</ul>
+	</span>
+</span>
+{END loggedas_message}
+			</span>
+								</nav>
+{END supertop_block}
+						{$locking}
+				</div>	
+				<div class="r-body" data-resize-top="topbar" data-body-width="standard">
+					{$header}
+					<div class="r-top">
+									{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="leftbar" {$form_top} data-pageid="{$pageid}" >		
+	</div>		
+{END top_block}
+						</div>
+					<div class="r-above">
+										{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="leftbar" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class="			col-md-6
+	
+">
+		{BEGIN firstAboveGridCell}
+		 
+		{BEGIN add_link}
+<span data-itemtype="add" data-itemid="add" {$item_add} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$addlink_attrs} href="contrato_add.php" data-popup >
+							Añadir nuevo			</a>
+</span>
+{END add_link}
+	 
+		{BEGIN deleteselected_link}
+<span data-itemtype="delete" data-itemid="delete" {$item_delete} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$deleteselectedlink_attrs} {$deleteselectedlink_span} disabled >
+							Borrar artículos seleccionados			</a>
+</span>
+{END deleteselected_link}
+			{END firstAboveGridCell}	
+	</div>			 
+				<div 
+	data-cellId="above-grid_c2" data-pageid="{$pageid}"	{$cell_above-grid_c2}
+	class="r-align-right			col-md-6
+	
+">
+		 
+		<span data-itemtype="details_found" data-itemid="details_found" {$item_details_found} data-pageid="{$pageid}" data-small >
+{$details_found_labeldetails_found}
+</span>	 
+		<span data-itemtype="page_size" data-itemid="page_size" {$item_page_size} data-pageid="{$pageid}" >
+		{$recsPerPage}
+</span>	 
+		{BEGIN print_friendly}
+<span id="printpanelblock{$id}"  data-pageid="{$pageid}" {$printpanel_hiddenattr} data-itemtype="print_panel" data-itemid="print_panel" {$item_print_panel} data-pageid="{$pageid}">
+	<button title="Página para imprimir" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+					<span class="glyphicon glyphicon-print"></span>
+				<span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu pull-right">
+										 
+				 
+					<li class="container-fluid 
+										">
+									<div id="print_friendly_scope{$id}">
+	<div class="row">
+		<div class="col-md-4">
+			Rango:		</div>
+
+		{BEGIN print_friendly_all}
+		<div class="col-md-8">
+			<label for="printAll{$id}">
+				<input type="radio" id="printAll{$id}" data-href="contrato_print.php?all=1&amp;{$crosstable_attrs}" name="printScope">
+									Imprimir todas las páginas							</label>
+		</div>
+		{END print_friendly_all}
+	</div>
+	<div class="row">
+		<div class="col-md-4">&nbsp;</div>
+		<div class="col-md-8">
+			<label for="printPage{$id}">
+				<input name="printScope" id="printPage{$id}" type="radio" checked data-href="contrato_print.php?{$crosstable_attrs}">
+				Imprimir esta página			</label>
+		</div>
+	</div>
+	
+		<div class="row">
+		<div class="col-md-4">
+			&nbsp;
+		</div>
+		<div class="col-md-8">
+			<label style="color: gray;" for="printSelection{$id}">
+			<input name="printScope" disabled="disabled" id="printSelection{$id}" type="radio">
+			Imprimir la selección			</label>
+		</div>
+	</div>
+	</div>				 
+					</li>
+											<li class="divider" role="separator"></li>
+																				 
+				 
+					<li class="container-fluid 
+										">
+									<div>
+	<label for="printPerPage{$id}">
+					Resultados por página							
+	</label>
+	<input type="number" id="printPerPage{$id}" value="{$print_recspp}" class="rnr-printrecspp">		
+</div>
+				 
+					</li>
+											<li class="divider" role="separator"></li>
+																				 
+				 
+					<li class="container-fluid 
+					 text-center 					">
+									<span data-itemtype="print_button" data-itemid="print_button" {$item_print_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" id="print_friendly_button{$id}" >
+							Imprimir			</a>
+</span>
+				 
+					</li>
+															</ul>
+</span>
+{END print_friendly}
+		</div>					</div>
+	</div>		
+{END above-grid_block}
+						</div>
+					<div class="r-grid">
+										{BEGIN grid_block}
+{BEGIN grid_tabs}
+  <ul class="nav nav-tabs bsgrid_tabs">
+	{$grid_tabs_content}
+  </ul>
+{END grid_tabs}
+{BEGIN message_block}
+<div data-grid-message data-pageid="{$pageid}" class="alert {$message_class}" role="alert" {$grid_message_attrs}>{$message}</div>
+{END message_block}	<style>
+@media screen and (max-width: 767px) {
+		[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="id_cont"]:before {
+		content: "{$label contrato id_cont}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_hash"]:before {
+		content: "{$label contrato cont_hash}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_nit_contra_ta"]:before {
+		content: "{$label contrato cont_nit_contra_ta}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_paa_id"]:before {
+		content: "{$label contrato cont_paa_id}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_estado"]:before {
+		content: "{$label contrato cont_estado}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="prenumero"]:before {
+		content: "{$label contrato prenumero}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="numregistro"]:before {
+		content: "{$label contrato numregistro}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="pre_contnumero"]:before {
+		content: "{$label contrato pre_contnumero}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="contnumero"]:before {
+		content: "{$label contrato contnumero}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_unspsc"]:before {
+		content: "{$label contrato cont_unspsc}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_tipo"]:before {
+		content: "{$label contrato cont_tipo}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_ano"]:before {
+		content: "{$label contrato cont_ano}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_codrubro"]:before {
+		content: "{$label contrato cont_codrubro}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_tipo_rubro"]:before {
+		content: "{$label contrato cont_tipo_rubro}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_reg_sigep"]:before {
+		content: "{$label contrato cont_reg_sigep}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_catalogo_presupuestal"]:before {
+		content: "{$label contrato cont_catalogo_presupuestal}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_tipopre"]:before {
+		content: "{$label contrato cont_tipopre}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_fechaapertura"]:before {
+		content: "{$label contrato cont_fechaapertura}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_plazoi"]:before {
+		content: "{$label contrato cont_plazoi}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_fecha_inicio"]:before {
+		content: "{$label contrato cont_fecha_inicio}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_fechafinal"]:before {
+		content: "{$label contrato cont_fechafinal}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_valormensual_base"]:before {
+		content: "{$label contrato cont_valormensual_base}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_valormensual_iva"]:before {
+		content: "{$label contrato cont_valormensual_iva}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_fechavigencia"]:before {
+		content: "{$label contrato cont_fechavigencia}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_periodicidad"]:before {
+		content: "{$label contrato cont_periodicidad}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_informessug"]:before {
+		content: "{$label contrato cont_informessug}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_otrosi"]:before {
+		content: "{$label contrato cont_otrosi}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_otrosi_type"]:before {
+		content: "{$label contrato cont_otrosi_type}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_valorant"]:before {
+		content: "{$label contrato cont_valorant}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_valorinicial"]:before {
+		content: "{$label contrato cont_valorinicial}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_valormensual"]:before {
+		content: "{$label contrato cont_valormensual}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_valoradic_fecha"]:before {
+		content: "{$label contrato cont_valoradic_fecha}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_valoradic"]:before {
+		content: "{$label contrato cont_valoradic}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_valorreduc_fecha"]:before {
+		content: "{$label contrato cont_valorreduc_fecha}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_valorreduc"]:before {
+		content: "{$label contrato cont_valorreduc}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_valorvigente"]:before {
+		content: "{$label contrato cont_valorvigente}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_valors"]:before {
+		content: "{$label contrato cont_valors}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_lugar"]:before {
+		content: "{$label contrato cont_lugar}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_region"]:before {
+		content: "{$label contrato cont_region}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_requactaliq"]:before {
+		content: "{$label contrato cont_requactaliq}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_plazol"]:before {
+		content: "{$label contrato cont_plazol}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_tipoproceso"]:before {
+		content: "{$label contrato cont_tipoproceso}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_formapago"]:before {
+		content: "{$label contrato cont_formapago}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_tipoc"]:before {
+		content: "{$label contrato cont_tipoc}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_modalidad"]:before {
+		content: "{$label contrato cont_modalidad}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_causalc"]:before {
+		content: "{$label contrato cont_causalc}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_funcion"]:before {
+		content: "{$label contrato cont_funcion}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cesion_estado"]:before {
+		content: "{$label contrato cesion_estado}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_acta_liquidacion"]:before {
+		content: "{$label contrato cont_acta_liquidacion}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_fecha_aprobgarantia"]:before {
+		content: "{$label contrato cont_fecha_aprobgarantia}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_afilia_arl"]:before {
+		content: "{$label contrato cont_afilia_arl}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_excluir_notificacion"]:before {
+		content: "{$label contrato cont_excluir_notificacion}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_depsup"]:before {
+		content: "{$label contrato cont_depsup}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_dep"]:before {
+		content: "{$label contrato cont_dep}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_lugar_prestacion"]:before {
+		content: "{$label contrato cont_lugar_prestacion}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_objeto"]:before {
+		content: "{$label contrato cont_objeto}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_obligaciones"]:before {
+		content: "{$label contrato cont_obligaciones}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_plazo"]:before {
+		content: "{$label contrato cont_plazo}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_tipo_regimen"]:before {
+		content: "{$label contrato cont_tipo_regimen}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_fecha_firma"]:before {
+		content: "{$label contrato cont_fecha_firma}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_secop_proceso"]:before {
+		content: "{$label contrato cont_secop_proceso}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_secop_enlace"]:before {
+		content: "{$label contrato cont_secop_enlace}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_sigep"]:before {
+		content: "{$label contrato cont_sigep}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_vigencias_futuras"]:before {
+		content: "{$label contrato cont_vigencias_futuras}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="vf_num_autorizacion"]:before {
+		content: "{$label contrato vf_num_autorizacion}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="vf_fecha"]:before {
+		content: "{$label contrato vf_fecha}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="vf_valor"]:before {
+		content: "{$label contrato vf_valor}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_fechasistema"]:before {
+		content: "{$label contrato cont_fechasistema}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_cesion"]:before {
+		content: "{$label contrato cont_cesion}";
+	}
+	}
+</style>
+<table data-location="grid" id="form_grid_{$pageid}" data-makeup="leftbar" {$form_grid} data-pageid="{$pageid}" class=" table {$grid_classes}  r-flexgrid rnr-b-grid rnr-gridtable" 
+	cellpadding="0" 
+	data-body-height="1"
+>
+						<thead>
+			{BEGIN grid_header}
+					
+		 
+						<tr {$rowattrs} {$row_grid_0} class="{$rowclass} 
+									{$gridHeader_class}
+									
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_headcell_icons}
+	<th
+	
+	{$cell_grid_headcell_icons}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_headcell_icons" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"		data-control-cell
+	
+	>
+
+	
+	</th>
+	{END cellblock_grid_headcell_icons}
+				 
+					{BEGIN cellblock_grid_headcell_checkbox}
+	<th
+	
+	{$cell_grid_headcell_checkbox}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_headcell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+		data-checkbox-cell
+	>
+
+	 
+		{BEGIN checkbox_column}
+<span data-itemtype="grid_checkbox_head" data-itemid="grid_checkbox_head" {$item_grid_checkbox_head} data-pageid="{$pageid}" data-record-id="{$recId}" >
+	<input type="checkbox" {$checkboxheader_attrs}>
+</span>
+{END checkbox_column}
+	
+	</th>
+	{END cellblock_grid_headcell_checkbox}
+				 
+					{BEGIN cellblock_grid_headcell_field}
+	<th
+	
+	{$cell_grid_headcell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$id_cont_class}
+			"
+
+			data-field="id_cont"
+	
+	data-cellId="grid_headcell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN id_cont_fieldheadercolumn}
+	{BEGIN id_cont_fieldheader}
+	<SPAN {$id_cont_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field69" {$item_simple_grid_field69} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id_cont">
+	{$label contrato id_cont }	{$arrow_icon_id_cont}
+	</SPAN>
+	{END id_cont_fieldheader}
+{END id_cont_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field}
+				 
+					{BEGIN cellblock_grid_headcell_field1}
+	<th
+	
+	{$cell_grid_headcell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_hash_class}
+			"
+
+			data-field="cont_hash"
+	
+	data-cellId="grid_headcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_hash_fieldheadercolumn}
+	{BEGIN cont_hash_fieldheader}
+	<SPAN {$cont_hash_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field70" {$item_simple_grid_field70} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_hash">
+	{$label contrato cont_hash }	{$arrow_icon_cont_hash}
+	</SPAN>
+	{END cont_hash_fieldheader}
+{END cont_hash_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field1}
+				 
+					{BEGIN cellblock_grid_headcell_field2}
+	<th
+	
+	{$cell_grid_headcell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_nit_contra_ta_class}
+			"
+
+			data-field="cont_nit_contra_ta"
+	
+	data-cellId="grid_headcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_nit_contra_ta_fieldheadercolumn}
+	{BEGIN cont_nit_contra_ta_fieldheader}
+	<SPAN {$cont_nit_contra_ta_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field71" {$item_simple_grid_field71} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_nit_contra_ta">
+	{$label contrato cont_nit_contra_ta }	{$arrow_icon_cont_nit_contra_ta}
+	</SPAN>
+	{END cont_nit_contra_ta_fieldheader}
+{END cont_nit_contra_ta_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field2}
+				 
+					{BEGIN cellblock_grid_headcell_field3}
+	<th
+	
+	{$cell_grid_headcell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_paa_id_class}
+			"
+
+			data-field="cont_paa_id"
+	
+	data-cellId="grid_headcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_paa_id_fieldheadercolumn}
+	{BEGIN cont_paa_id_fieldheader}
+	<SPAN {$cont_paa_id_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field72" {$item_simple_grid_field72} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_paa_id">
+	{$label contrato cont_paa_id }	{$arrow_icon_cont_paa_id}
+	</SPAN>
+	{END cont_paa_id_fieldheader}
+{END cont_paa_id_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field3}
+				 
+					{BEGIN cellblock_grid_headcell_field4}
+	<th
+	
+	{$cell_grid_headcell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_cesion_class}
+			"
+
+			data-field="cont_cesion"
+	
+	data-cellId="grid_headcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_cesion_fieldheadercolumn}
+	{BEGIN cont_cesion_fieldheader}
+	<SPAN {$cont_cesion_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field73" {$item_simple_grid_field73} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_cesion">
+	{$label contrato cont_cesion }	{$arrow_icon_cont_cesion}
+	</SPAN>
+	{END cont_cesion_fieldheader}
+{END cont_cesion_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field4}
+				 
+					{BEGIN cellblock_grid_headcell_field5}
+	<th
+	
+	{$cell_grid_headcell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_estado_class}
+			"
+
+			data-field="cont_estado"
+	
+	data-cellId="grid_headcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_estado_fieldheadercolumn}
+	{BEGIN cont_estado_fieldheader}
+	<SPAN {$cont_estado_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field74" {$item_simple_grid_field74} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_estado">
+	{$label contrato cont_estado }	{$arrow_icon_cont_estado}
+	</SPAN>
+	{END cont_estado_fieldheader}
+{END cont_estado_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field5}
+				 
+					{BEGIN cellblock_grid_headcell_field6}
+	<th
+	
+	{$cell_grid_headcell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$prenumero_class}
+			"
+
+			data-field="prenumero"
+	
+	data-cellId="grid_headcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN prenumero_fieldheadercolumn}
+	{BEGIN prenumero_fieldheader}
+	<SPAN {$prenumero_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field75" {$item_simple_grid_field75} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="prenumero">
+	{$label contrato prenumero }	{$arrow_icon_prenumero}
+	</SPAN>
+	{END prenumero_fieldheader}
+{END prenumero_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field6}
+				 
+					{BEGIN cellblock_grid_headcell_field7}
+	<th
+	
+	{$cell_grid_headcell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$numregistro_class}
+			"
+
+			data-field="numregistro"
+	
+	data-cellId="grid_headcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN numregistro_fieldheadercolumn}
+	{BEGIN numregistro_fieldheader}
+	<SPAN {$numregistro_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field76" {$item_simple_grid_field76} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="numregistro">
+	{$label contrato numregistro }	{$arrow_icon_numregistro}
+	</SPAN>
+	{END numregistro_fieldheader}
+{END numregistro_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field7}
+				 
+					{BEGIN cellblock_grid_headcell_field8}
+	<th
+	
+	{$cell_grid_headcell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$pre_contnumero_class}
+			"
+
+			data-field="pre_contnumero"
+	
+	data-cellId="grid_headcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN pre_contnumero_fieldheadercolumn}
+	{BEGIN pre_contnumero_fieldheader}
+	<SPAN {$pre_contnumero_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field77" {$item_simple_grid_field77} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="pre_contnumero">
+	{$label contrato pre_contnumero }	{$arrow_icon_pre_contnumero}
+	</SPAN>
+	{END pre_contnumero_fieldheader}
+{END pre_contnumero_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field8}
+				 
+					{BEGIN cellblock_grid_headcell_field9}
+	<th
+	
+	{$cell_grid_headcell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$contnumero_class}
+			"
+
+			data-field="contnumero"
+	
+	data-cellId="grid_headcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contnumero_fieldheadercolumn}
+	{BEGIN contnumero_fieldheader}
+	<SPAN {$contnumero_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field78" {$item_simple_grid_field78} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contnumero">
+	{$label contrato contnumero }	{$arrow_icon_contnumero}
+	</SPAN>
+	{END contnumero_fieldheader}
+{END contnumero_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field9}
+				 
+					{BEGIN cellblock_grid_headcell_field10}
+	<th
+	
+	{$cell_grid_headcell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_tipo_class}
+			"
+
+			data-field="cont_tipo"
+	
+	data-cellId="grid_headcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_tipo_fieldheadercolumn}
+	{BEGIN cont_tipo_fieldheader}
+	<SPAN {$cont_tipo_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field79" {$item_simple_grid_field79} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_tipo">
+	{$label contrato cont_tipo }	{$arrow_icon_cont_tipo}
+	</SPAN>
+	{END cont_tipo_fieldheader}
+{END cont_tipo_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field10}
+				 
+					{BEGIN cellblock_grid_headcell_field11}
+	<th
+	
+	{$cell_grid_headcell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_ano_class}
+			"
+
+			data-field="cont_ano"
+	
+	data-cellId="grid_headcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_ano_fieldheadercolumn}
+	{BEGIN cont_ano_fieldheader}
+	<SPAN {$cont_ano_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field80" {$item_simple_grid_field80} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_ano">
+	{$label contrato cont_ano }	{$arrow_icon_cont_ano}
+	</SPAN>
+	{END cont_ano_fieldheader}
+{END cont_ano_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field11}
+				 
+					{BEGIN cellblock_grid_headcell_field12}
+	<th
+	
+	{$cell_grid_headcell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_codrubro_class}
+			"
+
+			data-field="cont_codrubro"
+	
+	data-cellId="grid_headcell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_codrubro_fieldheadercolumn}
+	{BEGIN cont_codrubro_fieldheader}
+	<SPAN {$cont_codrubro_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field81" {$item_simple_grid_field81} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_codrubro">
+	{$label contrato cont_codrubro }	{$arrow_icon_cont_codrubro}
+	</SPAN>
+	{END cont_codrubro_fieldheader}
+{END cont_codrubro_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field12}
+				 
+					{BEGIN cellblock_grid_headcell_field13}
+	<th
+	
+	{$cell_grid_headcell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_catalogo_presupuestal_class}
+			"
+
+			data-field="cont_catalogo_presupuestal"
+	
+	data-cellId="grid_headcell_field13" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_catalogo_presupuestal_fieldheadercolumn}
+	{BEGIN cont_catalogo_presupuestal_fieldheader}
+	<SPAN {$cont_catalogo_presupuestal_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field82" {$item_simple_grid_field82} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_catalogo_presupuestal">
+	{$label contrato cont_catalogo_presupuestal }	{$arrow_icon_cont_catalogo_presupuestal}
+	</SPAN>
+	{END cont_catalogo_presupuestal_fieldheader}
+{END cont_catalogo_presupuestal_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field13}
+				 
+					{BEGIN cellblock_grid_headcell_field14}
+	<th
+	
+	{$cell_grid_headcell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_tipopre_class}
+			"
+
+			data-field="cont_tipopre"
+	
+	data-cellId="grid_headcell_field14" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_tipopre_fieldheadercolumn}
+	{BEGIN cont_tipopre_fieldheader}
+	<SPAN {$cont_tipopre_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field83" {$item_simple_grid_field83} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_tipopre">
+	{$label contrato cont_tipopre }	{$arrow_icon_cont_tipopre}
+	</SPAN>
+	{END cont_tipopre_fieldheader}
+{END cont_tipopre_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field14}
+				 
+					{BEGIN cellblock_grid_headcell_field15}
+	<th
+	
+	{$cell_grid_headcell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_fechaapertura_class}
+			"
+
+			data-field="cont_fechaapertura"
+	
+	data-cellId="grid_headcell_field15" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_fechaapertura_fieldheadercolumn}
+	{BEGIN cont_fechaapertura_fieldheader}
+	<SPAN {$cont_fechaapertura_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field84" {$item_simple_grid_field84} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_fechaapertura">
+	{$label contrato cont_fechaapertura }	{$arrow_icon_cont_fechaapertura}
+	</SPAN>
+	{END cont_fechaapertura_fieldheader}
+{END cont_fechaapertura_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field15}
+				 
+					{BEGIN cellblock_grid_headcell_field16}
+	<th
+	
+	{$cell_grid_headcell_field16}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_plazoi_class}
+			"
+
+			data-field="cont_plazoi"
+	
+	data-cellId="grid_headcell_field16" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_plazoi_fieldheadercolumn}
+	{BEGIN cont_plazoi_fieldheader}
+	<SPAN {$cont_plazoi_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field85" {$item_simple_grid_field85} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_plazoi">
+	{$label contrato cont_plazoi }	{$arrow_icon_cont_plazoi}
+	</SPAN>
+	{END cont_plazoi_fieldheader}
+{END cont_plazoi_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field16}
+				 
+					{BEGIN cellblock_grid_headcell_field17}
+	<th
+	
+	{$cell_grid_headcell_field17}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_fecha_inicio_class}
+			"
+
+			data-field="cont_fecha_inicio"
+	
+	data-cellId="grid_headcell_field17" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_fecha_inicio_fieldheadercolumn}
+	{BEGIN cont_fecha_inicio_fieldheader}
+	<SPAN {$cont_fecha_inicio_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field86" {$item_simple_grid_field86} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_fecha_inicio">
+	{$label contrato cont_fecha_inicio }	{$arrow_icon_cont_fecha_inicio}
+	</SPAN>
+	{END cont_fecha_inicio_fieldheader}
+{END cont_fecha_inicio_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field17}
+				 
+					{BEGIN cellblock_grid_headcell_field18}
+	<th
+	
+	{$cell_grid_headcell_field18}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_fechafinal_class}
+			"
+
+			data-field="cont_fechafinal"
+	
+	data-cellId="grid_headcell_field18" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_fechafinal_fieldheadercolumn}
+	{BEGIN cont_fechafinal_fieldheader}
+	<SPAN {$cont_fechafinal_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field87" {$item_simple_grid_field87} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_fechafinal">
+	{$label contrato cont_fechafinal }	{$arrow_icon_cont_fechafinal}
+	</SPAN>
+	{END cont_fechafinal_fieldheader}
+{END cont_fechafinal_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field18}
+				 
+					{BEGIN cellblock_grid_headcell_field19}
+	<th
+	
+	{$cell_grid_headcell_field19}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_fechavigencia_class}
+			"
+
+			data-field="cont_fechavigencia"
+	
+	data-cellId="grid_headcell_field19" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_fechavigencia_fieldheadercolumn}
+	{BEGIN cont_fechavigencia_fieldheader}
+	<SPAN {$cont_fechavigencia_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field88" {$item_simple_grid_field88} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_fechavigencia">
+	{$label contrato cont_fechavigencia }	{$arrow_icon_cont_fechavigencia}
+	</SPAN>
+	{END cont_fechavigencia_fieldheader}
+{END cont_fechavigencia_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field19}
+				 
+					{BEGIN cellblock_grid_headcell_field20}
+	<th
+	
+	{$cell_grid_headcell_field20}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_periodicidad_class}
+			"
+
+			data-field="cont_periodicidad"
+	
+	data-cellId="grid_headcell_field20" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_periodicidad_fieldheadercolumn}
+	{BEGIN cont_periodicidad_fieldheader}
+	<SPAN {$cont_periodicidad_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field89" {$item_simple_grid_field89} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_periodicidad">
+	{$label contrato cont_periodicidad }	{$arrow_icon_cont_periodicidad}
+	</SPAN>
+	{END cont_periodicidad_fieldheader}
+{END cont_periodicidad_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field20}
+				 
+					{BEGIN cellblock_grid_headcell_field21}
+	<th
+	
+	{$cell_grid_headcell_field21}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_informessug_class}
+			"
+
+			data-field="cont_informessug"
+	
+	data-cellId="grid_headcell_field21" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_informessug_fieldheadercolumn}
+	{BEGIN cont_informessug_fieldheader}
+	<SPAN {$cont_informessug_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field90" {$item_simple_grid_field90} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_informessug">
+	{$label contrato cont_informessug }	{$arrow_icon_cont_informessug}
+	</SPAN>
+	{END cont_informessug_fieldheader}
+{END cont_informessug_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field21}
+				 
+					{BEGIN cellblock_grid_headcell_field22}
+	<th
+	
+	{$cell_grid_headcell_field22}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_otrosi_class}
+			"
+
+			data-field="cont_otrosi"
+	
+	data-cellId="grid_headcell_field22" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_otrosi_fieldheadercolumn}
+	{BEGIN cont_otrosi_fieldheader}
+	<SPAN {$cont_otrosi_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field91" {$item_simple_grid_field91} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_otrosi">
+	{$label contrato cont_otrosi }	{$arrow_icon_cont_otrosi}
+	</SPAN>
+	{END cont_otrosi_fieldheader}
+{END cont_otrosi_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field22}
+				 
+					{BEGIN cellblock_grid_headcell_field23}
+	<th
+	
+	{$cell_grid_headcell_field23}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_otrosi_type_class}
+			"
+
+			data-field="cont_otrosi_type"
+	
+	data-cellId="grid_headcell_field23" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_otrosi_type_fieldheadercolumn}
+	{BEGIN cont_otrosi_type_fieldheader}
+	<SPAN {$cont_otrosi_type_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field92" {$item_simple_grid_field92} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_otrosi_type">
+	{$label contrato cont_otrosi_type }	{$arrow_icon_cont_otrosi_type}
+	</SPAN>
+	{END cont_otrosi_type_fieldheader}
+{END cont_otrosi_type_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field23}
+				 
+					{BEGIN cellblock_grid_headcell_field24}
+	<th
+	
+	{$cell_grid_headcell_field24}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_valorant_class}
+			"
+
+			data-field="cont_valorant"
+	
+	data-cellId="grid_headcell_field24" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_valorant_fieldheadercolumn}
+	{BEGIN cont_valorant_fieldheader}
+	<SPAN {$cont_valorant_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field93" {$item_simple_grid_field93} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_valorant">
+	{$label contrato cont_valorant }	{$arrow_icon_cont_valorant}
+	</SPAN>
+	{END cont_valorant_fieldheader}
+{END cont_valorant_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field24}
+				 
+					{BEGIN cellblock_grid_headcell_field25}
+	<th
+	
+	{$cell_grid_headcell_field25}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_valorinicial_class}
+			"
+
+			data-field="cont_valorinicial"
+	
+	data-cellId="grid_headcell_field25" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_valorinicial_fieldheadercolumn}
+	{BEGIN cont_valorinicial_fieldheader}
+	<SPAN {$cont_valorinicial_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field94" {$item_simple_grid_field94} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_valorinicial">
+	{$label contrato cont_valorinicial }	{$arrow_icon_cont_valorinicial}
+	</SPAN>
+	{END cont_valorinicial_fieldheader}
+{END cont_valorinicial_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field25}
+				 
+					{BEGIN cellblock_grid_headcell_field26}
+	<th
+	
+	{$cell_grid_headcell_field26}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_valormensual_class}
+			"
+
+			data-field="cont_valormensual"
+	
+	data-cellId="grid_headcell_field26" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_valormensual_fieldheadercolumn}
+	{BEGIN cont_valormensual_fieldheader}
+	<SPAN {$cont_valormensual_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field95" {$item_simple_grid_field95} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_valormensual">
+	{$label contrato cont_valormensual }	{$arrow_icon_cont_valormensual}
+	</SPAN>
+	{END cont_valormensual_fieldheader}
+{END cont_valormensual_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field26}
+				 
+					{BEGIN cellblock_grid_headcell_field27}
+	<th
+	
+	{$cell_grid_headcell_field27}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_valoradic_fecha_class}
+			"
+
+			data-field="cont_valoradic_fecha"
+	
+	data-cellId="grid_headcell_field27" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_valoradic_fecha_fieldheadercolumn}
+	{BEGIN cont_valoradic_fecha_fieldheader}
+	<SPAN {$cont_valoradic_fecha_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field96" {$item_simple_grid_field96} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_valoradic_fecha">
+	{$label contrato cont_valoradic_fecha }	{$arrow_icon_cont_valoradic_fecha}
+	</SPAN>
+	{END cont_valoradic_fecha_fieldheader}
+{END cont_valoradic_fecha_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field27}
+				 
+					{BEGIN cellblock_grid_headcell_field28}
+	<th
+	
+	{$cell_grid_headcell_field28}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_valoradic_class}
+			"
+
+			data-field="cont_valoradic"
+	
+	data-cellId="grid_headcell_field28" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_valoradic_fieldheadercolumn}
+	{BEGIN cont_valoradic_fieldheader}
+	<SPAN {$cont_valoradic_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field97" {$item_simple_grid_field97} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_valoradic">
+	{$label contrato cont_valoradic }	{$arrow_icon_cont_valoradic}
+	</SPAN>
+	{END cont_valoradic_fieldheader}
+{END cont_valoradic_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field28}
+				 
+					{BEGIN cellblock_grid_headcell_field29}
+	<th
+	
+	{$cell_grid_headcell_field29}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_valorreduc_fecha_class}
+			"
+
+			data-field="cont_valorreduc_fecha"
+	
+	data-cellId="grid_headcell_field29" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_valorreduc_fecha_fieldheadercolumn}
+	{BEGIN cont_valorreduc_fecha_fieldheader}
+	<SPAN {$cont_valorreduc_fecha_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field98" {$item_simple_grid_field98} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_valorreduc_fecha">
+	{$label contrato cont_valorreduc_fecha }	{$arrow_icon_cont_valorreduc_fecha}
+	</SPAN>
+	{END cont_valorreduc_fecha_fieldheader}
+{END cont_valorreduc_fecha_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field29}
+				 
+					{BEGIN cellblock_grid_headcell_field30}
+	<th
+	
+	{$cell_grid_headcell_field30}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_valorreduc_class}
+			"
+
+			data-field="cont_valorreduc"
+	
+	data-cellId="grid_headcell_field30" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_valorreduc_fieldheadercolumn}
+	{BEGIN cont_valorreduc_fieldheader}
+	<SPAN {$cont_valorreduc_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field99" {$item_simple_grid_field99} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_valorreduc">
+	{$label contrato cont_valorreduc }	{$arrow_icon_cont_valorreduc}
+	</SPAN>
+	{END cont_valorreduc_fieldheader}
+{END cont_valorreduc_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field30}
+				 
+					{BEGIN cellblock_grid_headcell_field31}
+	<th
+	
+	{$cell_grid_headcell_field31}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_valorvigente_class}
+			"
+
+			data-field="cont_valorvigente"
+	
+	data-cellId="grid_headcell_field31" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_valorvigente_fieldheadercolumn}
+	{BEGIN cont_valorvigente_fieldheader}
+	<SPAN {$cont_valorvigente_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field100" {$item_simple_grid_field100} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_valorvigente">
+	{$label contrato cont_valorvigente }	{$arrow_icon_cont_valorvigente}
+	</SPAN>
+	{END cont_valorvigente_fieldheader}
+{END cont_valorvigente_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field31}
+				 
+					{BEGIN cellblock_grid_headcell_field32}
+	<th
+	
+	{$cell_grid_headcell_field32}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_valors_class}
+			"
+
+			data-field="cont_valors"
+	
+	data-cellId="grid_headcell_field32" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_valors_fieldheadercolumn}
+	{BEGIN cont_valors_fieldheader}
+	<SPAN {$cont_valors_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field101" {$item_simple_grid_field101} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_valors">
+	{$label contrato cont_valors }	{$arrow_icon_cont_valors}
+	</SPAN>
+	{END cont_valors_fieldheader}
+{END cont_valors_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field32}
+				 
+					{BEGIN cellblock_grid_headcell_field33}
+	<th
+	
+	{$cell_grid_headcell_field33}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_lugar_class}
+			"
+
+			data-field="cont_lugar"
+	
+	data-cellId="grid_headcell_field33" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_lugar_fieldheadercolumn}
+	{BEGIN cont_lugar_fieldheader}
+	<SPAN {$cont_lugar_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field102" {$item_simple_grid_field102} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_lugar">
+	{$label contrato cont_lugar }	{$arrow_icon_cont_lugar}
+	</SPAN>
+	{END cont_lugar_fieldheader}
+{END cont_lugar_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field33}
+				 
+					{BEGIN cellblock_grid_headcell_field34}
+	<th
+	
+	{$cell_grid_headcell_field34}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_modalidad_class}
+			"
+
+			data-field="cont_modalidad"
+	
+	data-cellId="grid_headcell_field34" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_modalidad_fieldheadercolumn}
+	{BEGIN cont_modalidad_fieldheader}
+	<SPAN {$cont_modalidad_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field103" {$item_simple_grid_field103} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_modalidad">
+	{$label contrato cont_modalidad }	{$arrow_icon_cont_modalidad}
+	</SPAN>
+	{END cont_modalidad_fieldheader}
+{END cont_modalidad_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field34}
+				 
+					{BEGIN cellblock_grid_headcell_field35}
+	<th
+	
+	{$cell_grid_headcell_field35}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_objeto_class}
+			"
+
+			data-field="cont_objeto"
+	
+	data-cellId="grid_headcell_field35" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_objeto_fieldheadercolumn}
+	{BEGIN cont_objeto_fieldheader}
+	<SPAN {$cont_objeto_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field104" {$item_simple_grid_field104} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_objeto">
+	{$label contrato cont_objeto }	{$arrow_icon_cont_objeto}
+	</SPAN>
+	{END cont_objeto_fieldheader}
+{END cont_objeto_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field35}
+				 
+					{BEGIN cellblock_grid_headcell_field36}
+	<th
+	
+	{$cell_grid_headcell_field36}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_region_class}
+			"
+
+			data-field="cont_region"
+	
+	data-cellId="grid_headcell_field36" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_region_fieldheadercolumn}
+	{BEGIN cont_region_fieldheader}
+	<SPAN {$cont_region_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field105" {$item_simple_grid_field105} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_region">
+	{$label contrato cont_region }	{$arrow_icon_cont_region}
+	</SPAN>
+	{END cont_region_fieldheader}
+{END cont_region_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field36}
+				 
+					{BEGIN cellblock_grid_headcell_field37}
+	<th
+	
+	{$cell_grid_headcell_field37}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_requactaliq_class}
+			"
+
+			data-field="cont_requactaliq"
+	
+	data-cellId="grid_headcell_field37" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_requactaliq_fieldheadercolumn}
+	{BEGIN cont_requactaliq_fieldheader}
+	<SPAN {$cont_requactaliq_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field106" {$item_simple_grid_field106} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_requactaliq">
+	{$label contrato cont_requactaliq }	{$arrow_icon_cont_requactaliq}
+	</SPAN>
+	{END cont_requactaliq_fieldheader}
+{END cont_requactaliq_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field37}
+				 
+					{BEGIN cellblock_grid_headcell_field38}
+	<th
+	
+	{$cell_grid_headcell_field38}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_plazol_class}
+			"
+
+			data-field="cont_plazol"
+	
+	data-cellId="grid_headcell_field38" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_plazol_fieldheadercolumn}
+	{BEGIN cont_plazol_fieldheader}
+	<SPAN {$cont_plazol_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field107" {$item_simple_grid_field107} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_plazol">
+	{$label contrato cont_plazol }	{$arrow_icon_cont_plazol}
+	</SPAN>
+	{END cont_plazol_fieldheader}
+{END cont_plazol_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field38}
+				 
+					{BEGIN cellblock_grid_headcell_field39}
+	<th
+	
+	{$cell_grid_headcell_field39}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_tipoproceso_class}
+			"
+
+			data-field="cont_tipoproceso"
+	
+	data-cellId="grid_headcell_field39" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_tipoproceso_fieldheadercolumn}
+	{BEGIN cont_tipoproceso_fieldheader}
+	<SPAN {$cont_tipoproceso_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field108" {$item_simple_grid_field108} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_tipoproceso">
+	{$label contrato cont_tipoproceso }	{$arrow_icon_cont_tipoproceso}
+	</SPAN>
+	{END cont_tipoproceso_fieldheader}
+{END cont_tipoproceso_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field39}
+				 
+					{BEGIN cellblock_grid_headcell_field40}
+	<th
+	
+	{$cell_grid_headcell_field40}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_formapago_class}
+			"
+
+			data-field="cont_formapago"
+	
+	data-cellId="grid_headcell_field40" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_formapago_fieldheadercolumn}
+	{BEGIN cont_formapago_fieldheader}
+	<SPAN {$cont_formapago_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field109" {$item_simple_grid_field109} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_formapago">
+	{$label contrato cont_formapago }	{$arrow_icon_cont_formapago}
+	</SPAN>
+	{END cont_formapago_fieldheader}
+{END cont_formapago_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field40}
+				 
+					{BEGIN cellblock_grid_headcell_field41}
+	<th
+	
+	{$cell_grid_headcell_field41}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_fechasistema_class}
+			"
+
+			data-field="cont_fechasistema"
+	
+	data-cellId="grid_headcell_field41" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_fechasistema_fieldheadercolumn}
+	{BEGIN cont_fechasistema_fieldheader}
+	<SPAN {$cont_fechasistema_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field110" {$item_simple_grid_field110} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_fechasistema">
+	{$label contrato cont_fechasistema }	{$arrow_icon_cont_fechasistema}
+	</SPAN>
+	{END cont_fechasistema_fieldheader}
+{END cont_fechasistema_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field41}
+				 
+					{BEGIN cellblock_grid_headcell_field42}
+	<th
+	
+	{$cell_grid_headcell_field42}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_acta_liquidacion_class}
+			"
+
+			data-field="cont_acta_liquidacion"
+	
+	data-cellId="grid_headcell_field42" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_acta_liquidacion_fieldheadercolumn}
+	{BEGIN cont_acta_liquidacion_fieldheader}
+	<SPAN {$cont_acta_liquidacion_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field111" {$item_simple_grid_field111} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_acta_liquidacion">
+	{$label contrato cont_acta_liquidacion }	{$arrow_icon_cont_acta_liquidacion}
+	</SPAN>
+	{END cont_acta_liquidacion_fieldheader}
+{END cont_acta_liquidacion_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field42}
+				 
+					{BEGIN cellblock_grid_headcell_field43}
+	<th
+	
+	{$cell_grid_headcell_field43}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_excluir_notificacion_class}
+			"
+
+			data-field="cont_excluir_notificacion"
+	
+	data-cellId="grid_headcell_field43" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_excluir_notificacion_fieldheadercolumn}
+	{BEGIN cont_excluir_notificacion_fieldheader}
+	<SPAN {$cont_excluir_notificacion_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field112" {$item_simple_grid_field112} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_excluir_notificacion">
+	{$label contrato cont_excluir_notificacion }	{$arrow_icon_cont_excluir_notificacion}
+	</SPAN>
+	{END cont_excluir_notificacion_fieldheader}
+{END cont_excluir_notificacion_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field43}
+				 
+					{BEGIN cellblock_grid_headcell_field44}
+	<th
+	
+	{$cell_grid_headcell_field44}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_unspsc_class}
+			"
+
+			data-field="cont_unspsc"
+	
+	data-cellId="grid_headcell_field44" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_unspsc_fieldheadercolumn}
+	{BEGIN cont_unspsc_fieldheader}
+	<SPAN {$cont_unspsc_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field113" {$item_simple_grid_field113} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_unspsc">
+	{$label contrato cont_unspsc }	{$arrow_icon_cont_unspsc}
+	</SPAN>
+	{END cont_unspsc_fieldheader}
+{END cont_unspsc_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field44}
+				 
+					{BEGIN cellblock_grid_headcell_field45}
+	<th
+	
+	{$cell_grid_headcell_field45}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_tipo_rubro_class}
+			"
+
+			data-field="cont_tipo_rubro"
+	
+	data-cellId="grid_headcell_field45" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_tipo_rubro_fieldheadercolumn}
+	{BEGIN cont_tipo_rubro_fieldheader}
+	<SPAN {$cont_tipo_rubro_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field114" {$item_simple_grid_field114} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_tipo_rubro">
+	{$label contrato cont_tipo_rubro }	{$arrow_icon_cont_tipo_rubro}
+	</SPAN>
+	{END cont_tipo_rubro_fieldheader}
+{END cont_tipo_rubro_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field45}
+				 
+					{BEGIN cellblock_grid_headcell_field46}
+	<th
+	
+	{$cell_grid_headcell_field46}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_reg_sigep_class}
+			"
+
+			data-field="cont_reg_sigep"
+	
+	data-cellId="grid_headcell_field46" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_reg_sigep_fieldheadercolumn}
+	{BEGIN cont_reg_sigep_fieldheader}
+	<SPAN {$cont_reg_sigep_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field115" {$item_simple_grid_field115} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_reg_sigep">
+	{$label contrato cont_reg_sigep }	{$arrow_icon_cont_reg_sigep}
+	</SPAN>
+	{END cont_reg_sigep_fieldheader}
+{END cont_reg_sigep_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field46}
+				 
+					{BEGIN cellblock_grid_headcell_field47}
+	<th
+	
+	{$cell_grid_headcell_field47}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_valormensual_base_class}
+			"
+
+			data-field="cont_valormensual_base"
+	
+	data-cellId="grid_headcell_field47" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_valormensual_base_fieldheadercolumn}
+	{BEGIN cont_valormensual_base_fieldheader}
+	<SPAN {$cont_valormensual_base_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field116" {$item_simple_grid_field116} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_valormensual_base">
+	{$label contrato cont_valormensual_base }	{$arrow_icon_cont_valormensual_base}
+	</SPAN>
+	{END cont_valormensual_base_fieldheader}
+{END cont_valormensual_base_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field47}
+				 
+					{BEGIN cellblock_grid_headcell_field48}
+	<th
+	
+	{$cell_grid_headcell_field48}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_valormensual_iva_class}
+			"
+
+			data-field="cont_valormensual_iva"
+	
+	data-cellId="grid_headcell_field48" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_valormensual_iva_fieldheadercolumn}
+	{BEGIN cont_valormensual_iva_fieldheader}
+	<SPAN {$cont_valormensual_iva_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field117" {$item_simple_grid_field117} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_valormensual_iva">
+	{$label contrato cont_valormensual_iva }	{$arrow_icon_cont_valormensual_iva}
+	</SPAN>
+	{END cont_valormensual_iva_fieldheader}
+{END cont_valormensual_iva_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field48}
+				 
+					{BEGIN cellblock_grid_headcell_field49}
+	<th
+	
+	{$cell_grid_headcell_field49}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_tipoc_class}
+			"
+
+			data-field="cont_tipoc"
+	
+	data-cellId="grid_headcell_field49" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_tipoc_fieldheadercolumn}
+	{BEGIN cont_tipoc_fieldheader}
+	<SPAN {$cont_tipoc_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field118" {$item_simple_grid_field118} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_tipoc">
+	{$label contrato cont_tipoc }	{$arrow_icon_cont_tipoc}
+	</SPAN>
+	{END cont_tipoc_fieldheader}
+{END cont_tipoc_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field49}
+				 
+					{BEGIN cellblock_grid_headcell_field50}
+	<th
+	
+	{$cell_grid_headcell_field50}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_causalc_class}
+			"
+
+			data-field="cont_causalc"
+	
+	data-cellId="grid_headcell_field50" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_causalc_fieldheadercolumn}
+	{BEGIN cont_causalc_fieldheader}
+	<SPAN {$cont_causalc_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field119" {$item_simple_grid_field119} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_causalc">
+	{$label contrato cont_causalc }	{$arrow_icon_cont_causalc}
+	</SPAN>
+	{END cont_causalc_fieldheader}
+{END cont_causalc_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field50}
+				 
+					{BEGIN cellblock_grid_headcell_field51}
+	<th
+	
+	{$cell_grid_headcell_field51}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_funcion_class}
+			"
+
+			data-field="cont_funcion"
+	
+	data-cellId="grid_headcell_field51" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_funcion_fieldheadercolumn}
+	{BEGIN cont_funcion_fieldheader}
+	<SPAN {$cont_funcion_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field120" {$item_simple_grid_field120} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_funcion">
+	{$label contrato cont_funcion }	{$arrow_icon_cont_funcion}
+	</SPAN>
+	{END cont_funcion_fieldheader}
+{END cont_funcion_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field51}
+				 
+					{BEGIN cellblock_grid_headcell_field52}
+	<th
+	
+	{$cell_grid_headcell_field52}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cesion_estado_class}
+			"
+
+			data-field="cesion_estado"
+	
+	data-cellId="grid_headcell_field52" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cesion_estado_fieldheadercolumn}
+	{BEGIN cesion_estado_fieldheader}
+	<SPAN {$cesion_estado_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field121" {$item_simple_grid_field121} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cesion_estado">
+	{$label contrato cesion_estado }	{$arrow_icon_cesion_estado}
+	</SPAN>
+	{END cesion_estado_fieldheader}
+{END cesion_estado_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field52}
+				 
+					{BEGIN cellblock_grid_headcell_field53}
+	<th
+	
+	{$cell_grid_headcell_field53}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_fecha_aprobgarantia_class}
+			"
+
+			data-field="cont_fecha_aprobgarantia"
+	
+	data-cellId="grid_headcell_field53" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_fecha_aprobgarantia_fieldheadercolumn}
+	{BEGIN cont_fecha_aprobgarantia_fieldheader}
+	<SPAN {$cont_fecha_aprobgarantia_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field122" {$item_simple_grid_field122} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_fecha_aprobgarantia">
+	{$label contrato cont_fecha_aprobgarantia }	{$arrow_icon_cont_fecha_aprobgarantia}
+	</SPAN>
+	{END cont_fecha_aprobgarantia_fieldheader}
+{END cont_fecha_aprobgarantia_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field53}
+				 
+					{BEGIN cellblock_grid_headcell_field54}
+	<th
+	
+	{$cell_grid_headcell_field54}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_afilia_arl_class}
+			"
+
+			data-field="cont_afilia_arl"
+	
+	data-cellId="grid_headcell_field54" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_afilia_arl_fieldheadercolumn}
+	{BEGIN cont_afilia_arl_fieldheader}
+	<SPAN {$cont_afilia_arl_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field123" {$item_simple_grid_field123} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_afilia_arl">
+	{$label contrato cont_afilia_arl }	{$arrow_icon_cont_afilia_arl}
+	</SPAN>
+	{END cont_afilia_arl_fieldheader}
+{END cont_afilia_arl_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field54}
+				 
+					{BEGIN cellblock_grid_headcell_field55}
+	<th
+	
+	{$cell_grid_headcell_field55}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_depsup_class}
+			"
+
+			data-field="cont_depsup"
+	
+	data-cellId="grid_headcell_field55" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_depsup_fieldheadercolumn}
+	{BEGIN cont_depsup_fieldheader}
+	<SPAN {$cont_depsup_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field124" {$item_simple_grid_field124} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_depsup">
+	{$label contrato cont_depsup }	{$arrow_icon_cont_depsup}
+	</SPAN>
+	{END cont_depsup_fieldheader}
+{END cont_depsup_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field55}
+				 
+					{BEGIN cellblock_grid_headcell_field56}
+	<th
+	
+	{$cell_grid_headcell_field56}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_dep_class}
+			"
+
+			data-field="cont_dep"
+	
+	data-cellId="grid_headcell_field56" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_dep_fieldheadercolumn}
+	{BEGIN cont_dep_fieldheader}
+	<SPAN {$cont_dep_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field125" {$item_simple_grid_field125} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_dep">
+	{$label contrato cont_dep }	{$arrow_icon_cont_dep}
+	</SPAN>
+	{END cont_dep_fieldheader}
+{END cont_dep_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field56}
+				 
+					{BEGIN cellblock_grid_headcell_field57}
+	<th
+	
+	{$cell_grid_headcell_field57}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_lugar_prestacion_class}
+			"
+
+			data-field="cont_lugar_prestacion"
+	
+	data-cellId="grid_headcell_field57" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_lugar_prestacion_fieldheadercolumn}
+	{BEGIN cont_lugar_prestacion_fieldheader}
+	<SPAN {$cont_lugar_prestacion_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field126" {$item_simple_grid_field126} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_lugar_prestacion">
+	{$label contrato cont_lugar_prestacion }	{$arrow_icon_cont_lugar_prestacion}
+	</SPAN>
+	{END cont_lugar_prestacion_fieldheader}
+{END cont_lugar_prestacion_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field57}
+				 
+					{BEGIN cellblock_grid_headcell_field58}
+	<th
+	
+	{$cell_grid_headcell_field58}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_obligaciones_class}
+			"
+
+			data-field="cont_obligaciones"
+	
+	data-cellId="grid_headcell_field58" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_obligaciones_fieldheadercolumn}
+	{BEGIN cont_obligaciones_fieldheader}
+	<SPAN {$cont_obligaciones_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field127" {$item_simple_grid_field127} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_obligaciones">
+	{$label contrato cont_obligaciones }	{$arrow_icon_cont_obligaciones}
+	</SPAN>
+	{END cont_obligaciones_fieldheader}
+{END cont_obligaciones_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field58}
+				 
+					{BEGIN cellblock_grid_headcell_field59}
+	<th
+	
+	{$cell_grid_headcell_field59}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_plazo_class}
+			"
+
+			data-field="cont_plazo"
+	
+	data-cellId="grid_headcell_field59" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_plazo_fieldheadercolumn}
+	{BEGIN cont_plazo_fieldheader}
+	<SPAN {$cont_plazo_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field128" {$item_simple_grid_field128} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_plazo">
+	{$label contrato cont_plazo }	{$arrow_icon_cont_plazo}
+	</SPAN>
+	{END cont_plazo_fieldheader}
+{END cont_plazo_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field59}
+				 
+					{BEGIN cellblock_grid_headcell_field60}
+	<th
+	
+	{$cell_grid_headcell_field60}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_tipo_regimen_class}
+			"
+
+			data-field="cont_tipo_regimen"
+	
+	data-cellId="grid_headcell_field60" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_tipo_regimen_fieldheadercolumn}
+	{BEGIN cont_tipo_regimen_fieldheader}
+	<SPAN {$cont_tipo_regimen_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field129" {$item_simple_grid_field129} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_tipo_regimen">
+	{$label contrato cont_tipo_regimen }	{$arrow_icon_cont_tipo_regimen}
+	</SPAN>
+	{END cont_tipo_regimen_fieldheader}
+{END cont_tipo_regimen_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field60}
+				 
+					{BEGIN cellblock_grid_headcell_field61}
+	<th
+	
+	{$cell_grid_headcell_field61}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_fecha_firma_class}
+			"
+
+			data-field="cont_fecha_firma"
+	
+	data-cellId="grid_headcell_field61" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_fecha_firma_fieldheadercolumn}
+	{BEGIN cont_fecha_firma_fieldheader}
+	<SPAN {$cont_fecha_firma_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field130" {$item_simple_grid_field130} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_fecha_firma">
+	{$label contrato cont_fecha_firma }	{$arrow_icon_cont_fecha_firma}
+	</SPAN>
+	{END cont_fecha_firma_fieldheader}
+{END cont_fecha_firma_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field61}
+				 
+					{BEGIN cellblock_grid_headcell_field62}
+	<th
+	
+	{$cell_grid_headcell_field62}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_secop_proceso_class}
+			"
+
+			data-field="cont_secop_proceso"
+	
+	data-cellId="grid_headcell_field62" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_secop_proceso_fieldheadercolumn}
+	{BEGIN cont_secop_proceso_fieldheader}
+	<SPAN {$cont_secop_proceso_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field131" {$item_simple_grid_field131} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_secop_proceso">
+	{$label contrato cont_secop_proceso }	{$arrow_icon_cont_secop_proceso}
+	</SPAN>
+	{END cont_secop_proceso_fieldheader}
+{END cont_secop_proceso_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field62}
+				 
+					{BEGIN cellblock_grid_headcell_field63}
+	<th
+	
+	{$cell_grid_headcell_field63}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_secop_enlace_class}
+			"
+
+			data-field="cont_secop_enlace"
+	
+	data-cellId="grid_headcell_field63" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_secop_enlace_fieldheadercolumn}
+	{BEGIN cont_secop_enlace_fieldheader}
+	<SPAN {$cont_secop_enlace_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field132" {$item_simple_grid_field132} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_secop_enlace">
+	{$label contrato cont_secop_enlace }	{$arrow_icon_cont_secop_enlace}
+	</SPAN>
+	{END cont_secop_enlace_fieldheader}
+{END cont_secop_enlace_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field63}
+				 
+					{BEGIN cellblock_grid_headcell_field64}
+	<th
+	
+	{$cell_grid_headcell_field64}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_sigep_class}
+			"
+
+			data-field="cont_sigep"
+	
+	data-cellId="grid_headcell_field64" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_sigep_fieldheadercolumn}
+	{BEGIN cont_sigep_fieldheader}
+	<SPAN {$cont_sigep_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field133" {$item_simple_grid_field133} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_sigep">
+	{$label contrato cont_sigep }	{$arrow_icon_cont_sigep}
+	</SPAN>
+	{END cont_sigep_fieldheader}
+{END cont_sigep_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field64}
+				 
+					{BEGIN cellblock_grid_headcell_field65}
+	<th
+	
+	{$cell_grid_headcell_field65}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_vigencias_futuras_class}
+			"
+
+			data-field="cont_vigencias_futuras"
+	
+	data-cellId="grid_headcell_field65" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_vigencias_futuras_fieldheadercolumn}
+	{BEGIN cont_vigencias_futuras_fieldheader}
+	<SPAN {$cont_vigencias_futuras_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field134" {$item_simple_grid_field134} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_vigencias_futuras">
+	{$label contrato cont_vigencias_futuras }	{$arrow_icon_cont_vigencias_futuras}
+	</SPAN>
+	{END cont_vigencias_futuras_fieldheader}
+{END cont_vigencias_futuras_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field65}
+				 
+					{BEGIN cellblock_grid_headcell_field66}
+	<th
+	
+	{$cell_grid_headcell_field66}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$vf_num_autorizacion_class}
+			"
+
+			data-field="vf_num_autorizacion"
+	
+	data-cellId="grid_headcell_field66" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN vf_num_autorizacion_fieldheadercolumn}
+	{BEGIN vf_num_autorizacion_fieldheader}
+	<SPAN {$vf_num_autorizacion_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field135" {$item_simple_grid_field135} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="vf_num_autorizacion">
+	{$label contrato vf_num_autorizacion }	{$arrow_icon_vf_num_autorizacion}
+	</SPAN>
+	{END vf_num_autorizacion_fieldheader}
+{END vf_num_autorizacion_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field66}
+				 
+					{BEGIN cellblock_grid_headcell_field67}
+	<th
+	
+	{$cell_grid_headcell_field67}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$vf_fecha_class}
+			"
+
+			data-field="vf_fecha"
+	
+	data-cellId="grid_headcell_field67" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN vf_fecha_fieldheadercolumn}
+	{BEGIN vf_fecha_fieldheader}
+	<SPAN {$vf_fecha_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field136" {$item_simple_grid_field136} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="vf_fecha">
+	{$label contrato vf_fecha }	{$arrow_icon_vf_fecha}
+	</SPAN>
+	{END vf_fecha_fieldheader}
+{END vf_fecha_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field67}
+				 
+					{BEGIN cellblock_grid_headcell_field68}
+	<th
+	
+	{$cell_grid_headcell_field68}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$vf_valor_class}
+			"
+
+			data-field="vf_valor"
+	
+	data-cellId="grid_headcell_field68" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN vf_valor_fieldheadercolumn}
+	{BEGIN vf_valor_fieldheader}
+	<SPAN {$vf_valor_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field137" {$item_simple_grid_field137} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="vf_valor">
+	{$label contrato vf_valor }	{$arrow_icon_vf_valor}
+	</SPAN>
+	{END vf_valor_fieldheader}
+{END vf_valor_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field68}
+							</tr>
+					 
+					 
+					
+					{END grid_header}
+			</thead>
+															<tbody>
+					{BEGIN grid_row}
+									
+		 
+					 
+						<tr {$rowattrs} {$row_grid_1} class="{$rowclass} 
+								
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_cell_icons}
+	<td
+	
+	{$cell_grid_cell_icons}
+	{$recordattrs}
+	class="
+					"
+
+	
+	data-cellId="grid_cell_icons" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"		data-control-cell
+	
+	>
+
+	 
+		{BEGIN edit_column}
+{BEGIN edit_link}
+<span data-itemtype="grid_edit" data-itemid="grid_edit" {$item_grid_edit} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
+	<a type="button" title="Editar" class="btn-link   
+	 glyphicon glyphicon-pencil" href="contrato_edit.php?{$editlink}" {$editlink_attrs} title="Editar" data-popup >		
+				
+								</a>
+</span>
+{END edit_link}
+{END edit_column}
+	 
+		{BEGIN view_column}
+{BEGIN view_link}
+<span data-itemtype="grid_view" data-itemid="grid_view" {$item_grid_view} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
+	<a type="button" title="Ver registro" class="btn-link   
+	 glyphicon glyphicon-search" href="contrato_view.php?{$editlink}" {$viewlink_attrs} title="Ver" data-popup >		
+				
+								</a>
+</span>
+{END view_link}
+{END view_column}
+	
+	</td>
+	{END cellblock_grid_cell_icons}
+				 
+					{BEGIN cellblock_grid_cell_checkbox}
+	<td
+	
+	{$cell_grid_cell_checkbox}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}"		data-control-cell
+	
+		data-checkbox-cell
+	>
+
+	 
+		{BEGIN checkbox_column}
+<span data-itemtype="grid_checkbox" data-itemid="grid_checkbox" {$item_grid_checkbox} data-pageid="{$pageid}" data-record-id="{$recId}" >
+	<input type="checkbox" {$checkbox_attrs}>
+</span>	
+{END checkbox_column}
+	
+	</td>
+	{END cellblock_grid_cell_checkbox}
+				 
+					{BEGIN cellblock_grid_cell_field}
+	<td
+	
+	{$cell_grid_cell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$id_cont_class}
+			"
+
+			data-field="id_cont"
+	
+	data-cellId="grid_cell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN id_cont_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id_cont" data-default-width >
+{$id_cont_value}
+</span>
+{END id_cont_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field}
+				 
+					{BEGIN cellblock_grid_cell_field1}
+	<td
+	
+	{$cell_grid_cell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_hash_class}
+			"
+
+			data-field="cont_hash"
+	
+	data-cellId="grid_cell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_hash_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field1" {$item_simple_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_hash" data-default-width >
+{$cont_hash_value}
+</span>
+{END cont_hash_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field1}
+				 
+					{BEGIN cellblock_grid_cell_field2}
+	<td
+	
+	{$cell_grid_cell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_nit_contra_ta_class}
+			"
+
+			data-field="cont_nit_contra_ta"
+	
+	data-cellId="grid_cell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_nit_contra_ta_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field2" {$item_simple_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_nit_contra_ta" data-default-width >
+{$cont_nit_contra_ta_value}
+</span>
+{END cont_nit_contra_ta_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field2}
+				 
+					{BEGIN cellblock_grid_cell_field3}
+	<td
+	
+	{$cell_grid_cell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_paa_id_class}
+			"
+
+			data-field="cont_paa_id"
+	
+	data-cellId="grid_cell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_paa_id_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_paa_id" data-default-width >
+{$cont_paa_id_value}
+</span>
+{END cont_paa_id_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field3}
+				 
+					{BEGIN cellblock_grid_cell_field4}
+	<td
+	
+	{$cell_grid_cell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_cesion_class}
+			"
+
+			data-field="cont_cesion"
+	
+	data-cellId="grid_cell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_cesion_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_cesion" data-default-width >
+{$cont_cesion_value}
+</span>
+{END cont_cesion_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field4}
+				 
+					{BEGIN cellblock_grid_cell_field5}
+	<td
+	
+	{$cell_grid_cell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_estado_class}
+			"
+
+			data-field="cont_estado"
+	
+	data-cellId="grid_cell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_estado_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_estado" data-default-width >
+{$cont_estado_value}
+</span>
+{END cont_estado_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field5}
+				 
+					{BEGIN cellblock_grid_cell_field6}
+	<td
+	
+	{$cell_grid_cell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$prenumero_class}
+			"
+
+			data-field="prenumero"
+	
+	data-cellId="grid_cell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN prenumero_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="prenumero" data-default-width >
+{$prenumero_value}
+</span>
+{END prenumero_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field6}
+				 
+					{BEGIN cellblock_grid_cell_field7}
+	<td
+	
+	{$cell_grid_cell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$numregistro_class}
+			"
+
+			data-field="numregistro"
+	
+	data-cellId="grid_cell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN numregistro_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="numregistro" data-default-width >
+{$numregistro_value}
+</span>
+{END numregistro_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field7}
+				 
+					{BEGIN cellblock_grid_cell_field8}
+	<td
+	
+	{$cell_grid_cell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$pre_contnumero_class}
+			"
+
+			data-field="pre_contnumero"
+	
+	data-cellId="grid_cell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN pre_contnumero_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field8" {$item_simple_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="pre_contnumero" data-default-width >
+{$pre_contnumero_value}
+</span>
+{END pre_contnumero_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field8}
+				 
+					{BEGIN cellblock_grid_cell_field9}
+	<td
+	
+	{$cell_grid_cell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$contnumero_class}
+			"
+
+			data-field="contnumero"
+	
+	data-cellId="grid_cell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contnumero_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contnumero" data-default-width >
+{$contnumero_value}
+</span>
+{END contnumero_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field9}
+				 
+					{BEGIN cellblock_grid_cell_field10}
+	<td
+	
+	{$cell_grid_cell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_tipo_class}
+			"
+
+			data-field="cont_tipo"
+	
+	data-cellId="grid_cell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_tipo_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_tipo" data-default-width >
+{$cont_tipo_value}
+</span>
+{END cont_tipo_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field10}
+				 
+					{BEGIN cellblock_grid_cell_field11}
+	<td
+	
+	{$cell_grid_cell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_ano_class}
+			"
+
+			data-field="cont_ano"
+	
+	data-cellId="grid_cell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_ano_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_ano" data-default-width >
+{$cont_ano_value}
+</span>
+{END cont_ano_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field11}
+				 
+					{BEGIN cellblock_grid_cell_field12}
+	<td
+	
+	{$cell_grid_cell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_codrubro_class}
+			"
+
+			data-field="cont_codrubro"
+	
+	data-cellId="grid_cell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_codrubro_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field12" {$item_simple_grid_field12} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_codrubro" data-default-width >
+{$cont_codrubro_value}
+</span>
+{END cont_codrubro_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field12}
+				 
+					{BEGIN cellblock_grid_cell_field13}
+	<td
+	
+	{$cell_grid_cell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_catalogo_presupuestal_class}
+			"
+
+			data-field="cont_catalogo_presupuestal"
+	
+	data-cellId="grid_cell_field13" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_catalogo_presupuestal_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field13" {$item_simple_grid_field13} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_catalogo_presupuestal" data-default-width >
+{$cont_catalogo_presupuestal_value}
+</span>
+{END cont_catalogo_presupuestal_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field13}
+				 
+					{BEGIN cellblock_grid_cell_field14}
+	<td
+	
+	{$cell_grid_cell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_tipopre_class}
+			"
+
+			data-field="cont_tipopre"
+	
+	data-cellId="grid_cell_field14" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_tipopre_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field14" {$item_simple_grid_field14} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_tipopre" data-default-width >
+{$cont_tipopre_value}
+</span>
+{END cont_tipopre_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field14}
+				 
+					{BEGIN cellblock_grid_cell_field15}
+	<td
+	
+	{$cell_grid_cell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_fechaapertura_class}
+			"
+
+			data-field="cont_fechaapertura"
+	
+	data-cellId="grid_cell_field15" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_fechaapertura_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field16" {$item_simple_grid_field16} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_fechaapertura" data-default-width >
+{$cont_fechaapertura_value}
+</span>
+{END cont_fechaapertura_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field15}
+				 
+					{BEGIN cellblock_grid_cell_field16}
+	<td
+	
+	{$cell_grid_cell_field16}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_plazoi_class}
+			"
+
+			data-field="cont_plazoi"
+	
+	data-cellId="grid_cell_field16" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_plazoi_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field17" {$item_simple_grid_field17} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_plazoi" data-default-width >
+{$cont_plazoi_value}
+</span>
+{END cont_plazoi_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field16}
+				 
+					{BEGIN cellblock_grid_cell_field17}
+	<td
+	
+	{$cell_grid_cell_field17}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_fecha_inicio_class}
+			"
+
+			data-field="cont_fecha_inicio"
+	
+	data-cellId="grid_cell_field17" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_fecha_inicio_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field18" {$item_simple_grid_field18} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_fecha_inicio" data-default-width >
+{$cont_fecha_inicio_value}
+</span>
+{END cont_fecha_inicio_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field17}
+				 
+					{BEGIN cellblock_grid_cell_field18}
+	<td
+	
+	{$cell_grid_cell_field18}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_fechafinal_class}
+			"
+
+			data-field="cont_fechafinal"
+	
+	data-cellId="grid_cell_field18" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_fechafinal_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field19" {$item_simple_grid_field19} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_fechafinal" data-default-width >
+{$cont_fechafinal_value}
+</span>
+{END cont_fechafinal_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field18}
+				 
+					{BEGIN cellblock_grid_cell_field19}
+	<td
+	
+	{$cell_grid_cell_field19}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_fechavigencia_class}
+			"
+
+			data-field="cont_fechavigencia"
+	
+	data-cellId="grid_cell_field19" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_fechavigencia_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field20" {$item_simple_grid_field20} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_fechavigencia" data-default-width >
+{$cont_fechavigencia_value}
+</span>
+{END cont_fechavigencia_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field19}
+				 
+					{BEGIN cellblock_grid_cell_field20}
+	<td
+	
+	{$cell_grid_cell_field20}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_periodicidad_class}
+			"
+
+			data-field="cont_periodicidad"
+	
+	data-cellId="grid_cell_field20" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_periodicidad_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field21" {$item_simple_grid_field21} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_periodicidad" data-default-width >
+{$cont_periodicidad_value}
+</span>
+{END cont_periodicidad_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field20}
+				 
+					{BEGIN cellblock_grid_cell_field21}
+	<td
+	
+	{$cell_grid_cell_field21}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_informessug_class}
+			"
+
+			data-field="cont_informessug"
+	
+	data-cellId="grid_cell_field21" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_informessug_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field22" {$item_simple_grid_field22} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_informessug" data-default-width >
+{$cont_informessug_value}
+</span>
+{END cont_informessug_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field21}
+				 
+					{BEGIN cellblock_grid_cell_field22}
+	<td
+	
+	{$cell_grid_cell_field22}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_otrosi_class}
+			"
+
+			data-field="cont_otrosi"
+	
+	data-cellId="grid_cell_field22" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_otrosi_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field23" {$item_simple_grid_field23} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_otrosi" data-default-width >
+{$cont_otrosi_value}
+</span>
+{END cont_otrosi_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field22}
+				 
+					{BEGIN cellblock_grid_cell_field23}
+	<td
+	
+	{$cell_grid_cell_field23}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_otrosi_type_class}
+			"
+
+			data-field="cont_otrosi_type"
+	
+	data-cellId="grid_cell_field23" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_otrosi_type_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field24" {$item_simple_grid_field24} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_otrosi_type" data-default-width >
+{$cont_otrosi_type_value}
+</span>
+{END cont_otrosi_type_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field23}
+				 
+					{BEGIN cellblock_grid_cell_field24}
+	<td
+	
+	{$cell_grid_cell_field24}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_valorant_class}
+			"
+
+			data-field="cont_valorant"
+	
+	data-cellId="grid_cell_field24" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_valorant_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field25" {$item_simple_grid_field25} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_valorant" data-default-width >
+{$cont_valorant_value}
+</span>
+{END cont_valorant_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field24}
+				 
+					{BEGIN cellblock_grid_cell_field25}
+	<td
+	
+	{$cell_grid_cell_field25}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_valorinicial_class}
+			"
+
+			data-field="cont_valorinicial"
+	
+	data-cellId="grid_cell_field25" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_valorinicial_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field26" {$item_simple_grid_field26} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_valorinicial" data-default-width >
+{$cont_valorinicial_value}
+</span>
+{END cont_valorinicial_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field25}
+				 
+					{BEGIN cellblock_grid_cell_field26}
+	<td
+	
+	{$cell_grid_cell_field26}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_valormensual_class}
+			"
+
+			data-field="cont_valormensual"
+	
+	data-cellId="grid_cell_field26" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_valormensual_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field27" {$item_simple_grid_field27} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_valormensual" data-default-width >
+{$cont_valormensual_value}
+</span>
+{END cont_valormensual_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field26}
+				 
+					{BEGIN cellblock_grid_cell_field27}
+	<td
+	
+	{$cell_grid_cell_field27}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_valoradic_fecha_class}
+			"
+
+			data-field="cont_valoradic_fecha"
+	
+	data-cellId="grid_cell_field27" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_valoradic_fecha_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field28" {$item_simple_grid_field28} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_valoradic_fecha" data-default-width >
+{$cont_valoradic_fecha_value}
+</span>
+{END cont_valoradic_fecha_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field27}
+				 
+					{BEGIN cellblock_grid_cell_field28}
+	<td
+	
+	{$cell_grid_cell_field28}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_valoradic_class}
+			"
+
+			data-field="cont_valoradic"
+	
+	data-cellId="grid_cell_field28" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_valoradic_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field29" {$item_simple_grid_field29} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_valoradic" data-default-width >
+{$cont_valoradic_value}
+</span>
+{END cont_valoradic_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field28}
+				 
+					{BEGIN cellblock_grid_cell_field29}
+	<td
+	
+	{$cell_grid_cell_field29}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_valorreduc_fecha_class}
+			"
+
+			data-field="cont_valorreduc_fecha"
+	
+	data-cellId="grid_cell_field29" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_valorreduc_fecha_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field30" {$item_simple_grid_field30} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_valorreduc_fecha" data-default-width >
+{$cont_valorreduc_fecha_value}
+</span>
+{END cont_valorreduc_fecha_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field29}
+				 
+					{BEGIN cellblock_grid_cell_field30}
+	<td
+	
+	{$cell_grid_cell_field30}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_valorreduc_class}
+			"
+
+			data-field="cont_valorreduc"
+	
+	data-cellId="grid_cell_field30" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_valorreduc_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field31" {$item_simple_grid_field31} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_valorreduc" data-default-width >
+{$cont_valorreduc_value}
+</span>
+{END cont_valorreduc_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field30}
+				 
+					{BEGIN cellblock_grid_cell_field31}
+	<td
+	
+	{$cell_grid_cell_field31}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_valorvigente_class}
+			"
+
+			data-field="cont_valorvigente"
+	
+	data-cellId="grid_cell_field31" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_valorvigente_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field32" {$item_simple_grid_field32} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_valorvigente" data-default-width >
+{$cont_valorvigente_value}
+</span>
+{END cont_valorvigente_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field31}
+				 
+					{BEGIN cellblock_grid_cell_field32}
+	<td
+	
+	{$cell_grid_cell_field32}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_valors_class}
+			"
+
+			data-field="cont_valors"
+	
+	data-cellId="grid_cell_field32" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_valors_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field33" {$item_simple_grid_field33} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_valors" data-default-width >
+{$cont_valors_value}
+</span>
+{END cont_valors_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field32}
+				 
+					{BEGIN cellblock_grid_cell_field33}
+	<td
+	
+	{$cell_grid_cell_field33}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_lugar_class}
+			"
+
+			data-field="cont_lugar"
+	
+	data-cellId="grid_cell_field33" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_lugar_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field34" {$item_simple_grid_field34} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_lugar" data-default-width >
+{$cont_lugar_value}
+</span>
+{END cont_lugar_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field33}
+				 
+					{BEGIN cellblock_grid_cell_field34}
+	<td
+	
+	{$cell_grid_cell_field34}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_modalidad_class}
+			"
+
+			data-field="cont_modalidad"
+	
+	data-cellId="grid_cell_field34" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_modalidad_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field35" {$item_simple_grid_field35} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_modalidad" data-default-width >
+{$cont_modalidad_value}
+</span>
+{END cont_modalidad_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field34}
+				 
+					{BEGIN cellblock_grid_cell_field35}
+	<td
+	
+	{$cell_grid_cell_field35}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_objeto_class}
+			"
+
+			data-field="cont_objeto"
+	
+	data-cellId="grid_cell_field35" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_objeto_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field36" {$item_simple_grid_field36} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_objeto" data-default-width >
+{$cont_objeto_value}
+</span>
+{END cont_objeto_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field35}
+				 
+					{BEGIN cellblock_grid_cell_field36}
+	<td
+	
+	{$cell_grid_cell_field36}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_region_class}
+			"
+
+			data-field="cont_region"
+	
+	data-cellId="grid_cell_field36" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_region_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field37" {$item_simple_grid_field37} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_region" data-default-width >
+{$cont_region_value}
+</span>
+{END cont_region_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field36}
+				 
+					{BEGIN cellblock_grid_cell_field37}
+	<td
+	
+	{$cell_grid_cell_field37}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_requactaliq_class}
+			"
+
+			data-field="cont_requactaliq"
+	
+	data-cellId="grid_cell_field37" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_requactaliq_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field38" {$item_simple_grid_field38} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_requactaliq" data-default-width >
+{$cont_requactaliq_value}
+</span>
+{END cont_requactaliq_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field37}
+				 
+					{BEGIN cellblock_grid_cell_field38}
+	<td
+	
+	{$cell_grid_cell_field38}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_plazol_class}
+			"
+
+			data-field="cont_plazol"
+	
+	data-cellId="grid_cell_field38" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_plazol_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field39" {$item_simple_grid_field39} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_plazol" data-default-width >
+{$cont_plazol_value}
+</span>
+{END cont_plazol_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field38}
+				 
+					{BEGIN cellblock_grid_cell_field39}
+	<td
+	
+	{$cell_grid_cell_field39}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_tipoproceso_class}
+			"
+
+			data-field="cont_tipoproceso"
+	
+	data-cellId="grid_cell_field39" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_tipoproceso_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field40" {$item_simple_grid_field40} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_tipoproceso" data-default-width >
+{$cont_tipoproceso_value}
+</span>
+{END cont_tipoproceso_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field39}
+				 
+					{BEGIN cellblock_grid_cell_field40}
+	<td
+	
+	{$cell_grid_cell_field40}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_formapago_class}
+			"
+
+			data-field="cont_formapago"
+	
+	data-cellId="grid_cell_field40" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_formapago_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field41" {$item_simple_grid_field41} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_formapago" data-default-width >
+{$cont_formapago_value}
+</span>
+{END cont_formapago_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field40}
+				 
+					{BEGIN cellblock_grid_cell_field41}
+	<td
+	
+	{$cell_grid_cell_field41}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_fechasistema_class}
+			"
+
+			data-field="cont_fechasistema"
+	
+	data-cellId="grid_cell_field41" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_fechasistema_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field47" {$item_simple_grid_field47} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_fechasistema" data-default-width >
+{$cont_fechasistema_value}
+</span>
+{END cont_fechasistema_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field41}
+				 
+					{BEGIN cellblock_grid_cell_field42}
+	<td
+	
+	{$cell_grid_cell_field42}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_acta_liquidacion_class}
+			"
+
+			data-field="cont_acta_liquidacion"
+	
+	data-cellId="grid_cell_field42" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_acta_liquidacion_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field49" {$item_simple_grid_field49} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_acta_liquidacion" data-default-width >
+{$cont_acta_liquidacion_value}
+</span>
+{END cont_acta_liquidacion_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field42}
+				 
+					{BEGIN cellblock_grid_cell_field43}
+	<td
+	
+	{$cell_grid_cell_field43}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_excluir_notificacion_class}
+			"
+
+			data-field="cont_excluir_notificacion"
+	
+	data-cellId="grid_cell_field43" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_excluir_notificacion_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field50" {$item_simple_grid_field50} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_excluir_notificacion" data-default-width >
+{$cont_excluir_notificacion_value}
+</span>
+{END cont_excluir_notificacion_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field43}
+				 
+					{BEGIN cellblock_grid_cell_field44}
+	<td
+	
+	{$cell_grid_cell_field44}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_unspsc_class}
+			"
+
+			data-field="cont_unspsc"
+	
+	data-cellId="grid_cell_field44" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_unspsc_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field15" {$item_simple_grid_field15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_unspsc" data-default-width >
+{$cont_unspsc_value}
+</span>
+{END cont_unspsc_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field44}
+				 
+					{BEGIN cellblock_grid_cell_field45}
+	<td
+	
+	{$cell_grid_cell_field45}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_tipo_rubro_class}
+			"
+
+			data-field="cont_tipo_rubro"
+	
+	data-cellId="grid_cell_field45" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_tipo_rubro_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field42" {$item_simple_grid_field42} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_tipo_rubro" data-default-width >
+{$cont_tipo_rubro_value}
+</span>
+{END cont_tipo_rubro_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field45}
+				 
+					{BEGIN cellblock_grid_cell_field46}
+	<td
+	
+	{$cell_grid_cell_field46}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_reg_sigep_class}
+			"
+
+			data-field="cont_reg_sigep"
+	
+	data-cellId="grid_cell_field46" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_reg_sigep_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field43" {$item_simple_grid_field43} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_reg_sigep" data-default-width >
+{$cont_reg_sigep_value}
+</span>
+{END cont_reg_sigep_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field46}
+				 
+					{BEGIN cellblock_grid_cell_field47}
+	<td
+	
+	{$cell_grid_cell_field47}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_valormensual_base_class}
+			"
+
+			data-field="cont_valormensual_base"
+	
+	data-cellId="grid_cell_field47" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_valormensual_base_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field44" {$item_simple_grid_field44} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_valormensual_base" data-default-width >
+{$cont_valormensual_base_value}
+</span>
+{END cont_valormensual_base_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field47}
+				 
+					{BEGIN cellblock_grid_cell_field48}
+	<td
+	
+	{$cell_grid_cell_field48}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_valormensual_iva_class}
+			"
+
+			data-field="cont_valormensual_iva"
+	
+	data-cellId="grid_cell_field48" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_valormensual_iva_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field45" {$item_simple_grid_field45} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_valormensual_iva" data-default-width >
+{$cont_valormensual_iva_value}
+</span>
+{END cont_valormensual_iva_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field48}
+				 
+					{BEGIN cellblock_grid_cell_field49}
+	<td
+	
+	{$cell_grid_cell_field49}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_tipoc_class}
+			"
+
+			data-field="cont_tipoc"
+	
+	data-cellId="grid_cell_field49" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_tipoc_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field46" {$item_simple_grid_field46} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_tipoc" data-default-width >
+{$cont_tipoc_value}
+</span>
+{END cont_tipoc_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field49}
+				 
+					{BEGIN cellblock_grid_cell_field50}
+	<td
+	
+	{$cell_grid_cell_field50}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_causalc_class}
+			"
+
+			data-field="cont_causalc"
+	
+	data-cellId="grid_cell_field50" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_causalc_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field48" {$item_simple_grid_field48} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_causalc" data-default-width >
+{$cont_causalc_value}
+</span>
+{END cont_causalc_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field50}
+				 
+					{BEGIN cellblock_grid_cell_field51}
+	<td
+	
+	{$cell_grid_cell_field51}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_funcion_class}
+			"
+
+			data-field="cont_funcion"
+	
+	data-cellId="grid_cell_field51" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_funcion_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field51" {$item_simple_grid_field51} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_funcion" data-default-width >
+{$cont_funcion_value}
+</span>
+{END cont_funcion_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field51}
+				 
+					{BEGIN cellblock_grid_cell_field52}
+	<td
+	
+	{$cell_grid_cell_field52}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cesion_estado_class}
+			"
+
+			data-field="cesion_estado"
+	
+	data-cellId="grid_cell_field52" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cesion_estado_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field52" {$item_simple_grid_field52} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cesion_estado" data-default-width >
+{$cesion_estado_value}
+</span>
+{END cesion_estado_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field52}
+				 
+					{BEGIN cellblock_grid_cell_field53}
+	<td
+	
+	{$cell_grid_cell_field53}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_fecha_aprobgarantia_class}
+			"
+
+			data-field="cont_fecha_aprobgarantia"
+	
+	data-cellId="grid_cell_field53" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_fecha_aprobgarantia_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field53" {$item_simple_grid_field53} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_fecha_aprobgarantia" data-default-width >
+{$cont_fecha_aprobgarantia_value}
+</span>
+{END cont_fecha_aprobgarantia_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field53}
+				 
+					{BEGIN cellblock_grid_cell_field54}
+	<td
+	
+	{$cell_grid_cell_field54}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_afilia_arl_class}
+			"
+
+			data-field="cont_afilia_arl"
+	
+	data-cellId="grid_cell_field54" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_afilia_arl_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field54" {$item_simple_grid_field54} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_afilia_arl" data-default-width >
+{$cont_afilia_arl_value}
+</span>
+{END cont_afilia_arl_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field54}
+				 
+					{BEGIN cellblock_grid_cell_field55}
+	<td
+	
+	{$cell_grid_cell_field55}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_depsup_class}
+			"
+
+			data-field="cont_depsup"
+	
+	data-cellId="grid_cell_field55" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_depsup_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field55" {$item_simple_grid_field55} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_depsup" data-default-width >
+{$cont_depsup_value}
+</span>
+{END cont_depsup_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field55}
+				 
+					{BEGIN cellblock_grid_cell_field56}
+	<td
+	
+	{$cell_grid_cell_field56}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_dep_class}
+			"
+
+			data-field="cont_dep"
+	
+	data-cellId="grid_cell_field56" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_dep_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field56" {$item_simple_grid_field56} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_dep" data-default-width >
+{$cont_dep_value}
+</span>
+{END cont_dep_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field56}
+				 
+					{BEGIN cellblock_grid_cell_field57}
+	<td
+	
+	{$cell_grid_cell_field57}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_lugar_prestacion_class}
+			"
+
+			data-field="cont_lugar_prestacion"
+	
+	data-cellId="grid_cell_field57" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_lugar_prestacion_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field57" {$item_simple_grid_field57} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_lugar_prestacion" data-default-width >
+{$cont_lugar_prestacion_value}
+</span>
+{END cont_lugar_prestacion_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field57}
+				 
+					{BEGIN cellblock_grid_cell_field58}
+	<td
+	
+	{$cell_grid_cell_field58}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_obligaciones_class}
+			"
+
+			data-field="cont_obligaciones"
+	
+	data-cellId="grid_cell_field58" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_obligaciones_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field58" {$item_simple_grid_field58} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_obligaciones" data-default-width >
+{$cont_obligaciones_value}
+</span>
+{END cont_obligaciones_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field58}
+				 
+					{BEGIN cellblock_grid_cell_field59}
+	<td
+	
+	{$cell_grid_cell_field59}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_plazo_class}
+			"
+
+			data-field="cont_plazo"
+	
+	data-cellId="grid_cell_field59" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_plazo_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field59" {$item_simple_grid_field59} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_plazo" data-default-width >
+{$cont_plazo_value}
+</span>
+{END cont_plazo_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field59}
+				 
+					{BEGIN cellblock_grid_cell_field60}
+	<td
+	
+	{$cell_grid_cell_field60}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_tipo_regimen_class}
+			"
+
+			data-field="cont_tipo_regimen"
+	
+	data-cellId="grid_cell_field60" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_tipo_regimen_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field60" {$item_simple_grid_field60} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_tipo_regimen" data-default-width >
+{$cont_tipo_regimen_value}
+</span>
+{END cont_tipo_regimen_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field60}
+				 
+					{BEGIN cellblock_grid_cell_field61}
+	<td
+	
+	{$cell_grid_cell_field61}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_fecha_firma_class}
+			"
+
+			data-field="cont_fecha_firma"
+	
+	data-cellId="grid_cell_field61" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_fecha_firma_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field61" {$item_simple_grid_field61} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_fecha_firma" data-default-width >
+{$cont_fecha_firma_value}
+</span>
+{END cont_fecha_firma_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field61}
+				 
+					{BEGIN cellblock_grid_cell_field62}
+	<td
+	
+	{$cell_grid_cell_field62}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_secop_proceso_class}
+			"
+
+			data-field="cont_secop_proceso"
+	
+	data-cellId="grid_cell_field62" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_secop_proceso_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field62" {$item_simple_grid_field62} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_secop_proceso" data-default-width >
+{$cont_secop_proceso_value}
+</span>
+{END cont_secop_proceso_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field62}
+				 
+					{BEGIN cellblock_grid_cell_field63}
+	<td
+	
+	{$cell_grid_cell_field63}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_secop_enlace_class}
+			"
+
+			data-field="cont_secop_enlace"
+	
+	data-cellId="grid_cell_field63" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_secop_enlace_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field63" {$item_simple_grid_field63} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_secop_enlace" data-default-width >
+{$cont_secop_enlace_value}
+</span>
+{END cont_secop_enlace_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field63}
+				 
+					{BEGIN cellblock_grid_cell_field64}
+	<td
+	
+	{$cell_grid_cell_field64}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_sigep_class}
+			"
+
+			data-field="cont_sigep"
+	
+	data-cellId="grid_cell_field64" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_sigep_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field64" {$item_simple_grid_field64} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_sigep" data-default-width >
+{$cont_sigep_value}
+</span>
+{END cont_sigep_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field64}
+				 
+					{BEGIN cellblock_grid_cell_field65}
+	<td
+	
+	{$cell_grid_cell_field65}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_vigencias_futuras_class}
+			"
+
+			data-field="cont_vigencias_futuras"
+	
+	data-cellId="grid_cell_field65" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_vigencias_futuras_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field65" {$item_simple_grid_field65} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_vigencias_futuras" data-default-width >
+{$cont_vigencias_futuras_value}
+</span>
+{END cont_vigencias_futuras_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field65}
+				 
+					{BEGIN cellblock_grid_cell_field66}
+	<td
+	
+	{$cell_grid_cell_field66}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$vf_num_autorizacion_class}
+			"
+
+			data-field="vf_num_autorizacion"
+	
+	data-cellId="grid_cell_field66" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN vf_num_autorizacion_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field66" {$item_simple_grid_field66} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="vf_num_autorizacion" data-default-width >
+{$vf_num_autorizacion_value}
+</span>
+{END vf_num_autorizacion_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field66}
+				 
+					{BEGIN cellblock_grid_cell_field67}
+	<td
+	
+	{$cell_grid_cell_field67}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$vf_fecha_class}
+			"
+
+			data-field="vf_fecha"
+	
+	data-cellId="grid_cell_field67" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN vf_fecha_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field67" {$item_simple_grid_field67} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="vf_fecha" data-default-width >
+{$vf_fecha_value}
+</span>
+{END vf_fecha_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field67}
+				 
+					{BEGIN cellblock_grid_cell_field68}
+	<td
+	
+	{$cell_grid_cell_field68}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$vf_valor_class}
+			"
+
+			data-field="vf_valor"
+	
+	data-cellId="grid_cell_field68" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN vf_valor_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field68" {$item_simple_grid_field68} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="vf_valor" data-default-width >
+{$vf_valor_value}
+</span>
+{END vf_valor_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field68}
+							</tr>
+					 
+					
+											{END grid_row}
+					</tbody>
+													<tfoot>
+					
+		 
+					 
+					 
+						<tr {$rowattrs} {$row_grid_2} class="{$rowclass} 
+									{$gridFooter_class}
+									
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_footcell_icons}
+	<td
+	
+	{$cell_grid_footcell_icons}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_icons" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_icons}
+				 
+					{BEGIN cellblock_grid_footcell_checkbox}
+	<td
+	
+	{$cell_grid_footcell_checkbox}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_checkbox}
+				 
+					{BEGIN cellblock_grid_footcell_field}
+	<td
+	
+	{$cell_grid_footcell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field}
+				 
+					{BEGIN cellblock_grid_footcell_field1}
+	<td
+	
+	{$cell_grid_footcell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field1}
+				 
+					{BEGIN cellblock_grid_footcell_field2}
+	<td
+	
+	{$cell_grid_footcell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field2}
+				 
+					{BEGIN cellblock_grid_footcell_field3}
+	<td
+	
+	{$cell_grid_footcell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field3}
+				 
+					{BEGIN cellblock_grid_footcell_field4}
+	<td
+	
+	{$cell_grid_footcell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field4}
+				 
+					{BEGIN cellblock_grid_footcell_field5}
+	<td
+	
+	{$cell_grid_footcell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field5}
+				 
+					{BEGIN cellblock_grid_footcell_field6}
+	<td
+	
+	{$cell_grid_footcell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field6}
+				 
+					{BEGIN cellblock_grid_footcell_field7}
+	<td
+	
+	{$cell_grid_footcell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field7}
+				 
+					{BEGIN cellblock_grid_footcell_field8}
+	<td
+	
+	{$cell_grid_footcell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field8}
+				 
+					{BEGIN cellblock_grid_footcell_field9}
+	<td
+	
+	{$cell_grid_footcell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field9}
+				 
+					{BEGIN cellblock_grid_footcell_field10}
+	<td
+	
+	{$cell_grid_footcell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field10}
+				 
+					{BEGIN cellblock_grid_footcell_field11}
+	<td
+	
+	{$cell_grid_footcell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field11}
+				 
+					{BEGIN cellblock_grid_footcell_field12}
+	<td
+	
+	{$cell_grid_footcell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field12" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field12}
+				 
+					{BEGIN cellblock_grid_footcell_field13}
+	<td
+	
+	{$cell_grid_footcell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field13" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field13}
+				 
+					{BEGIN cellblock_grid_footcell_field14}
+	<td
+	
+	{$cell_grid_footcell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field14" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field14}
+				 
+					{BEGIN cellblock_grid_footcell_field15}
+	<td
+	
+	{$cell_grid_footcell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field15" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field15}
+				 
+					{BEGIN cellblock_grid_footcell_field16}
+	<td
+	
+	{$cell_grid_footcell_field16}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field16" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field16}
+				 
+					{BEGIN cellblock_grid_footcell_field17}
+	<td
+	
+	{$cell_grid_footcell_field17}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field17" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field17}
+				 
+					{BEGIN cellblock_grid_footcell_field18}
+	<td
+	
+	{$cell_grid_footcell_field18}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field18" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field18}
+				 
+					{BEGIN cellblock_grid_footcell_field19}
+	<td
+	
+	{$cell_grid_footcell_field19}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field19" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field19}
+				 
+					{BEGIN cellblock_grid_footcell_field20}
+	<td
+	
+	{$cell_grid_footcell_field20}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field20" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field20}
+				 
+					{BEGIN cellblock_grid_footcell_field21}
+	<td
+	
+	{$cell_grid_footcell_field21}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field21" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field21}
+				 
+					{BEGIN cellblock_grid_footcell_field22}
+	<td
+	
+	{$cell_grid_footcell_field22}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field22" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field22}
+				 
+					{BEGIN cellblock_grid_footcell_field23}
+	<td
+	
+	{$cell_grid_footcell_field23}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field23" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field23}
+				 
+					{BEGIN cellblock_grid_footcell_field24}
+	<td
+	
+	{$cell_grid_footcell_field24}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field24" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field24}
+				 
+					{BEGIN cellblock_grid_footcell_field25}
+	<td
+	
+	{$cell_grid_footcell_field25}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field25" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field25}
+				 
+					{BEGIN cellblock_grid_footcell_field26}
+	<td
+	
+	{$cell_grid_footcell_field26}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field26" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field26}
+				 
+					{BEGIN cellblock_grid_footcell_field27}
+	<td
+	
+	{$cell_grid_footcell_field27}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field27" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field27}
+				 
+					{BEGIN cellblock_grid_footcell_field28}
+	<td
+	
+	{$cell_grid_footcell_field28}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field28" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field28}
+				 
+					{BEGIN cellblock_grid_footcell_field29}
+	<td
+	
+	{$cell_grid_footcell_field29}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field29" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field29}
+				 
+					{BEGIN cellblock_grid_footcell_field30}
+	<td
+	
+	{$cell_grid_footcell_field30}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field30" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field30}
+				 
+					{BEGIN cellblock_grid_footcell_field31}
+	<td
+	
+	{$cell_grid_footcell_field31}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field31" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field31}
+				 
+					{BEGIN cellblock_grid_footcell_field32}
+	<td
+	
+	{$cell_grid_footcell_field32}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field32" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field32}
+				 
+					{BEGIN cellblock_grid_footcell_field33}
+	<td
+	
+	{$cell_grid_footcell_field33}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field33" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field33}
+				 
+					{BEGIN cellblock_grid_footcell_field34}
+	<td
+	
+	{$cell_grid_footcell_field34}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field34" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field34}
+				 
+					{BEGIN cellblock_grid_footcell_field35}
+	<td
+	
+	{$cell_grid_footcell_field35}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field35" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field35}
+				 
+					{BEGIN cellblock_grid_footcell_field36}
+	<td
+	
+	{$cell_grid_footcell_field36}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field36" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field36}
+				 
+					{BEGIN cellblock_grid_footcell_field37}
+	<td
+	
+	{$cell_grid_footcell_field37}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field37" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field37}
+				 
+					{BEGIN cellblock_grid_footcell_field38}
+	<td
+	
+	{$cell_grid_footcell_field38}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field38" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field38}
+				 
+					{BEGIN cellblock_grid_footcell_field39}
+	<td
+	
+	{$cell_grid_footcell_field39}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field39" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field39}
+				 
+					{BEGIN cellblock_grid_footcell_field40}
+	<td
+	
+	{$cell_grid_footcell_field40}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field40" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field40}
+				 
+					{BEGIN cellblock_grid_footcell_field41}
+	<td
+	
+	{$cell_grid_footcell_field41}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field41" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field41}
+				 
+					{BEGIN cellblock_grid_footcell_field42}
+	<td
+	
+	{$cell_grid_footcell_field42}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field42" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field42}
+				 
+					{BEGIN cellblock_grid_footcell_field43}
+	<td
+	
+	{$cell_grid_footcell_field43}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field43" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field43}
+				 
+					{BEGIN cellblock_grid_footcell_field44}
+	<td
+	
+	{$cell_grid_footcell_field44}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field44" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field44}
+				 
+					{BEGIN cellblock_grid_footcell_field45}
+	<td
+	
+	{$cell_grid_footcell_field45}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field45" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field45}
+				 
+					{BEGIN cellblock_grid_footcell_field46}
+	<td
+	
+	{$cell_grid_footcell_field46}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field46" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field46}
+				 
+					{BEGIN cellblock_grid_footcell_field47}
+	<td
+	
+	{$cell_grid_footcell_field47}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field47" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field47}
+				 
+					{BEGIN cellblock_grid_footcell_field48}
+	<td
+	
+	{$cell_grid_footcell_field48}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field48" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field48}
+				 
+					{BEGIN cellblock_grid_footcell_field49}
+	<td
+	
+	{$cell_grid_footcell_field49}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field49" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field49}
+				 
+					{BEGIN cellblock_grid_footcell_field50}
+	<td
+	
+	{$cell_grid_footcell_field50}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field50" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field50}
+				 
+					{BEGIN cellblock_grid_footcell_field51}
+	<td
+	
+	{$cell_grid_footcell_field51}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field51" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field51}
+				 
+					{BEGIN cellblock_grid_footcell_field52}
+	<td
+	
+	{$cell_grid_footcell_field52}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field52" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field52}
+				 
+					{BEGIN cellblock_grid_footcell_field53}
+	<td
+	
+	{$cell_grid_footcell_field53}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field53" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field53}
+				 
+					{BEGIN cellblock_grid_footcell_field54}
+	<td
+	
+	{$cell_grid_footcell_field54}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field54" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field54}
+				 
+					{BEGIN cellblock_grid_footcell_field55}
+	<td
+	
+	{$cell_grid_footcell_field55}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field55" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field55}
+				 
+					{BEGIN cellblock_grid_footcell_field56}
+	<td
+	
+	{$cell_grid_footcell_field56}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field56" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field56}
+				 
+					{BEGIN cellblock_grid_footcell_field57}
+	<td
+	
+	{$cell_grid_footcell_field57}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field57" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field57}
+				 
+					{BEGIN cellblock_grid_footcell_field58}
+	<td
+	
+	{$cell_grid_footcell_field58}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field58" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field58}
+				 
+					{BEGIN cellblock_grid_footcell_field59}
+	<td
+	
+	{$cell_grid_footcell_field59}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field59" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field59}
+				 
+					{BEGIN cellblock_grid_footcell_field60}
+	<td
+	
+	{$cell_grid_footcell_field60}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field60" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field60}
+				 
+					{BEGIN cellblock_grid_footcell_field61}
+	<td
+	
+	{$cell_grid_footcell_field61}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field61" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field61}
+				 
+					{BEGIN cellblock_grid_footcell_field62}
+	<td
+	
+	{$cell_grid_footcell_field62}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field62" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field62}
+				 
+					{BEGIN cellblock_grid_footcell_field63}
+	<td
+	
+	{$cell_grid_footcell_field63}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field63" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field63}
+				 
+					{BEGIN cellblock_grid_footcell_field64}
+	<td
+	
+	{$cell_grid_footcell_field64}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field64" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field64}
+				 
+					{BEGIN cellblock_grid_footcell_field65}
+	<td
+	
+	{$cell_grid_footcell_field65}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field65" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field65}
+				 
+					{BEGIN cellblock_grid_footcell_field66}
+	<td
+	
+	{$cell_grid_footcell_field66}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field66" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field66}
+				 
+					{BEGIN cellblock_grid_footcell_field67}
+	<td
+	
+	{$cell_grid_footcell_field67}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field67" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field67}
+				 
+					{BEGIN cellblock_grid_footcell_field68}
+	<td
+	
+	{$cell_grid_footcell_field68}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field68" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field68}
+							</tr>
+					
+					</tfoot>
+				</table>
+{END grid_block}
+						</div>
+					<div class="r-below">
+										{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="leftbar" {$form_below-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="r-align-center r-ori-vert			col-md-12
+	
+">
+		 
+		{BEGIN pagination_block}
+<span data-itemtype="pagination" data-itemid="pagination" {$item_pagination} data-pageid="{$pageid}" >
+{$pagination}
+</span>
+{END pagination_block}
+		</div>					</div>
+	</div>		
+{END below-grid_block}
+						</div>
+					{$footer}
+				</div>	
+			</div>	
+		</div>
+	{END body}
+	</body>
+</html>

@@ -1,0 +1,450 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"{$jspagetitlelabel contrato edit}","hidden":"{$item_hide_edit_header}","fontSize":30},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+		
+								
+{
+	table: {
+	
+				
+		location: 'above-grid',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"","hidden":"{$item_hide_edit_message}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+		
+								
+{
+	table: {
+	
+				tableForm: true,
+				
+		location: 'grid',
+		
+		
+		widths: [
+									{BEGIN col_grid_0}
+						"*", 
+							{END col_grid_0}
+					 ],	
+		
+			heights: [
+								{BEGIN row_grid_0}
+						
+			"%",
+						{END row_grid_0}
+			 
+				],
+	
+		body: [
+				
+					{BEGIN row_grid_0}
+				[
+												{BEGIN cellblock_grid_c3}
+{
+	cellId: 'c3',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field}","stack":[{"text":"{$jslabel contrato cont_hash }","bold":true},{"text":{$cont_hash_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field1}","stack":[{"text":"{$jslabel contrato cont_nit_contra_ta }","bold":true},{"text":{$cont_nit_contra_ta_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field2}","stack":[{"text":"{$jslabel contrato cont_paa_id }","bold":true},{"text":{$cont_paa_id_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field3}","stack":[{"text":"{$jslabel contrato cont_cesion }","bold":true},{"text":{$cont_cesion_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field4}","stack":[{"text":"{$jslabel contrato cont_estado }","bold":true},{"text":{$cont_estado_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field5}","stack":[{"text":"{$jslabel contrato prenumero }","bold":true},{"text":{$prenumero_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field6}","stack":[{"text":"{$jslabel contrato numregistro }","bold":true},{"text":{$numregistro_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field7}","stack":[{"text":"{$jslabel contrato pre_contnumero }","bold":true},{"text":{$pre_contnumero_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field8}","stack":[{"text":"{$jslabel contrato contnumero }","bold":true},{"text":{$contnumero_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field9}","stack":[{"text":"{$jslabel contrato cont_tipo }","bold":true},{"text":{$cont_tipo_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field10}","stack":[{"text":"{$jslabel contrato cont_ano }","bold":true},{"text":{$cont_ano_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field11}","stack":[{"text":"{$jslabel contrato cont_codrubro }","bold":true},{"text":{$cont_codrubro_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field12}","stack":[{"text":"{$jslabel contrato cont_catalogo_presupuestal }","bold":true},{"text":{$cont_catalogo_presupuestal_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field13}","stack":[{"text":"{$jslabel contrato cont_tipopre }","bold":true},{"text":{$cont_tipopre_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field15}","stack":[{"text":"{$jslabel contrato cont_fechaapertura }","bold":true},{"text":{$cont_fechaapertura_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field16}","stack":[{"text":"{$jslabel contrato cont_plazoi }","bold":true},{"text":{$cont_plazoi_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field17}","stack":[{"text":"{$jslabel contrato cont_fecha_inicio }","bold":true},{"text":{$cont_fecha_inicio_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field18}","stack":[{"text":"{$jslabel contrato cont_fechafinal }","bold":true},{"text":{$cont_fechafinal_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field19}","stack":[{"text":"{$jslabel contrato cont_fechavigencia }","bold":true},{"text":{$cont_fechavigencia_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field20}","stack":[{"text":"{$jslabel contrato cont_periodicidad }","bold":true},{"text":{$cont_periodicidad_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field21}","stack":[{"text":"{$jslabel contrato cont_informessug }","bold":true},{"text":{$cont_informessug_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field22}","stack":[{"text":"{$jslabel contrato cont_otrosi }","bold":true},{"text":{$cont_otrosi_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field23}","stack":[{"text":"{$jslabel contrato cont_otrosi_type }","bold":true},{"text":{$cont_otrosi_type_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field24}","stack":[{"text":"{$jslabel contrato cont_valorant }","bold":true},{"text":{$cont_valorant_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field25}","stack":[{"text":"{$jslabel contrato cont_valorinicial }","bold":true},{"text":{$cont_valorinicial_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field26}","stack":[{"text":"{$jslabel contrato cont_valormensual }","bold":true},{"text":{$cont_valormensual_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field27}","stack":[{"text":"{$jslabel contrato cont_valoradic_fecha }","bold":true},{"text":{$cont_valoradic_fecha_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field28}","stack":[{"text":"{$jslabel contrato cont_valoradic }","bold":true},{"text":{$cont_valoradic_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field29}","stack":[{"text":"{$jslabel contrato cont_valorreduc_fecha }","bold":true},{"text":{$cont_valorreduc_fecha_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field30}","stack":[{"text":"{$jslabel contrato cont_valorreduc }","bold":true},{"text":{$cont_valorreduc_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field31}","stack":[{"text":"{$jslabel contrato cont_valorvigente }","bold":true},{"text":{$cont_valorvigente_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field32}","stack":[{"text":"{$jslabel contrato cont_valors }","bold":true},{"text":{$cont_valors_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field33}","stack":[{"text":"{$jslabel contrato cont_lugar }","bold":true},{"text":{$cont_lugar_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field34}","stack":[{"text":"{$jslabel contrato cont_modalidad }","bold":true},{"text":{$cont_modalidad_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field35}","stack":[{"text":"{$jslabel contrato cont_objeto }","bold":true},{"text":{$cont_objeto_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field36}","stack":[{"text":"{$jslabel contrato cont_region }","bold":true},{"text":{$cont_region_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field37}","stack":[{"text":"{$jslabel contrato cont_requactaliq }","bold":true},{"text":{$cont_requactaliq_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field38}","stack":[{"text":"{$jslabel contrato cont_plazol }","bold":true},{"text":{$cont_plazol_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field39}","stack":[{"text":"{$jslabel contrato cont_tipoproceso }","bold":true},{"text":{$cont_tipoproceso_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field40}","stack":[{"text":"{$jslabel contrato cont_formapago }","bold":true},{"text":{$cont_formapago_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field46}","stack":[{"text":"{$jslabel contrato cont_fechasistema }","bold":true},{"text":{$cont_fechasistema_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field48}","stack":[{"text":"{$jslabel contrato cont_acta_liquidacion }","bold":true},{"text":{$cont_acta_liquidacion_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field49}","stack":[{"text":"{$jslabel contrato cont_excluir_notificacion }","bold":true},{"text":{$cont_excluir_notificacion_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field14}","stack":[{"text":"{$jslabel contrato cont_unspsc }","bold":true},{"text":{$cont_unspsc_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field41}","stack":[{"text":"{$jslabel contrato cont_tipo_rubro }","bold":true},{"text":{$cont_tipo_rubro_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field42}","stack":[{"text":"{$jslabel contrato cont_reg_sigep }","bold":true},{"text":{$cont_reg_sigep_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field43}","stack":[{"text":"{$jslabel contrato cont_valormensual_base }","bold":true},{"text":{$cont_valormensual_base_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field44}","stack":[{"text":"{$jslabel contrato cont_valormensual_iva }","bold":true},{"text":{$cont_valormensual_iva_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field45}","stack":[{"text":"{$jslabel contrato cont_tipoc }","bold":true},{"text":{$cont_tipoc_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field47}","stack":[{"text":"{$jslabel contrato cont_causalc }","bold":true},{"text":{$cont_causalc_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field50}","stack":[{"text":"{$jslabel contrato cont_funcion }","bold":true},{"text":{$cont_funcion_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field51}","stack":[{"text":"{$jslabel contrato cesion_estado }","bold":true},{"text":{$cesion_estado_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field52}","stack":[{"text":"{$jslabel contrato cont_fecha_aprobgarantia }","bold":true},{"text":{$cont_fecha_aprobgarantia_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field53}","stack":[{"text":"{$jslabel contrato cont_afilia_arl }","bold":true},{"text":{$cont_afilia_arl_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field54}","stack":[{"text":"{$jslabel contrato cont_depsup }","bold":true},{"text":{$cont_depsup_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field55}","stack":[{"text":"{$jslabel contrato cont_dep }","bold":true},{"text":{$cont_dep_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field56}","stack":[{"text":"{$jslabel contrato cont_lugar_prestacion }","bold":true},{"text":{$cont_lugar_prestacion_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field57}","stack":[{"text":"{$jslabel contrato cont_obligaciones }","bold":true},{"text":{$cont_obligaciones_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field58}","stack":[{"text":"{$jslabel contrato cont_plazo }","bold":true},{"text":{$cont_plazo_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field59}","stack":[{"text":"{$jslabel contrato cont_tipo_regimen }","bold":true},{"text":{$cont_tipo_regimen_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field60}","stack":[{"text":"{$jslabel contrato cont_fecha_firma }","bold":true},{"text":{$cont_fecha_firma_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field61}","stack":[{"text":"{$jslabel contrato cont_secop_proceso }","bold":true},{"text":{$cont_secop_proceso_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field62}","stack":[{"text":"{$jslabel contrato cont_secop_enlace }","bold":true},{"text":{$cont_secop_enlace_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field63}","stack":[{"text":"{$jslabel contrato cont_sigep }","bold":true},{"text":{$cont_sigep_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field64}","stack":[{"text":"{$jslabel contrato cont_vigencias_futuras }","bold":true},{"text":{$cont_vigencias_futuras_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field65}","stack":[{"text":"{$jslabel contrato vf_num_autorizacion }","bold":true},{"text":{$vf_num_autorizacion_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field66}","stack":[{"text":"{$jslabel contrato vf_fecha }","bold":true},{"text":{$vf_fecha_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field67}","stack":[{"text":"{$jslabel contrato vf_valor }","bold":true},{"text":{$vf_valor_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c3}
+											],
+				{END row_grid_0}
+					]
+	}
+}
+,
+		
+								
+{
+	table: {
+	
+				
+		location: 'below-grid',
+		
+		
+		widths: [
+								"*", 
+											"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"","hidden":"{$item_hide_edit_save}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_edit_back_list}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_edit_close}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+																			{
+	cellId: 'c2',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":""},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+											],
+					]
+	}
+}
+,
+			]
+}
+  

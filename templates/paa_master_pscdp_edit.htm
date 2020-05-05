@@ -1,0 +1,546 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-edit" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="0"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="edit_header" data-itemid="edit_header" {$item_edit_header} data-pageid="{$pageid}" >{$pagetitlelabel paa_master_pscdp edit}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="0"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<div data-itemtype="edit_message" data-itemid="edit_message" {$item_edit_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN back_button}
+			<button class="btn btn-sm btn-default" {$backbutton_attrs}>Volver a la lista</button>
+	{END back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>Ver</button>
+{END view_page_button}
+</div>
+</div>
+	</div>					</div>
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c2" data-pageid="{$pageid}"	{$cell_above-grid_c2}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="text" data-itemid="text1" {$item_text1} data-pageid="{$pageid}" data-small > 
+	<div class="alert alert-warning">
+                        <strong>Importante!</strong> Para realizar la solicitud de expedición del CDP al grupo administrativa asegúrese que la información se encuentra completa, que los RUBROS Y USOS corresponden, de lo contrario su solicitud será anulada                     </div></span>
+	 
+		<span data-itemtype="text" data-itemid="text2" {$item_text2} data-pageid="{$pageid}" data-small > 
+	<div class="alert alert-warning">
+                        <strong>Importante!</strong> Para realizar la solicitud de expedición del CDP al grupo administrativa asegúrese que la información se encuentra completa, que los RUBROS Y USOS corresponden, de lo contrario su solicitud será anulada                     </div></span>
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="2"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c9}
+<td
+	{$cell_grid_c9}
+	class=" r-ori-vert"
+	
+			data-single
+			
+	ocolspan="2"		data-cellId="grid_c9" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				<span data-itemtype="text" data-itemid="text" {$item_text} data-pageid="{$pageid}" data-small > 
+	<div class="alert alert-warning">
+                        <strong>Importante!</strong> Para realizar la solicitud de expedición del CDP al grupo administrativa asegúrese que la información se encuentra completa, que los RUBROS Y USOS corresponden, de lo contrario su solicitud será anulada                     </div></span>
+	
+								</td>
+			{END cellblock_grid_c9}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c4}
+<td
+	{$cell_grid_c4}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c4" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN PAA_ID_FK_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_PAA_ID_FK}  r-vertical-field" 
+	data-fieldname="PAA_ID_FK" 
+	data-signal-error-for="PAA_ID_FK{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="PAA_ID_FK" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_PAA_ID_FK}">
+		{BEGIN PAA_ID_FK_label}{$label paa_master_pscdp PAA_ID_FK }{END PAA_ID_FK_label}
+	</label>
+	<div class="r-edit-field">
+		{$PAA_ID_FK_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="PAA_ID_FK">
+		<div class="text-muted" >
+		{$tooltip paa_master_pscdp PAA_ID_FK }		</div>
+	</div>
+</div>
+
+
+{END PAA_ID_FK_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c4}
+			 
+																
+
+{BEGIN cellblock_grid_c5}
+<td
+	{$cell_grid_c5}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c5" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN SOL_FECHA_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_SOL_FECHA}  r-vertical-field" 
+	data-fieldname="SOL_FECHA" 
+	data-signal-error-for="SOL_FECHA{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="SOL_FECHA" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_SOL_FECHA}">
+		{BEGIN SOL_FECHA_label}{$label paa_master_pscdp SOL_FECHA }{END SOL_FECHA_label}
+	</label>
+	<div class="r-edit-field">
+		{$SOL_FECHA_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="SOL_FECHA">
+		<div class="text-muted" >
+		{$tooltip paa_master_pscdp SOL_FECHA }		</div>
+	</div>
+</div>
+
+
+{END SOL_FECHA_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c5}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c6}
+<td
+	{$cell_grid_c6}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c6" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN OPERACION_ID_FK_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_OPERACION_ID_FK}  r-vertical-field" 
+	data-fieldname="OPERACION_ID_FK" 
+	data-signal-error-for="OPERACION_ID_FK{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="OPERACION_ID_FK" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_OPERACION_ID_FK}">
+		{BEGIN OPERACION_ID_FK_label}{$label paa_master_pscdp OPERACION_ID_FK }{END OPERACION_ID_FK_label}
+	</label>
+	<div class="r-edit-field">
+		{$OPERACION_ID_FK_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="OPERACION_ID_FK">
+		<div class="text-muted" >
+		{$tooltip paa_master_pscdp OPERACION_ID_FK }		</div>
+	</div>
+</div>
+
+
+{END OPERACION_ID_FK_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c6}
+			 
+																
+
+{BEGIN cellblock_grid_c7}
+<td
+	{$cell_grid_c7}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c7" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN VALOR_SOLICITADO_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_VALOR_SOLICITADO}  r-vertical-field" 
+	data-fieldname="VALOR_SOLICITADO" 
+	data-signal-error-for="VALOR_SOLICITADO{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="VALOR_SOLICITADO" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_VALOR_SOLICITADO}">
+		{BEGIN VALOR_SOLICITADO_label}{$label paa_master_pscdp VALOR_SOLICITADO }{END VALOR_SOLICITADO_label}
+	</label>
+	<div class="r-edit-field">
+		{$VALOR_SOLICITADO_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="VALOR_SOLICITADO">
+		<div class="text-muted" >
+		{$tooltip paa_master_pscdp VALOR_SOLICITADO }		</div>
+	</div>
+</div>
+
+
+{END VALOR_SOLICITADO_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c7}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c11}
+<td
+	{$cell_grid_c11}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c11" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN SOL_DEPENDENCIA_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_SOL_DEPENDENCIA}  r-vertical-field" 
+	data-fieldname="SOL_DEPENDENCIA" 
+	data-signal-error-for="SOL_DEPENDENCIA{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="SOL_DEPENDENCIA" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_SOL_DEPENDENCIA}">
+		{BEGIN SOL_DEPENDENCIA_label}{$label paa_master_pscdp SOL_DEPENDENCIA }{END SOL_DEPENDENCIA_label}
+	</label>
+	<div class="r-edit-field">
+		{$SOL_DEPENDENCIA_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="SOL_DEPENDENCIA">
+		<div class="text-muted" >
+		{$tooltip paa_master_pscdp SOL_DEPENDENCIA }		</div>
+	</div>
+</div>
+
+
+{END SOL_DEPENDENCIA_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c11}
+			 
+																
+
+{BEGIN cellblock_grid_c12}
+<td
+	{$cell_grid_c12}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c12" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN SYS_STATUS_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_SYS_STATUS}  r-vertical-field" 
+	data-fieldname="SYS_STATUS" 
+	data-signal-error-for="SYS_STATUS{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field21" {$item_integrated_edit_field21} data-pageid="{$pageid}" data-field="SYS_STATUS" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_SYS_STATUS}">
+		{BEGIN SYS_STATUS_label}{$label paa_master_pscdp SYS_STATUS }{END SYS_STATUS_label}
+	</label>
+	<div class="r-edit-field">
+		{$SYS_STATUS_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="SYS_STATUS">
+		<div class="text-muted" >
+		{$tooltip paa_master_pscdp SYS_STATUS }		</div>
+	</div>
+</div>
+
+
+{END SYS_STATUS_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c12}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c8}
+<td
+	{$cell_grid_c8}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c8" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN USER_REG_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_USER_REG}  r-vertical-field" 
+	data-fieldname="USER_REG" 
+	data-signal-error-for="USER_REG{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field20" {$item_integrated_edit_field20} data-pageid="{$pageid}" data-field="USER_REG" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_USER_REG}">
+		{BEGIN USER_REG_label}{$label paa_master_pscdp USER_REG }{END USER_REG_label}
+	</label>
+	<div class="r-edit-field">
+		{$USER_REG_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="USER_REG">
+		<div class="text-muted" >
+		{$tooltip paa_master_pscdp USER_REG }		</div>
+	</div>
+</div>
+
+
+{END USER_REG_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c8}
+			 
+																
+
+{BEGIN cellblock_grid_c10}
+<td
+	{$cell_grid_c10}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c10" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN TIPO_SOL_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_TIPO_SOL}  r-vertical-field" 
+	data-fieldname="TIPO_SOL" 
+	data-signal-error-for="TIPO_SOL{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="TIPO_SOL" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_TIPO_SOL}">
+		{BEGIN TIPO_SOL_label}{$label paa_master_pscdp TIPO_SOL }{END TIPO_SOL_label}
+	</label>
+	<div class="r-edit-field">
+		{$TIPO_SOL_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="TIPO_SOL">
+		<div class="text-muted" >
+		{$tooltip paa_master_pscdp TIPO_SOL }		</div>
+	</div>
+</div>
+
+
+{END TIPO_SOL_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c10}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="0"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN save_edit}
+<span data-itemtype="edit_save" data-itemid="edit_save" {$item_edit_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							Guardar			</a>
+</span>
+{END save_edit}
+	 
+		{BEGIN back_button}
+<span data-itemtype="edit_back_list" data-itemid="edit_back_list" {$item_edit_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="edit_close" data-itemid="edit_close" {$item_edit_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$closebutton_attrs} >
+							Cancelar			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-menu-hamburger"></span>
+									<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+								<li data-itemtype="edit_reset" data-itemid="edit_reset" {$item_edit_reset} data-pageid="{$pageid}" data-small >
+				<a  {$resetbutton_attrs}  title="" >
+				
+		Reiniciar		
+		</a>
+	</li>
+							{BEGIN view_page_button}
+	<li data-itemtype="edit_view" data-itemid="edit_view" {$item_edit_view} data-pageid="{$pageid}" data-small >
+				<a  {$view_page_button_attrs}  title="" >
+				
+		Ver		
+		</a>
+	</li>
+{END view_page_button}
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

@@ -1,0 +1,165 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"{$jspagetitlelabel paa_master_usos export}","hidden":"{$item_hide_export_header}","fontSize":30},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+		
+				
+								
+{
+	table: {
+	
+				
+		location: 'grid',
+		
+		
+		widths: [
+								"%", 
+					 ],	
+		
+			heights: [
+								
+			"%",
+			 
+				],
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_export_field2}","text":{$ACT_ID_FK_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field3}","text":{$UEJ_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field4}","text":{$RUBRO_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field8}","text":{$ACTIVIDAD_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field10}","text":{$RECURSOS_SOLICITADOS_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field11}","text":{$FECHA_REG_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field12}","text":{$USER_REG_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field}","text":{$TIPO_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field6}","text":{$EBI_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field7}","text":{$SYS_STATUS_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field1}","text":{$PROYECTO_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field5}","text":{$CATALOGO_PRESUPUESTAL_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field9}","text":{$USO_CONTABILIDAD_A_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field13}","text":{$USO_CONTABILIDAD_B_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field14}","text":{$CATALOGO_PRESUPUESTAL_COD_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+		
+					]
+}
+  

@@ -1,0 +1,327 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"{$jspagetitlelabel contrato export}","hidden":"{$item_hide_export_header}","fontSize":30},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+		
+				
+								
+{
+	table: {
+	
+				
+		location: 'grid',
+		
+		
+		widths: [
+								"%", 
+					 ],	
+		
+			heights: [
+								
+			"%",
+			 
+				],
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_export_field}","text":{$id_cont_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field1}","text":{$cont_hash_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field2}","text":{$cont_nit_contra_ta_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field3}","text":{$cont_paa_id_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field4}","text":{$cont_cesion_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field5}","text":{$cont_estado_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field6}","text":{$prenumero_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field7}","text":{$numregistro_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field8}","text":{$pre_contnumero_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field9}","text":{$contnumero_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field10}","text":{$cont_tipo_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field11}","text":{$cont_ano_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field12}","text":{$cont_codrubro_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field13}","text":{$cont_catalogo_presupuestal_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field14}","text":{$cont_tipopre_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field16}","text":{$cont_fechaapertura_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field17}","text":{$cont_plazoi_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field18}","text":{$cont_fecha_inicio_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field19}","text":{$cont_fechafinal_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field20}","text":{$cont_fechavigencia_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field21}","text":{$cont_periodicidad_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field22}","text":{$cont_informessug_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field23}","text":{$cont_otrosi_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field24}","text":{$cont_otrosi_type_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field25}","text":{$cont_valorant_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field26}","text":{$cont_valorinicial_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field27}","text":{$cont_valormensual_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field28}","text":{$cont_valoradic_fecha_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field29}","text":{$cont_valoradic_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field30}","text":{$cont_valorreduc_fecha_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field31}","text":{$cont_valorreduc_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field32}","text":{$cont_valorvigente_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field33}","text":{$cont_valors_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field34}","text":{$cont_lugar_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field35}","text":{$cont_modalidad_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field36}","text":{$cont_objeto_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field37}","text":{$cont_region_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field38}","text":{$cont_requactaliq_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field39}","text":{$cont_plazol_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field40}","text":{$cont_tipoproceso_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field41}","text":{$cont_formapago_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field47}","text":{$cont_fechasistema_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field49}","text":{$cont_acta_liquidacion_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field50}","text":{$cont_excluir_notificacion_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field15}","text":{$cont_unspsc_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field42}","text":{$cont_tipo_rubro_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field43}","text":{$cont_reg_sigep_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field44}","text":{$cont_valormensual_base_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field45}","text":{$cont_valormensual_iva_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field46}","text":{$cont_tipoc_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field48}","text":{$cont_causalc_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field51}","text":{$cont_funcion_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field52}","text":{$cesion_estado_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field53}","text":{$cont_fecha_aprobgarantia_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field54}","text":{$cont_afilia_arl_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field55}","text":{$cont_depsup_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field56}","text":{$cont_dep_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field57}","text":{$cont_lugar_prestacion_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field58}","text":{$cont_obligaciones_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field59}","text":{$cont_plazo_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field60}","text":{$cont_tipo_regimen_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field61}","text":{$cont_fecha_firma_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field62}","text":{$cont_secop_proceso_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field63}","text":{$cont_secop_enlace_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field64}","text":{$cont_sigep_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field65}","text":{$cont_vigencias_futuras_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field66}","text":{$vf_num_autorizacion_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field67}","text":{$vf_fecha_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field68}","text":{$vf_valor_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+		
+					]
+}
+  

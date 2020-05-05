@@ -1,0 +1,5 @@
+
+Runner.buttonEvents["gen_scdp_nopaa"]=function(pageObj,proxy,pageid){pageObj.buttonNames[pageObj.buttonNames.length]='gen_scdp_nopaa';if(!pageObj.buttonEventBefore['gen_scdp_nopaa']){pageObj.buttonEventBefore['gen_scdp_nopaa']=function(params,ctrl,pageObj,proxy,pageid,rowData,row,submit){var ajax=ctrl;}}
+if(!pageObj.buttonEventAfter['gen_scdp_nopaa']){pageObj.buttonEventAfter['gen_scdp_nopaa']=function(result,ctrl,pageObj,proxy,pageid,rowData,row,params){var ajax=ctrl;var win=Runner.displayPopup({url:'http://servicios.mincit.gov.co/gestion/_genpdf/mpdf60/mod/_no_paa.php?PAA_ID_FK='+result["PAA_ID_FK"],width:960,height:600,header:'SCDP'});}}
+$('a[id="gen_scdp_nopaa"]').each(function(){if($(this).closest('.gridRowAdd').length){return;}
+this.id="gen_scdp_nopaa"+"_"+Runner.genId();var button_gen_scdp_nopaa=new Runner.form.Button({id:this.id,btnName:"gen_scdp_nopaa"});button_gen_scdp_nopaa.init({args:[pageObj,proxy,pageid]});});};

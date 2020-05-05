@@ -1,0 +1,1724 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-add" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="add_header" data-itemid="add_header" {$item_add_header} data-pageid="{$pageid}" >{$pagetitlelabel contrato add}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		{BEGIN message_block}
+<div data-itemtype="add_message" data-itemid="add_message" {$item_add_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN back_button}
+		
+	<button class="btn btn-sm btn-default" {$backbutton_attrs}>Volver a la lista</button>
+	{END back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>Ver</button>
+{END view_page_button}
+{BEGIN edit_page_button}
+	<button class="btn btn-sm btn-default" {$edit_page_button_attrs}>Editar</button>
+{END edit_page_button}
+</div>
+</div>
+{END message_block}	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN cont_hash_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_hash}  r-vertical-field" 
+	data-fieldname="cont_hash" 
+	data-signal-error-for="cont_hash{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="cont_hash" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_hash}">
+		{BEGIN cont_hash_label}{$label contrato cont_hash }{END cont_hash_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_hash_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_hash">
+		<div class="text-muted" >
+		{$tooltip contrato cont_hash }		</div>
+	</div>
+</div>
+
+
+{END cont_hash_fieldblock}
+											
+{BEGIN cont_nit_contra_ta_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_nit_contra_ta}  r-vertical-field" 
+	data-fieldname="cont_nit_contra_ta" 
+	data-signal-error-for="cont_nit_contra_ta{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="cont_nit_contra_ta" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_nit_contra_ta}">
+		{BEGIN cont_nit_contra_ta_label}{$label contrato cont_nit_contra_ta }{END cont_nit_contra_ta_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_nit_contra_ta_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_nit_contra_ta">
+		<div class="text-muted" >
+		{$tooltip contrato cont_nit_contra_ta }		</div>
+	</div>
+</div>
+
+
+{END cont_nit_contra_ta_fieldblock}
+											
+{BEGIN cont_codrubro_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_codrubro}  r-vertical-field" 
+	data-fieldname="cont_codrubro" 
+	data-signal-error-for="cont_codrubro{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="cont_codrubro" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_codrubro}">
+		{BEGIN cont_codrubro_label}{$label contrato cont_codrubro }{END cont_codrubro_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_codrubro_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_codrubro">
+		<div class="text-muted" >
+		{$tooltip contrato cont_codrubro }		</div>
+	</div>
+</div>
+
+
+{END cont_codrubro_fieldblock}
+											
+{BEGIN cont_paa_id_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_paa_id}  r-vertical-field" 
+	data-fieldname="cont_paa_id" 
+	data-signal-error-for="cont_paa_id{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="cont_paa_id" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_paa_id}">
+		{BEGIN cont_paa_id_label}{$label contrato cont_paa_id }{END cont_paa_id_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_paa_id_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_paa_id">
+		<div class="text-muted" >
+		{$tooltip contrato cont_paa_id }		</div>
+	</div>
+</div>
+
+
+{END cont_paa_id_fieldblock}
+											
+{BEGIN cont_cesion_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_cesion}  r-vertical-field" 
+	data-fieldname="cont_cesion" 
+	data-signal-error-for="cont_cesion{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="cont_cesion" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_cesion}">
+		{BEGIN cont_cesion_label}{$label contrato cont_cesion }{END cont_cesion_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_cesion_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_cesion">
+		<div class="text-muted" >
+		{$tooltip contrato cont_cesion }		</div>
+	</div>
+</div>
+
+
+{END cont_cesion_fieldblock}
+											
+{BEGIN cont_estado_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_estado}  r-vertical-field" 
+	data-fieldname="cont_estado" 
+	data-signal-error-for="cont_estado{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="cont_estado" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_estado}">
+		{BEGIN cont_estado_label}{$label contrato cont_estado }{END cont_estado_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_estado_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_estado">
+		<div class="text-muted" >
+		{$tooltip contrato cont_estado }		</div>
+	</div>
+</div>
+
+
+{END cont_estado_fieldblock}
+											
+{BEGIN prenumero_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_prenumero}  r-vertical-field" 
+	data-fieldname="prenumero" 
+	data-signal-error-for="prenumero{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="prenumero" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_prenumero}">
+		{BEGIN prenumero_label}{$label contrato prenumero }{END prenumero_label}
+	</label>
+	<div class="r-edit-field">
+		{$prenumero_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="prenumero">
+		<div class="text-muted" >
+		{$tooltip contrato prenumero }		</div>
+	</div>
+</div>
+
+
+{END prenumero_fieldblock}
+											
+{BEGIN numregistro_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_numregistro}  r-vertical-field" 
+	data-fieldname="numregistro" 
+	data-signal-error-for="numregistro{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="numregistro" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_numregistro}">
+		{BEGIN numregistro_label}{$label contrato numregistro }{END numregistro_label}
+	</label>
+	<div class="r-edit-field">
+		{$numregistro_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="numregistro">
+		<div class="text-muted" >
+		{$tooltip contrato numregistro }		</div>
+	</div>
+</div>
+
+
+{END numregistro_fieldblock}
+											
+{BEGIN pre_contnumero_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_pre_contnumero}  r-vertical-field" 
+	data-fieldname="pre_contnumero" 
+	data-signal-error-for="pre_contnumero{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="pre_contnumero" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_pre_contnumero}">
+		{BEGIN pre_contnumero_label}{$label contrato pre_contnumero }{END pre_contnumero_label}
+	</label>
+	<div class="r-edit-field">
+		{$pre_contnumero_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="pre_contnumero">
+		<div class="text-muted" >
+		{$tooltip contrato pre_contnumero }		</div>
+	</div>
+</div>
+
+
+{END pre_contnumero_fieldblock}
+											
+{BEGIN contnumero_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contnumero}  r-vertical-field" 
+	data-fieldname="contnumero" 
+	data-signal-error-for="contnumero{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="contnumero" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_contnumero}">
+		{BEGIN contnumero_label}{$label contrato contnumero }{END contnumero_label}
+	</label>
+	<div class="r-edit-field">
+		{$contnumero_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="contnumero">
+		<div class="text-muted" >
+		{$tooltip contrato contnumero }		</div>
+	</div>
+</div>
+
+
+{END contnumero_fieldblock}
+											
+{BEGIN cont_tipo_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_tipo}  r-vertical-field" 
+	data-fieldname="cont_tipo" 
+	data-signal-error-for="cont_tipo{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="cont_tipo" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_tipo}">
+		{BEGIN cont_tipo_label}{$label contrato cont_tipo }{END cont_tipo_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_tipo_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_tipo">
+		<div class="text-muted" >
+		{$tooltip contrato cont_tipo }		</div>
+	</div>
+</div>
+
+
+{END cont_tipo_fieldblock}
+											
+{BEGIN cont_ano_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_ano}  r-vertical-field" 
+	data-fieldname="cont_ano" 
+	data-signal-error-for="cont_ano{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="cont_ano" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_ano}">
+		{BEGIN cont_ano_label}{$label contrato cont_ano }{END cont_ano_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_ano_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_ano">
+		<div class="text-muted" >
+		{$tooltip contrato cont_ano }		</div>
+	</div>
+</div>
+
+
+{END cont_ano_fieldblock}
+											
+{BEGIN cont_catalogo_presupuestal_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_catalogo_presupuestal}  r-vertical-field" 
+	data-fieldname="cont_catalogo_presupuestal" 
+	data-signal-error-for="cont_catalogo_presupuestal{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="cont_catalogo_presupuestal" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_catalogo_presupuestal}">
+		{BEGIN cont_catalogo_presupuestal_label}{$label contrato cont_catalogo_presupuestal }{END cont_catalogo_presupuestal_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_catalogo_presupuestal_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_catalogo_presupuestal">
+		<div class="text-muted" >
+		{$tooltip contrato cont_catalogo_presupuestal }		</div>
+	</div>
+</div>
+
+
+{END cont_catalogo_presupuestal_fieldblock}
+											
+{BEGIN cont_tipopre_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_tipopre}  r-vertical-field" 
+	data-fieldname="cont_tipopre" 
+	data-signal-error-for="cont_tipopre{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="cont_tipopre" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_tipopre}">
+		{BEGIN cont_tipopre_label}{$label contrato cont_tipopre }{END cont_tipopre_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_tipopre_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_tipopre">
+		<div class="text-muted" >
+		{$tooltip contrato cont_tipopre }		</div>
+	</div>
+</div>
+
+
+{END cont_tipopre_fieldblock}
+											
+{BEGIN cont_fechaapertura_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_fechaapertura}  r-vertical-field" 
+	data-fieldname="cont_fechaapertura" 
+	data-signal-error-for="cont_fechaapertura{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field15" {$item_integrated_edit_field15} data-pageid="{$pageid}" data-field="cont_fechaapertura" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_fechaapertura}">
+		{BEGIN cont_fechaapertura_label}{$label contrato cont_fechaapertura }{END cont_fechaapertura_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_fechaapertura_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_fechaapertura">
+		<div class="text-muted" >
+		{$tooltip contrato cont_fechaapertura }		</div>
+	</div>
+</div>
+
+
+{END cont_fechaapertura_fieldblock}
+											
+{BEGIN cont_plazoi_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_plazoi}  r-vertical-field" 
+	data-fieldname="cont_plazoi" 
+	data-signal-error-for="cont_plazoi{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field16" {$item_integrated_edit_field16} data-pageid="{$pageid}" data-field="cont_plazoi" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_plazoi}">
+		{BEGIN cont_plazoi_label}{$label contrato cont_plazoi }{END cont_plazoi_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_plazoi_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_plazoi">
+		<div class="text-muted" >
+		{$tooltip contrato cont_plazoi }		</div>
+	</div>
+</div>
+
+
+{END cont_plazoi_fieldblock}
+											
+{BEGIN cont_fecha_inicio_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_fecha_inicio}  r-vertical-field" 
+	data-fieldname="cont_fecha_inicio" 
+	data-signal-error-for="cont_fecha_inicio{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field17" {$item_integrated_edit_field17} data-pageid="{$pageid}" data-field="cont_fecha_inicio" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_fecha_inicio}">
+		{BEGIN cont_fecha_inicio_label}{$label contrato cont_fecha_inicio }{END cont_fecha_inicio_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_fecha_inicio_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_fecha_inicio">
+		<div class="text-muted" >
+		{$tooltip contrato cont_fecha_inicio }		</div>
+	</div>
+</div>
+
+
+{END cont_fecha_inicio_fieldblock}
+											
+{BEGIN cont_fechafinal_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_fechafinal}  r-vertical-field" 
+	data-fieldname="cont_fechafinal" 
+	data-signal-error-for="cont_fechafinal{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field18" {$item_integrated_edit_field18} data-pageid="{$pageid}" data-field="cont_fechafinal" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_fechafinal}">
+		{BEGIN cont_fechafinal_label}{$label contrato cont_fechafinal }{END cont_fechafinal_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_fechafinal_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_fechafinal">
+		<div class="text-muted" >
+		{$tooltip contrato cont_fechafinal }		</div>
+	</div>
+</div>
+
+
+{END cont_fechafinal_fieldblock}
+											
+{BEGIN cont_fechavigencia_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_fechavigencia}  r-vertical-field" 
+	data-fieldname="cont_fechavigencia" 
+	data-signal-error-for="cont_fechavigencia{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field19" {$item_integrated_edit_field19} data-pageid="{$pageid}" data-field="cont_fechavigencia" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_fechavigencia}">
+		{BEGIN cont_fechavigencia_label}{$label contrato cont_fechavigencia }{END cont_fechavigencia_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_fechavigencia_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_fechavigencia">
+		<div class="text-muted" >
+		{$tooltip contrato cont_fechavigencia }		</div>
+	</div>
+</div>
+
+
+{END cont_fechavigencia_fieldblock}
+											
+{BEGIN cont_periodicidad_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_periodicidad}  r-vertical-field" 
+	data-fieldname="cont_periodicidad" 
+	data-signal-error-for="cont_periodicidad{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field20" {$item_integrated_edit_field20} data-pageid="{$pageid}" data-field="cont_periodicidad" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_periodicidad}">
+		{BEGIN cont_periodicidad_label}{$label contrato cont_periodicidad }{END cont_periodicidad_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_periodicidad_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_periodicidad">
+		<div class="text-muted" >
+		{$tooltip contrato cont_periodicidad }		</div>
+	</div>
+</div>
+
+
+{END cont_periodicidad_fieldblock}
+											
+{BEGIN cont_informessug_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_informessug}  r-vertical-field" 
+	data-fieldname="cont_informessug" 
+	data-signal-error-for="cont_informessug{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field21" {$item_integrated_edit_field21} data-pageid="{$pageid}" data-field="cont_informessug" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_informessug}">
+		{BEGIN cont_informessug_label}{$label contrato cont_informessug }{END cont_informessug_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_informessug_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_informessug">
+		<div class="text-muted" >
+		{$tooltip contrato cont_informessug }		</div>
+	</div>
+</div>
+
+
+{END cont_informessug_fieldblock}
+											
+{BEGIN cont_otrosi_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_otrosi}  r-vertical-field" 
+	data-fieldname="cont_otrosi" 
+	data-signal-error-for="cont_otrosi{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field22" {$item_integrated_edit_field22} data-pageid="{$pageid}" data-field="cont_otrosi" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_otrosi}">
+		{BEGIN cont_otrosi_label}{$label contrato cont_otrosi }{END cont_otrosi_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_otrosi_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_otrosi">
+		<div class="text-muted" >
+		{$tooltip contrato cont_otrosi }		</div>
+	</div>
+</div>
+
+
+{END cont_otrosi_fieldblock}
+											
+{BEGIN cont_otrosi_type_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_otrosi_type}  r-vertical-field" 
+	data-fieldname="cont_otrosi_type" 
+	data-signal-error-for="cont_otrosi_type{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field23" {$item_integrated_edit_field23} data-pageid="{$pageid}" data-field="cont_otrosi_type" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_otrosi_type}">
+		{BEGIN cont_otrosi_type_label}{$label contrato cont_otrosi_type }{END cont_otrosi_type_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_otrosi_type_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_otrosi_type">
+		<div class="text-muted" >
+		{$tooltip contrato cont_otrosi_type }		</div>
+	</div>
+</div>
+
+
+{END cont_otrosi_type_fieldblock}
+											
+{BEGIN cont_valorant_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_valorant}  r-vertical-field" 
+	data-fieldname="cont_valorant" 
+	data-signal-error-for="cont_valorant{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field24" {$item_integrated_edit_field24} data-pageid="{$pageid}" data-field="cont_valorant" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_valorant}">
+		{BEGIN cont_valorant_label}{$label contrato cont_valorant }{END cont_valorant_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_valorant_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_valorant">
+		<div class="text-muted" >
+		{$tooltip contrato cont_valorant }		</div>
+	</div>
+</div>
+
+
+{END cont_valorant_fieldblock}
+											
+{BEGIN cont_valorinicial_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_valorinicial}  r-vertical-field" 
+	data-fieldname="cont_valorinicial" 
+	data-signal-error-for="cont_valorinicial{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field25" {$item_integrated_edit_field25} data-pageid="{$pageid}" data-field="cont_valorinicial" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_valorinicial}">
+		{BEGIN cont_valorinicial_label}{$label contrato cont_valorinicial }{END cont_valorinicial_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_valorinicial_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_valorinicial">
+		<div class="text-muted" >
+		{$tooltip contrato cont_valorinicial }		</div>
+	</div>
+</div>
+
+
+{END cont_valorinicial_fieldblock}
+											
+{BEGIN cont_valormensual_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_valormensual}  r-vertical-field" 
+	data-fieldname="cont_valormensual" 
+	data-signal-error-for="cont_valormensual{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field26" {$item_integrated_edit_field26} data-pageid="{$pageid}" data-field="cont_valormensual" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_valormensual}">
+		{BEGIN cont_valormensual_label}{$label contrato cont_valormensual }{END cont_valormensual_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_valormensual_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_valormensual">
+		<div class="text-muted" >
+		{$tooltip contrato cont_valormensual }		</div>
+	</div>
+</div>
+
+
+{END cont_valormensual_fieldblock}
+											
+{BEGIN cont_valoradic_fecha_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_valoradic_fecha}  r-vertical-field" 
+	data-fieldname="cont_valoradic_fecha" 
+	data-signal-error-for="cont_valoradic_fecha{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field27" {$item_integrated_edit_field27} data-pageid="{$pageid}" data-field="cont_valoradic_fecha" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_valoradic_fecha}">
+		{BEGIN cont_valoradic_fecha_label}{$label contrato cont_valoradic_fecha }{END cont_valoradic_fecha_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_valoradic_fecha_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_valoradic_fecha">
+		<div class="text-muted" >
+		{$tooltip contrato cont_valoradic_fecha }		</div>
+	</div>
+</div>
+
+
+{END cont_valoradic_fecha_fieldblock}
+											
+{BEGIN cont_valoradic_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_valoradic}  r-vertical-field" 
+	data-fieldname="cont_valoradic" 
+	data-signal-error-for="cont_valoradic{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field28" {$item_integrated_edit_field28} data-pageid="{$pageid}" data-field="cont_valoradic" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_valoradic}">
+		{BEGIN cont_valoradic_label}{$label contrato cont_valoradic }{END cont_valoradic_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_valoradic_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_valoradic">
+		<div class="text-muted" >
+		{$tooltip contrato cont_valoradic }		</div>
+	</div>
+</div>
+
+
+{END cont_valoradic_fieldblock}
+											
+{BEGIN cont_valorreduc_fecha_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_valorreduc_fecha}  r-vertical-field" 
+	data-fieldname="cont_valorreduc_fecha" 
+	data-signal-error-for="cont_valorreduc_fecha{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field29" {$item_integrated_edit_field29} data-pageid="{$pageid}" data-field="cont_valorreduc_fecha" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_valorreduc_fecha}">
+		{BEGIN cont_valorreduc_fecha_label}{$label contrato cont_valorreduc_fecha }{END cont_valorreduc_fecha_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_valorreduc_fecha_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_valorreduc_fecha">
+		<div class="text-muted" >
+		{$tooltip contrato cont_valorreduc_fecha }		</div>
+	</div>
+</div>
+
+
+{END cont_valorreduc_fecha_fieldblock}
+											
+{BEGIN cont_valorreduc_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_valorreduc}  r-vertical-field" 
+	data-fieldname="cont_valorreduc" 
+	data-signal-error-for="cont_valorreduc{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field30" {$item_integrated_edit_field30} data-pageid="{$pageid}" data-field="cont_valorreduc" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_valorreduc}">
+		{BEGIN cont_valorreduc_label}{$label contrato cont_valorreduc }{END cont_valorreduc_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_valorreduc_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_valorreduc">
+		<div class="text-muted" >
+		{$tooltip contrato cont_valorreduc }		</div>
+	</div>
+</div>
+
+
+{END cont_valorreduc_fieldblock}
+											
+{BEGIN cont_valorvigente_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_valorvigente}  r-vertical-field" 
+	data-fieldname="cont_valorvigente" 
+	data-signal-error-for="cont_valorvigente{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field31" {$item_integrated_edit_field31} data-pageid="{$pageid}" data-field="cont_valorvigente" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_valorvigente}">
+		{BEGIN cont_valorvigente_label}{$label contrato cont_valorvigente }{END cont_valorvigente_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_valorvigente_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_valorvigente">
+		<div class="text-muted" >
+		{$tooltip contrato cont_valorvigente }		</div>
+	</div>
+</div>
+
+
+{END cont_valorvigente_fieldblock}
+											
+{BEGIN cont_valors_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_valors}  r-vertical-field" 
+	data-fieldname="cont_valors" 
+	data-signal-error-for="cont_valors{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field32" {$item_integrated_edit_field32} data-pageid="{$pageid}" data-field="cont_valors" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_valors}">
+		{BEGIN cont_valors_label}{$label contrato cont_valors }{END cont_valors_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_valors_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_valors">
+		<div class="text-muted" >
+		{$tooltip contrato cont_valors }		</div>
+	</div>
+</div>
+
+
+{END cont_valors_fieldblock}
+											
+{BEGIN cont_lugar_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_lugar}  r-vertical-field" 
+	data-fieldname="cont_lugar" 
+	data-signal-error-for="cont_lugar{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field33" {$item_integrated_edit_field33} data-pageid="{$pageid}" data-field="cont_lugar" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_lugar}">
+		{BEGIN cont_lugar_label}{$label contrato cont_lugar }{END cont_lugar_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_lugar_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_lugar">
+		<div class="text-muted" >
+		{$tooltip contrato cont_lugar }		</div>
+	</div>
+</div>
+
+
+{END cont_lugar_fieldblock}
+											
+{BEGIN cont_modalidad_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_modalidad}  r-vertical-field" 
+	data-fieldname="cont_modalidad" 
+	data-signal-error-for="cont_modalidad{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field34" {$item_integrated_edit_field34} data-pageid="{$pageid}" data-field="cont_modalidad" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_modalidad}">
+		{BEGIN cont_modalidad_label}{$label contrato cont_modalidad }{END cont_modalidad_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_modalidad_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_modalidad">
+		<div class="text-muted" >
+		{$tooltip contrato cont_modalidad }		</div>
+	</div>
+</div>
+
+
+{END cont_modalidad_fieldblock}
+											
+{BEGIN cont_objeto_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_objeto}  r-vertical-field" 
+	data-fieldname="cont_objeto" 
+	data-signal-error-for="cont_objeto{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field35" {$item_integrated_edit_field35} data-pageid="{$pageid}" data-field="cont_objeto" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_objeto}">
+		{BEGIN cont_objeto_label}{$label contrato cont_objeto }{END cont_objeto_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_objeto_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_objeto">
+		<div class="text-muted" >
+		{$tooltip contrato cont_objeto }		</div>
+	</div>
+</div>
+
+
+{END cont_objeto_fieldblock}
+											
+{BEGIN cont_region_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_region}  r-vertical-field" 
+	data-fieldname="cont_region" 
+	data-signal-error-for="cont_region{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field36" {$item_integrated_edit_field36} data-pageid="{$pageid}" data-field="cont_region" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_region}">
+		{BEGIN cont_region_label}{$label contrato cont_region }{END cont_region_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_region_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_region">
+		<div class="text-muted" >
+		{$tooltip contrato cont_region }		</div>
+	</div>
+</div>
+
+
+{END cont_region_fieldblock}
+											
+{BEGIN cont_requactaliq_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_requactaliq}  r-vertical-field" 
+	data-fieldname="cont_requactaliq" 
+	data-signal-error-for="cont_requactaliq{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field37" {$item_integrated_edit_field37} data-pageid="{$pageid}" data-field="cont_requactaliq" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_requactaliq}">
+		{BEGIN cont_requactaliq_label}{$label contrato cont_requactaliq }{END cont_requactaliq_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_requactaliq_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_requactaliq">
+		<div class="text-muted" >
+		{$tooltip contrato cont_requactaliq }		</div>
+	</div>
+</div>
+
+
+{END cont_requactaliq_fieldblock}
+											
+{BEGIN cont_plazol_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_plazol}  r-vertical-field" 
+	data-fieldname="cont_plazol" 
+	data-signal-error-for="cont_plazol{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field38" {$item_integrated_edit_field38} data-pageid="{$pageid}" data-field="cont_plazol" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_plazol}">
+		{BEGIN cont_plazol_label}{$label contrato cont_plazol }{END cont_plazol_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_plazol_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_plazol">
+		<div class="text-muted" >
+		{$tooltip contrato cont_plazol }		</div>
+	</div>
+</div>
+
+
+{END cont_plazol_fieldblock}
+											
+{BEGIN cont_tipoproceso_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_tipoproceso}  r-vertical-field" 
+	data-fieldname="cont_tipoproceso" 
+	data-signal-error-for="cont_tipoproceso{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field39" {$item_integrated_edit_field39} data-pageid="{$pageid}" data-field="cont_tipoproceso" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_tipoproceso}">
+		{BEGIN cont_tipoproceso_label}{$label contrato cont_tipoproceso }{END cont_tipoproceso_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_tipoproceso_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_tipoproceso">
+		<div class="text-muted" >
+		{$tooltip contrato cont_tipoproceso }		</div>
+	</div>
+</div>
+
+
+{END cont_tipoproceso_fieldblock}
+											
+{BEGIN cont_formapago_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_formapago}  r-vertical-field" 
+	data-fieldname="cont_formapago" 
+	data-signal-error-for="cont_formapago{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field40" {$item_integrated_edit_field40} data-pageid="{$pageid}" data-field="cont_formapago" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_formapago}">
+		{BEGIN cont_formapago_label}{$label contrato cont_formapago }{END cont_formapago_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_formapago_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_formapago">
+		<div class="text-muted" >
+		{$tooltip contrato cont_formapago }		</div>
+	</div>
+</div>
+
+
+{END cont_formapago_fieldblock}
+											
+{BEGIN cont_fechasistema_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_fechasistema}  r-vertical-field" 
+	data-fieldname="cont_fechasistema" 
+	data-signal-error-for="cont_fechasistema{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field46" {$item_integrated_edit_field46} data-pageid="{$pageid}" data-field="cont_fechasistema" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_fechasistema}">
+		{BEGIN cont_fechasistema_label}{$label contrato cont_fechasistema }{END cont_fechasistema_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_fechasistema_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_fechasistema">
+		<div class="text-muted" >
+		{$tooltip contrato cont_fechasistema }		</div>
+	</div>
+</div>
+
+
+{END cont_fechasistema_fieldblock}
+											
+{BEGIN cont_acta_liquidacion_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_acta_liquidacion}  r-vertical-field" 
+	data-fieldname="cont_acta_liquidacion" 
+	data-signal-error-for="cont_acta_liquidacion{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field48" {$item_integrated_edit_field48} data-pageid="{$pageid}" data-field="cont_acta_liquidacion" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_acta_liquidacion}">
+		{BEGIN cont_acta_liquidacion_label}{$label contrato cont_acta_liquidacion }{END cont_acta_liquidacion_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_acta_liquidacion_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_acta_liquidacion">
+		<div class="text-muted" >
+		{$tooltip contrato cont_acta_liquidacion }		</div>
+	</div>
+</div>
+
+
+{END cont_acta_liquidacion_fieldblock}
+											
+{BEGIN cont_excluir_notificacion_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_excluir_notificacion}  r-vertical-field" 
+	data-fieldname="cont_excluir_notificacion" 
+	data-signal-error-for="cont_excluir_notificacion{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field49" {$item_integrated_edit_field49} data-pageid="{$pageid}" data-field="cont_excluir_notificacion" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_excluir_notificacion}">
+		{BEGIN cont_excluir_notificacion_label}{$label contrato cont_excluir_notificacion }{END cont_excluir_notificacion_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_excluir_notificacion_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_excluir_notificacion">
+		<div class="text-muted" >
+		{$tooltip contrato cont_excluir_notificacion }		</div>
+	</div>
+</div>
+
+
+{END cont_excluir_notificacion_fieldblock}
+											
+{BEGIN cont_unspsc_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_unspsc}  r-vertical-field" 
+	data-fieldname="cont_unspsc" 
+	data-signal-error-for="cont_unspsc{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="cont_unspsc" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_unspsc}">
+		{BEGIN cont_unspsc_label}{$label contrato cont_unspsc }{END cont_unspsc_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_unspsc_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_unspsc">
+		<div class="text-muted" >
+		{$tooltip contrato cont_unspsc }		</div>
+	</div>
+</div>
+
+
+{END cont_unspsc_fieldblock}
+											
+{BEGIN cont_tipo_rubro_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_tipo_rubro}  r-vertical-field" 
+	data-fieldname="cont_tipo_rubro" 
+	data-signal-error-for="cont_tipo_rubro{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field41" {$item_integrated_edit_field41} data-pageid="{$pageid}" data-field="cont_tipo_rubro" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_tipo_rubro}">
+		{BEGIN cont_tipo_rubro_label}{$label contrato cont_tipo_rubro }{END cont_tipo_rubro_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_tipo_rubro_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_tipo_rubro">
+		<div class="text-muted" >
+		{$tooltip contrato cont_tipo_rubro }		</div>
+	</div>
+</div>
+
+
+{END cont_tipo_rubro_fieldblock}
+											
+{BEGIN cont_reg_sigep_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_reg_sigep}  r-vertical-field" 
+	data-fieldname="cont_reg_sigep" 
+	data-signal-error-for="cont_reg_sigep{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field42" {$item_integrated_edit_field42} data-pageid="{$pageid}" data-field="cont_reg_sigep" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_reg_sigep}">
+		{BEGIN cont_reg_sigep_label}{$label contrato cont_reg_sigep }{END cont_reg_sigep_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_reg_sigep_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_reg_sigep">
+		<div class="text-muted" >
+		{$tooltip contrato cont_reg_sigep }		</div>
+	</div>
+</div>
+
+
+{END cont_reg_sigep_fieldblock}
+											
+{BEGIN cont_valormensual_base_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_valormensual_base}  r-vertical-field" 
+	data-fieldname="cont_valormensual_base" 
+	data-signal-error-for="cont_valormensual_base{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field43" {$item_integrated_edit_field43} data-pageid="{$pageid}" data-field="cont_valormensual_base" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_valormensual_base}">
+		{BEGIN cont_valormensual_base_label}{$label contrato cont_valormensual_base }{END cont_valormensual_base_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_valormensual_base_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_valormensual_base">
+		<div class="text-muted" >
+		{$tooltip contrato cont_valormensual_base }		</div>
+	</div>
+</div>
+
+
+{END cont_valormensual_base_fieldblock}
+											
+{BEGIN cont_valormensual_iva_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_valormensual_iva}  r-vertical-field" 
+	data-fieldname="cont_valormensual_iva" 
+	data-signal-error-for="cont_valormensual_iva{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field44" {$item_integrated_edit_field44} data-pageid="{$pageid}" data-field="cont_valormensual_iva" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_valormensual_iva}">
+		{BEGIN cont_valormensual_iva_label}{$label contrato cont_valormensual_iva }{END cont_valormensual_iva_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_valormensual_iva_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_valormensual_iva">
+		<div class="text-muted" >
+		{$tooltip contrato cont_valormensual_iva }		</div>
+	</div>
+</div>
+
+
+{END cont_valormensual_iva_fieldblock}
+											
+{BEGIN cont_tipoc_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_tipoc}  r-vertical-field" 
+	data-fieldname="cont_tipoc" 
+	data-signal-error-for="cont_tipoc{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field45" {$item_integrated_edit_field45} data-pageid="{$pageid}" data-field="cont_tipoc" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_tipoc}">
+		{BEGIN cont_tipoc_label}{$label contrato cont_tipoc }{END cont_tipoc_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_tipoc_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_tipoc">
+		<div class="text-muted" >
+		{$tooltip contrato cont_tipoc }		</div>
+	</div>
+</div>
+
+
+{END cont_tipoc_fieldblock}
+											
+{BEGIN cont_causalc_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_causalc}  r-vertical-field" 
+	data-fieldname="cont_causalc" 
+	data-signal-error-for="cont_causalc{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field47" {$item_integrated_edit_field47} data-pageid="{$pageid}" data-field="cont_causalc" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_causalc}">
+		{BEGIN cont_causalc_label}{$label contrato cont_causalc }{END cont_causalc_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_causalc_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_causalc">
+		<div class="text-muted" >
+		{$tooltip contrato cont_causalc }		</div>
+	</div>
+</div>
+
+
+{END cont_causalc_fieldblock}
+											
+{BEGIN cont_funcion_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_funcion}  r-vertical-field" 
+	data-fieldname="cont_funcion" 
+	data-signal-error-for="cont_funcion{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field50" {$item_integrated_edit_field50} data-pageid="{$pageid}" data-field="cont_funcion" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_funcion}">
+		{BEGIN cont_funcion_label}{$label contrato cont_funcion }{END cont_funcion_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_funcion_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_funcion">
+		<div class="text-muted" >
+		{$tooltip contrato cont_funcion }		</div>
+	</div>
+</div>
+
+
+{END cont_funcion_fieldblock}
+											
+{BEGIN cesion_estado_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cesion_estado}  r-vertical-field" 
+	data-fieldname="cesion_estado" 
+	data-signal-error-for="cesion_estado{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field51" {$item_integrated_edit_field51} data-pageid="{$pageid}" data-field="cesion_estado" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cesion_estado}">
+		{BEGIN cesion_estado_label}{$label contrato cesion_estado }{END cesion_estado_label}
+	</label>
+	<div class="r-edit-field">
+		{$cesion_estado_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cesion_estado">
+		<div class="text-muted" >
+		{$tooltip contrato cesion_estado }		</div>
+	</div>
+</div>
+
+
+{END cesion_estado_fieldblock}
+											
+{BEGIN cont_fecha_aprobgarantia_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_fecha_aprobgarantia}  r-vertical-field" 
+	data-fieldname="cont_fecha_aprobgarantia" 
+	data-signal-error-for="cont_fecha_aprobgarantia{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field52" {$item_integrated_edit_field52} data-pageid="{$pageid}" data-field="cont_fecha_aprobgarantia" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_fecha_aprobgarantia}">
+		{BEGIN cont_fecha_aprobgarantia_label}{$label contrato cont_fecha_aprobgarantia }{END cont_fecha_aprobgarantia_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_fecha_aprobgarantia_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_fecha_aprobgarantia">
+		<div class="text-muted" >
+		{$tooltip contrato cont_fecha_aprobgarantia }		</div>
+	</div>
+</div>
+
+
+{END cont_fecha_aprobgarantia_fieldblock}
+											
+{BEGIN cont_afilia_arl_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_afilia_arl}  r-vertical-field" 
+	data-fieldname="cont_afilia_arl" 
+	data-signal-error-for="cont_afilia_arl{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field53" {$item_integrated_edit_field53} data-pageid="{$pageid}" data-field="cont_afilia_arl" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_afilia_arl}">
+		{BEGIN cont_afilia_arl_label}{$label contrato cont_afilia_arl }{END cont_afilia_arl_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_afilia_arl_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_afilia_arl">
+		<div class="text-muted" >
+		{$tooltip contrato cont_afilia_arl }		</div>
+	</div>
+</div>
+
+
+{END cont_afilia_arl_fieldblock}
+											
+{BEGIN cont_depsup_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_depsup}  r-vertical-field" 
+	data-fieldname="cont_depsup" 
+	data-signal-error-for="cont_depsup{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field54" {$item_integrated_edit_field54} data-pageid="{$pageid}" data-field="cont_depsup" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_depsup}">
+		{BEGIN cont_depsup_label}{$label contrato cont_depsup }{END cont_depsup_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_depsup_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_depsup">
+		<div class="text-muted" >
+		{$tooltip contrato cont_depsup }		</div>
+	</div>
+</div>
+
+
+{END cont_depsup_fieldblock}
+											
+{BEGIN cont_dep_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_dep}  r-vertical-field" 
+	data-fieldname="cont_dep" 
+	data-signal-error-for="cont_dep{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field55" {$item_integrated_edit_field55} data-pageid="{$pageid}" data-field="cont_dep" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_dep}">
+		{BEGIN cont_dep_label}{$label contrato cont_dep }{END cont_dep_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_dep_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_dep">
+		<div class="text-muted" >
+		{$tooltip contrato cont_dep }		</div>
+	</div>
+</div>
+
+
+{END cont_dep_fieldblock}
+											
+{BEGIN cont_lugar_prestacion_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_lugar_prestacion}  r-vertical-field" 
+	data-fieldname="cont_lugar_prestacion" 
+	data-signal-error-for="cont_lugar_prestacion{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field56" {$item_integrated_edit_field56} data-pageid="{$pageid}" data-field="cont_lugar_prestacion" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_lugar_prestacion}">
+		{BEGIN cont_lugar_prestacion_label}{$label contrato cont_lugar_prestacion }{END cont_lugar_prestacion_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_lugar_prestacion_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_lugar_prestacion">
+		<div class="text-muted" >
+		{$tooltip contrato cont_lugar_prestacion }		</div>
+	</div>
+</div>
+
+
+{END cont_lugar_prestacion_fieldblock}
+											
+{BEGIN cont_obligaciones_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_obligaciones}  r-vertical-field" 
+	data-fieldname="cont_obligaciones" 
+	data-signal-error-for="cont_obligaciones{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field57" {$item_integrated_edit_field57} data-pageid="{$pageid}" data-field="cont_obligaciones" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_obligaciones}">
+		{BEGIN cont_obligaciones_label}{$label contrato cont_obligaciones }{END cont_obligaciones_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_obligaciones_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_obligaciones">
+		<div class="text-muted" >
+		{$tooltip contrato cont_obligaciones }		</div>
+	</div>
+</div>
+
+
+{END cont_obligaciones_fieldblock}
+											
+{BEGIN cont_plazo_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_plazo}  r-vertical-field" 
+	data-fieldname="cont_plazo" 
+	data-signal-error-for="cont_plazo{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field58" {$item_integrated_edit_field58} data-pageid="{$pageid}" data-field="cont_plazo" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_plazo}">
+		{BEGIN cont_plazo_label}{$label contrato cont_plazo }{END cont_plazo_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_plazo_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_plazo">
+		<div class="text-muted" >
+		{$tooltip contrato cont_plazo }		</div>
+	</div>
+</div>
+
+
+{END cont_plazo_fieldblock}
+											
+{BEGIN cont_tipo_regimen_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_tipo_regimen}  r-vertical-field" 
+	data-fieldname="cont_tipo_regimen" 
+	data-signal-error-for="cont_tipo_regimen{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field59" {$item_integrated_edit_field59} data-pageid="{$pageid}" data-field="cont_tipo_regimen" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_tipo_regimen}">
+		{BEGIN cont_tipo_regimen_label}{$label contrato cont_tipo_regimen }{END cont_tipo_regimen_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_tipo_regimen_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_tipo_regimen">
+		<div class="text-muted" >
+		{$tooltip contrato cont_tipo_regimen }		</div>
+	</div>
+</div>
+
+
+{END cont_tipo_regimen_fieldblock}
+											
+{BEGIN cont_fecha_firma_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_fecha_firma}  r-vertical-field" 
+	data-fieldname="cont_fecha_firma" 
+	data-signal-error-for="cont_fecha_firma{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field60" {$item_integrated_edit_field60} data-pageid="{$pageid}" data-field="cont_fecha_firma" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_fecha_firma}">
+		{BEGIN cont_fecha_firma_label}{$label contrato cont_fecha_firma }{END cont_fecha_firma_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_fecha_firma_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_fecha_firma">
+		<div class="text-muted" >
+		{$tooltip contrato cont_fecha_firma }		</div>
+	</div>
+</div>
+
+
+{END cont_fecha_firma_fieldblock}
+											
+{BEGIN cont_secop_proceso_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_secop_proceso}  r-vertical-field" 
+	data-fieldname="cont_secop_proceso" 
+	data-signal-error-for="cont_secop_proceso{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field61" {$item_integrated_edit_field61} data-pageid="{$pageid}" data-field="cont_secop_proceso" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_secop_proceso}">
+		{BEGIN cont_secop_proceso_label}{$label contrato cont_secop_proceso }{END cont_secop_proceso_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_secop_proceso_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_secop_proceso">
+		<div class="text-muted" >
+		{$tooltip contrato cont_secop_proceso }		</div>
+	</div>
+</div>
+
+
+{END cont_secop_proceso_fieldblock}
+											
+{BEGIN cont_secop_enlace_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_secop_enlace}  r-vertical-field" 
+	data-fieldname="cont_secop_enlace" 
+	data-signal-error-for="cont_secop_enlace{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field62" {$item_integrated_edit_field62} data-pageid="{$pageid}" data-field="cont_secop_enlace" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_secop_enlace}">
+		{BEGIN cont_secop_enlace_label}{$label contrato cont_secop_enlace }{END cont_secop_enlace_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_secop_enlace_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_secop_enlace">
+		<div class="text-muted" >
+		{$tooltip contrato cont_secop_enlace }		</div>
+	</div>
+</div>
+
+
+{END cont_secop_enlace_fieldblock}
+											
+{BEGIN cont_sigep_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_sigep}  r-vertical-field" 
+	data-fieldname="cont_sigep" 
+	data-signal-error-for="cont_sigep{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field63" {$item_integrated_edit_field63} data-pageid="{$pageid}" data-field="cont_sigep" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_sigep}">
+		{BEGIN cont_sigep_label}{$label contrato cont_sigep }{END cont_sigep_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_sigep_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_sigep">
+		<div class="text-muted" >
+		{$tooltip contrato cont_sigep }		</div>
+	</div>
+</div>
+
+
+{END cont_sigep_fieldblock}
+											
+{BEGIN cont_vigencias_futuras_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_vigencias_futuras}  r-vertical-field" 
+	data-fieldname="cont_vigencias_futuras" 
+	data-signal-error-for="cont_vigencias_futuras{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field64" {$item_integrated_edit_field64} data-pageid="{$pageid}" data-field="cont_vigencias_futuras" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_vigencias_futuras}">
+		{BEGIN cont_vigencias_futuras_label}{$label contrato cont_vigencias_futuras }{END cont_vigencias_futuras_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_vigencias_futuras_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_vigencias_futuras">
+		<div class="text-muted" >
+		{$tooltip contrato cont_vigencias_futuras }		</div>
+	</div>
+</div>
+
+
+{END cont_vigencias_futuras_fieldblock}
+											
+{BEGIN vf_num_autorizacion_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_vf_num_autorizacion}  r-vertical-field" 
+	data-fieldname="vf_num_autorizacion" 
+	data-signal-error-for="vf_num_autorizacion{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field65" {$item_integrated_edit_field65} data-pageid="{$pageid}" data-field="vf_num_autorizacion" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_vf_num_autorizacion}">
+		{BEGIN vf_num_autorizacion_label}{$label contrato vf_num_autorizacion }{END vf_num_autorizacion_label}
+	</label>
+	<div class="r-edit-field">
+		{$vf_num_autorizacion_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="vf_num_autorizacion">
+		<div class="text-muted" >
+		{$tooltip contrato vf_num_autorizacion }		</div>
+	</div>
+</div>
+
+
+{END vf_num_autorizacion_fieldblock}
+											
+{BEGIN vf_fecha_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_vf_fecha}  r-vertical-field" 
+	data-fieldname="vf_fecha" 
+	data-signal-error-for="vf_fecha{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field66" {$item_integrated_edit_field66} data-pageid="{$pageid}" data-field="vf_fecha" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_vf_fecha}">
+		{BEGIN vf_fecha_label}{$label contrato vf_fecha }{END vf_fecha_label}
+	</label>
+	<div class="r-edit-field">
+		{$vf_fecha_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="vf_fecha">
+		<div class="text-muted" >
+		{$tooltip contrato vf_fecha }		</div>
+	</div>
+</div>
+
+
+{END vf_fecha_fieldblock}
+											
+{BEGIN vf_valor_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_vf_valor}  r-vertical-field" 
+	data-fieldname="vf_valor" 
+	data-signal-error-for="vf_valor{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field67" {$item_integrated_edit_field67} data-pageid="{$pageid}" data-field="vf_valor" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_vf_valor}">
+		{BEGIN vf_valor_label}{$label contrato vf_valor }{END vf_valor_label}
+	</label>
+	<div class="r-edit-field">
+		{$vf_valor_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="vf_valor">
+		<div class="text-muted" >
+		{$tooltip contrato vf_valor }		</div>
+	</div>
+</div>
+
+
+{END vf_valor_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="add_save" data-itemid="add_save" {$item_add_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							Guardar			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="add_back_list" data-itemid="add_back_list" {$item_add_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="backButton{$id}" >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="add_cancel" data-itemid="add_cancel" {$item_add_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Cancelar			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

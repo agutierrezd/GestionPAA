@@ -1,0 +1,5 @@
+
+Runner.buttonEvents["New_Button1"]=function(pageObj,proxy,pageid){pageObj.buttonNames[pageObj.buttonNames.length]='New_Button1';if(!pageObj.buttonEventBefore['New_Button1']){pageObj.buttonEventBefore['New_Button1']=function(params,ctrl,pageObj,proxy,pageid,rowData,row,submit){var ajax=ctrl;}}
+if(!pageObj.buttonEventAfter['New_Button1']){pageObj.buttonEventAfter['New_Button1']=function(result,ctrl,pageObj,proxy,pageid,rowData,row,params){var ajax=ctrl;var message=result["editid1"];var win=Runner.displayPopup({url:'paa_master_send_edit.php?editid1='+result["editid1"],width:500,height:500,header:'ENVIAR SOLICITUD AL GRUPO ADMINISTRATIVA'});}}
+$('a[id="New_Button1"]').each(function(){if($(this).closest('.gridRowAdd').length){return;}
+this.id="New_Button1"+"_"+Runner.genId();var button_New_Button1=new Runner.form.Button({id:this.id,btnName:"New_Button1"});button_New_Button1.init({args:[pageObj,proxy,pageid]});});};
